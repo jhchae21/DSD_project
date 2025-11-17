@@ -1,0 +1,13 @@
+0.7
+2020.2
+May  7 2023
+15:10:42
+/home/hsjang0918/Desktop/2023_dsd_final_project-nexys/build/layer_tb/pool_tb/pool_tb.gen/sources_1/ip/sram_32x131072/sim/sram_32x131072.v,1699454120,verilog,,/home/hsjang0918/Desktop/2023_dsd_final_project-nexys/src/tb/pool/ip/axi_interconnect_0/sim/axi_interconnect_0.v,,sram_32x131072,,,../../../../pool_tb.ip_user_files/ipstatic/hdl,,,,,
+/home/hsjang0918/Desktop/2023_dsd_final_project-nexys/build/layer_tb/pool_tb/pool_tb.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+/home/hsjang0918/Desktop/2023_dsd_final_project-nexys/src/modules/pool_module/pool_module.v,1699460344,verilog,,/home/hsjang0918/Desktop/2023_dsd_final_project-nexys/src/tb/pool/top_simulation.v,,pool_module,,,../../../../pool_tb.ip_user_files/ipstatic/hdl,,,,,
+/home/hsjang0918/Desktop/2023_dsd_final_project-nexys/src/tb/pool/axi_m_interface.v,1668770612,verilog,,/home/hsjang0918/Desktop/2023_dsd_final_project-nexys/src/modules/pool_module/pool_module.v,,axi_m_interface,,,../../../../pool_tb.ip_user_files/ipstatic/hdl,,,,,
+/home/hsjang0918/Desktop/2023_dsd_final_project-nexys/src/tb/pool/ip/axi_interconnect_0/sim/axi_interconnect_0.v,1699453647,verilog,,/home/hsjang0918/Desktop/2023_dsd_final_project-nexys/src/tb/pool/axi_m_interface.v,,axi_interconnect_0,,,../../../../pool_tb.ip_user_files/ipstatic/hdl,,,,,
+/home/hsjang0918/Desktop/2023_dsd_final_project-nexys/src/tb/pool/ip/axi_vdma_0/sim/axi_vdma_0.vhd,1699453696,vhdl,,,,axi_vdma_0,,,,,,,,
+/home/hsjang0918/Desktop/2023_dsd_final_project-nexys/src/tb/pool/tb.v,1699453636,verilog,,,,tb,,,../../../../pool_tb.ip_user_files/ipstatic/hdl,,,,,
+/home/hsjang0918/Desktop/2023_dsd_final_project-nexys/src/tb/pool/top_simulation.v,1699458773,verilog,,/home/hsjang0918/Desktop/2023_dsd_final_project-nexys/src/tb/pool/vdma_controller.v,,top_simulation,,,../../../../pool_tb.ip_user_files/ipstatic/hdl,,,,,
+/home/hsjang0918/Desktop/2023_dsd_final_project-nexys/src/tb/pool/vdma_controller.v,1668770612,verilog,,/home/hsjang0918/Desktop/2023_dsd_final_project-nexys/src/tb/pool/tb.v,,vdma_controller,,,../../../../pool_tb.ip_user_files/ipstatic/hdl,,,,,

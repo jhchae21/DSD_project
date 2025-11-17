@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hsjang0918/Desktop/2022_dsd_final_project-nexys/build/layer_tb/fc_tb/fc_tb.gen/sources_1/ip/sram_32x131072/sim/sram_32x131072.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_32x131072
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hsjang0918/Desktop/2022_dsd_final_project-nexys/src/tb/fc/ip/axi_interconnect_0/sim/axi_interconnect_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_interconnect_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hsjang0918/Desktop/2022_dsd_final_project-nexys/src/tb/fc/axi_m_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_m_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hsjang0918/Desktop/2022_dsd_final_project-nexys/src/modules/fc_module/fc_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fc_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hsjang0918/Desktop/2022_dsd_final_project-nexys/src/tb/fc/top_simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_simulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hsjang0918/Desktop/2022_dsd_final_project-nexys/src/tb/fc/vdma_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vdma_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hsjang0918/Desktop/2022_dsd_final_project-nexys/src/tb/fc/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../pool_tb.ip_user_files/ipstatic/hdl" \
+"../../../../pool_tb.gen/sources_1/ip/sram_32x131072/sim/sram_32x131072.v" \
+"../../../../../../../src/tb/pool/ip/axi_interconnect_0/sim/axi_interconnect_0.v" \
+"../../../../../../../src/tb/pool/axi_m_interface.v" \
+"../../../../../../../src/modules/pool_module/pool_module.v" \
+"../../../../../../../src/tb/pool/top_simulation.v" \
+"../../../../../../../src/tb/pool/vdma_controller.v" \
+"../../../../../../../src/tb/pool/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
