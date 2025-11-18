@@ -1,0 +1,32 @@
+vhdl xpm  \
+"C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_VCOMP.vhd" \
+
+vhdl lib_cdc_v1_0_3  \
+"../../ipstatic/hdl/lib_cdc_v1_0_rfs.vhd" \
+
+vhdl lib_pkg_v1_0_4  \
+"../../ipstatic/hdl/lib_pkg_v1_0_rfs.vhd" \
+
+vhdl fifo_generator_v13_2_11  \
+"../../ipstatic/hdl/fifo_generator_v13_2_rfs.vhd" \
+
+vhdl lib_fifo_v1_0_20  \
+"../../ipstatic/hdl/lib_fifo_v1_0_rfs.vhd" \
+
+vhdl lib_bmg_v1_0_18  \
+"../../ipstatic/hdl/lib_bmg_v1_0_rfs.vhd" \
+
+vhdl lib_srl_fifo_v1_0_4  \
+"../../ipstatic/hdl/lib_srl_fifo_v1_0_rfs.vhd" \
+
+vhdl axi_datamover_v5_1_35  \
+"../../ipstatic/hdl/axi_datamover_v5_1_vh_rfs.vhd" \
+
+vhdl axi_vdma_v6_3_21  \
+"../../ipstatic/hdl/axi_vdma_v6_3_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../../../src/tb/pool/ip/axi_vdma_0/sim/axi_vdma_0.vhd" \
+
+# Do not sort compile order
+nosort

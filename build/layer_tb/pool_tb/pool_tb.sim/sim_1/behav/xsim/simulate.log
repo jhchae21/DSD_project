@@ -1,5 +1,5 @@
 Time resolution is 1 ps
-Block Memory Generator module tb.u_top_simulation.u_sram_32x131072.inst.\axi_mem_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_9_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
 Note: Actual FIFO Depth = 513
 Time: 0 ps  Iteration: 0
 Note:  DEPTH = 512 WIDTH = 72 C_RD_PRIM_WIDTH = 72 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
@@ -8,19 +8,8 @@ Note: Actual FIFO Depth = 513
 Time: 0 ps  Iteration: 0
 Note:  DEPTH = 512 WIDTH = 72 C_RD_PRIM_WIDTH = 72 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
 Time: 0 ps  Iteration: 0
-Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. tb.u_top_simulation.u_axi_vdma_0.U0.I_PRMRY_DATAMOVER.gen_s2mm_full.I_S2MM_FULL_WRAPPER.gen_enable_indet_btt_sf.I_INDET_BTT.I_XD_FIFO.non_blk_mem.I_SYNC_FIFOGEN_FIFO.xpm_fifo_instance.xpm_fifo_sync_inst.xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc
-Time: 1 ps  Iteration: 0  Process: /tb/u_top_simulation/u_axi_vdma_0/U0/I_PRMRY_DATAMOVER/gen_s2mm_full/I_S2MM_FULL_WRAPPER/gen_enable_indet_btt_sf/I_INDET_BTT/I_XD_FIFO/non_blk_mem/I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial304_820  Scope: tb.u_top_simulation.u_axi_vdma_0.U0.I_PRMRY_DATAMOVER.gen_s2mm_full.I_S2MM_FULL_WRAPPER.gen_enable_indet_btt_sf.I_INDET_BTT.I_XD_FIFO.non_blk_mem.I_SYNC_FIFOGEN_FIFO.xpm_fifo_instance.xpm_fifo_sync_inst.xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc  File: /opt/xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 508
-Block Memory Generator module tb.u_top_simulation.u_sram_32x131072.inst.\axi_mem_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
-Note: Actual FIFO Depth = 513
-Time: 0 ps  Iteration: 0
-Note:  DEPTH = 512 WIDTH = 72 C_RD_PRIM_WIDTH = 72 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
-Time: 0 ps  Iteration: 0
-Note: Actual FIFO Depth = 513
-Time: 0 ps  Iteration: 0
-Note:  DEPTH = 512 WIDTH = 72 C_RD_PRIM_WIDTH = 72 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
-Time: 0 ps  Iteration: 0
-Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. tb.u_top_simulation.u_axi_vdma_0.U0.I_PRMRY_DATAMOVER.gen_s2mm_full.I_S2MM_FULL_WRAPPER.gen_enable_indet_btt_sf.I_INDET_BTT.I_XD_FIFO.non_blk_mem.I_SYNC_FIFOGEN_FIFO.xpm_fifo_instance.xpm_fifo_sync_inst.xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc
-Time: 1 ps  Iteration: 0  Process: /tb/u_top_simulation/u_axi_vdma_0/U0/I_PRMRY_DATAMOVER/gen_s2mm_full/I_S2MM_FULL_WRAPPER/gen_enable_indet_btt_sf/I_INDET_BTT/I_XD_FIFO/non_blk_mem/I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial304_820  Scope: tb.u_top_simulation.u_axi_vdma_0.U0.I_PRMRY_DATAMOVER.gen_s2mm_full.I_S2MM_FULL_WRAPPER.gen_enable_indet_btt_sf.I_INDET_BTT.I_XD_FIFO.non_blk_mem.I_SYNC_FIFOGEN_FIFO.xpm_fifo_instance.xpm_fifo_sync_inst.xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc  File: /opt/xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 508
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. tb.u_top_simulation.u_axi_vdma_0.U0.I_PRMRY_DATAMOVER.gen_s2mm_full.I_S2MM_FULL_WRAPPER.gen_enable_indet_btt_sf.I_INDET_BTT.I_XD_FIFO.non_blk_mem.I_SYNC_FIFOGEN_FIFO.xpm_fifo_instance.xpm_fifo_sync_inst.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc
+Time: 1 ps  Iteration: 0  Process: /tb/u_top_simulation/u_axi_vdma_0/U0/I_PRMRY_DATAMOVER/gen_s2mm_full/I_S2MM_FULL_WRAPPER/gen_enable_indet_btt_sf/I_INDET_BTT/I_XD_FIFO/non_blk_mem/I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial302_820  Scope: tb.u_top_simulation.u_axi_vdma_0.U0.I_PRMRY_DATAMOVER.gen_s2mm_full.I_S2MM_FULL_WRAPPER.gen_enable_indet_btt_sf.I_INDET_BTT.I_XD_FIFO.non_blk_mem.I_SYNC_FIFOGEN_FIFO.xpm_fifo_instance.xpm_fifo_sync_inst.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc  File: C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 514
 - Force write starts -
 - Force write is done -
 
@@ -31,3 +20,51 @@ VDMA is ready to receive result from FC
 
 VDMA transmits feature to FC
 POOL starts to calculate
+POOL finishes to calculate
+
+- Comparing result starts -
+
+input file :                                                                                                         pool_output_32bits_2s.txt
+
+import result(no write) is done. 
+
+Index:           0
+
+Result is different!
+Expected value: 7f597f7f
+Output value: 7f59007f
+
+Index:           1
+Index:           2
+Index:           3
+Index:           4
+Index:           5
+Index:           6
+Index:           7
+Index:           8
+Index:           9
+Index:          10
+Index:          11
+Index:          12
+Index:          13
+Index:          14
+Index:          15
+Index:          16
+Index:          17
+Index:          18
+Index:          19
+Index:          20
+Index:          21
+Index:          22
+Index:          23
+Index:          24
+Index:          25
+Index:          26
+Index:          27
+Index:          28
+Index:          29
+Index:          30
+Index:          31
+- Comparing result is done!! -
+
+$finish called at time : 4187500 ps : File "C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/pool/tb.v" Line 292

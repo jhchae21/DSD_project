@@ -24,14 +24,14 @@ module tb;
     /////////////////////// 수정할 부분 begin ////////////////////////////
     
     ////// 이런 식으로 paramter화 시키면 더 편하게 값들을 대입시킬 수 있습니다. 단, 이것은 FC Layer의 예시이고, CONV나 POOL은 다릅니다.
-    parameter   INPUT_FEATURE_LENGTH = 32'd8;
-    parameter   INPUT_CHANNEL_SIZE = 32'd8;
+    parameter   INPUT_FEATURE_LENGTH = 32'd8; // Data 1줄은 Data 8개(+ Data 1묶음은 8줄!)
+    parameter   INPUT_CHANNEL_SIZE = 32'd8; // Data가 총 8묶음
     
     // HSIZE*VSIZE 가 각 데이터의 양 ( 8-bit의 수 = byte 수) 입니다. 일반적으로 VSIZE를 1 로하고 HSZIE 만으로 표현하면 되며 HSIZE가 클 때만 유의하시면 됩니다.
     // STRIDE SIZE 와 HSIZE는 동일합니다.
-    parameter   FEATURE_BASE_ADDR   = 32'h0000_1000;    // 00000_0000 일 경우 첫 번째 데이터가 안 읽힙니다. Feature Size, Weight Size, Bias SIze, Output Size를 고려해서 겹치지 않게 주소를 설정하세요.
+    parameter   FEATURE_BASE_ADDR   = 32'h0000_1000;    // 0이면 버그 있을 수 있으니, 임의의 값으로 설정 // 00000_0000 일 경우 첫 번째 데이터가 안 읽힙니다. Feature Size, Weight Size, Bias SIze, Output Size를 고려해서 겹치지 않게 주소를 설정하세요.
     parameter   FEATURE_STRIDE_SIZE = INPUT_FEATURE_LENGTH*INPUT_FEATURE_LENGTH*INPUT_CHANNEL_SIZE;
-    parameter   FEATURE_HSIZE       = INPUT_FEATURE_LENGTH*INPUT_FEATURE_LENGTH*INPUT_CHANNEL_SIZE;    // 65536 (2의 16승) 보다 크면 안됩니다. 크면 VSIZE를 늘려서 HSIZE*VSIZE를 INPUT SIZE와 똑같게 만들면 됩니다.
+    parameter   FEATURE_HSIZE       = INPUT_FEATURE_LENGTH*INPUT_FEATURE_LENGTH*INPUT_CHANNEL_SIZE; //512, 한번에 전체 data 512byte 모두 가져온다! // 65536 (2의 16승) 보다 크면 안됩니다. 크면 VSIZE를 늘려서 HSIZE*VSIZE를 INPUT SIZE와 똑같게 만들면 됩니다.
     parameter   FEATURE_VSIZE       = 32'd1;
 //    parameter   WEIGHT_BASE_ADDR    = 32'h0000_2000;    // 00000_0000 일 경우 첫 번째 데이터가 안 읽힙니다. Feature Size, Weight Size, Bias SIze, Output Size를 고려해서 겹치지 않게 주소를 설정하세요.
 //    parameter   WEIGHT_STRIDE_SIZE  = INPUT_SIZE*OUTPUT_SIZE;
@@ -43,7 +43,7 @@ module tb;
 //    parameter   BIAS_VSIZE          = 32'd1;    
     parameter   RESULT_BASE_ADDR    = 32'h0000_4000;    // Feature Size, Weight Size, Bias SIze, Output Size를 고려해서 겹치지 않게 주소를 설정하세요.
     parameter   RESULT_STRIDE_SIZE  = INPUT_FEATURE_LENGTH*INPUT_FEATURE_LENGTH*INPUT_CHANNEL_SIZE/4;    
-    parameter   RESULT_HSIZE        = INPUT_FEATURE_LENGTH*INPUT_FEATURE_LENGTH*INPUT_CHANNEL_SIZE/4;    // 65536 (2의 16승) 보다 크면 안됩니다. 크면 VSIZE를 늘려서 HSIZE*VSIZE를 INPUT SIZE와 똑같게 만들면 됩니다.   
+    parameter   RESULT_HSIZE        = INPUT_FEATURE_LENGTH*INPUT_FEATURE_LENGTH*INPUT_CHANNEL_SIZE/4; //Pool하면 data의 총 크기가 1/4로 줄어든다.   // 65536 (2의 16승) 보다 크면 안됩니다. 크면 VSIZE를 늘려서 HSIZE*VSIZE를 INPUT SIZE와 똑같게 만들면 됩니다.   
     parameter   RESULT_VSIZE        = 32'd1; 
     /////////////////////// 수정할 부분 end //////////////////////////////////////
     
@@ -53,7 +53,7 @@ module tb;
     localparam integer  DATA_SIZE       = 32;
     
     /////////////////////// 수정할 부분 begin ////////////////////////////
-    localparam integer  FEATURE_SIZE    = FEATURE_HSIZE*FEATURE_VSIZE/4;                 // txt 파일들의 각 line이 32 bit일 때 line 수 입니다. 위에서 구한 HSZIE*VSIZE 의 1/4 와 같습니다.
+    localparam integer  FEATURE_SIZE    = FEATURE_HSIZE*FEATURE_VSIZE/4;  // txt 파일들의 각 line이 32 bit일 때 line 수 입니다. 위에서 구한 HSZIE*VSIZE 의 1/4 와 같습니다.
 //    localparam integer  WEIGHT_SIZE     = WEIGHT_HSIZE*WEIGHT_VSIZE/4;                
 //    localparam integer  BIAS_SIZE       = BIAS_HSIZE*BIAS_VSIZE/4;                   
     localparam integer  RESULT_SIZE     = RESULT_HSIZE*RESULT_VSIZE/4;                   
@@ -61,17 +61,17 @@ module tb;
     
     // FC, CONV의 경우 a,b,c 세 개 모두 필요하지만 POOL은 weight와 bias가 없으므로 b,c는 필요 없습니다.
     // bram write 
-    reg [31:0]          data_a_32bit [0:FEATURE_SIZE-1];        // data_a
+    reg [31:0]          data_a_32bit [0:FEATURE_SIZE-1];        // data_a : pool_input.txt 파일 내용 불러와 임시로 저장할 메모리!
 //    reg [31:0]          data_b_32bit [0:WEIGHT_SIZE-1];         // data_b
 //    reg [31:0]          data_c_32bit [0:BIAS_SIZE-1];           // data_c  
     
     
     /////////////////////// 수정할 부분 begin //////////////////////////// 
     // module_example
-    reg           init;
-    reg [5:0]     input_size;
-    reg [8:0]     input_channel_size;
-    wire          maxpool_done;
+    reg           init; //연산 시작 신호
+    reg [5:0]     input_size; // 8
+    reg [8:0]     input_channel_size; // 8
+    wire          maxpool_done; //연산 완료 신호
     /////////////////////// 수정할 부분 end //////////////////////////////////////
     
     // system
@@ -152,13 +152,13 @@ module tb;
                  
         // writing pool_input_32bits.txt
         for (i = 0; i < FEATURE_SIZE; i = i + 1) begin
-            force tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_4_inst.ADDRA = (FEATURE_BASE_ADDR + i*4)/4; 
-            force tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_4_inst.ENA = 1'b1;
-            force tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_4_inst.WEA = 4'b1111;
-            @(posedge tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_4_inst.CLKA);
-            force tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_4_inst.DINA = {data_a_32bit[i][7:0],data_a_32bit[i][15:8],data_a_32bit[i][23:16],data_a_32bit[i][31:24]};   // UART version - big to little
+            force tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_9_inst.ADDRA = (FEATURE_BASE_ADDR + i*4)/4; 
+            force tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_9_inst.ENA = 1'b1;
+            force tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_9_inst.WEA = 4'b1111;
+            @(posedge tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_9_inst.CLKA);
+            force tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_9_inst.DINA = {data_a_32bit[i][7:0],data_a_32bit[i][15:8],data_a_32bit[i][23:16],data_a_32bit[i][31:24]};   // UART version - big to little
                                                              
-            @(posedge tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_4_inst.CLKA);
+            @(posedge tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_9_inst.CLKA);
         end 
           
 //        // writing pool_weight_32bits.txt  
@@ -183,11 +183,11 @@ module tb;
 //             @(posedge tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_1_inst.CLKA);
 //        end
  
-        release tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_4_inst.ADDRA;
-        release tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_4_inst.ENA;
-        release tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_4_inst.WEA;
-        release tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_4_inst.DINA;
-        @(posedge tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_4_inst.CLKA);
+        release tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_9_inst.ADDRA;
+        release tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_9_inst.ENA;
+        release tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_9_inst.WEA;
+        release tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_9_inst.DINA;
+        @(posedge tb.u_top_simulation.u_sram_32x131072.inst.axi_mem_module.blk_mem_gen_v8_4_9_inst.CLKA);
         
         $display("- Force write is done -\n\n");
         

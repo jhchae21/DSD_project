@@ -497,11 +497,15 @@ module top_simulation
         .M_AXIS_TDATA(M_AXIS_TDATA),
         .M_AXIS_TKEEP(M_AXIS_TKEEP),
         .M_AXIS_TLAST(M_AXIS_TLAST),
-        .M_AXIS_TVALID(M_AXIS_TVALID)
+        .M_AXIS_TVALID(M_AXIS_TVALID),
         
         /////////////////////////////////////////////////////////
         // TODO: Add ports
-        /////////////////////////////////////////////////////////        
+        /////////////////////////////////////////////////////////
+        .pool_start(init),                // tb.v의 'init'을 pool_module의 'pool_start'에 연결
+        .pool_done(maxpool_done),         // pool_module의 'pool_done'을 tb.v의 'maxpool_done'에 연결
+        .input_size(input_size),          // tb.v의 'input_size'를 pool_module의 'input_size'에 연결
+        .input_channel_size(input_channel_size) // tb.v의 'input_channel_size'를 pool_module의 'input_channel_size'에 연결
         );
         
 endmodule

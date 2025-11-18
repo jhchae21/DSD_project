@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="axi_interconnect_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1699454507">
-  <File Type="RDS-RDS" Name="axi_interconnect_0.vds"/>
   <File Type="REPORTS-TCL" Name="axi_interconnect_0_reports.tcl"/>
-  <File Type="PA-TCL" Name="axi_interconnect_0.tcl"/>
-  <File Type="RDS-DCP" Name="axi_interconnect_0.dcp"/>
   <File Type="RDS-UTIL" Name="axi_interconnect_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="axi_interconnect_0_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="axi_interconnect_0.tcl"/>
+  <File Type="RDS-RDS" Name="axi_interconnect_0.vds"/>
+  <File Type="RDS-DCP" Name="axi_interconnect_0.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axi_interconnect_0" RelGenDir="$PGENDIR/axi_interconnect_0">
     <File Path="$PPRDIR/../../../src/tb/fc/ip/axi_interconnect_0/axi_interconnect_0.xci">
       <FileInfo>
