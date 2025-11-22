@@ -1,27 +1,20 @@
--------------------------------------------------------------------------------
--- axi_sg_pkg
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -30,11 +23,11 @@
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -43,12 +36,13 @@
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -200,30 +194,23 @@ end function bo2int;
 end package body axi_sg_pkg;
 
 
--------------------------------------------------------------------------------
--- axi_sg_ftch_sm
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -232,11 +219,11 @@ end package body axi_sg_pkg;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -245,12 +232,13 @@ end package body axi_sg_pkg;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -322,11 +310,11 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_sg_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_sg_pkg.all;
 
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.clog2;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.clog2;
 
 -------------------------------------------------------------------------------
 entity  axi_sg_ftch_sm is
@@ -1214,30 +1202,23 @@ LOG_ERROR_ADDR : process(m_axi_sg_aclk)
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_sg_ftch_pntr
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -1246,11 +1227,11 @@ end implementation;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -1259,12 +1240,13 @@ end implementation;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -1333,8 +1315,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_sg_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_sg_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_sg_ftch_pntr is
@@ -1648,30 +1630,23 @@ end generate GEN_NO_PNTR_FOR_CH2;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_sg_ftch_cmdsts_if
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -1680,11 +1655,11 @@ end implementation;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -1693,12 +1668,13 @@ end implementation;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -1761,8 +1737,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_sg_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_sg_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_sg_ftch_cmdsts_if is
@@ -1975,30 +1951,23 @@ FETCH_ERROR_PROCESS : process(m_axi_sg_aclk)
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_sg_ftch_mngr
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -2007,11 +1976,11 @@ end implementation;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -2020,12 +1989,13 @@ end implementation;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -2092,8 +2062,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_sg_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_sg_pkg.all;
 
 
 -------------------------------------------------------------------------------
@@ -2275,7 +2245,7 @@ ftch_error          <= ftch_error_i;
 -------------------------------------------------------------------------------
 --  Scatter Gather Fetch State Machine
 -------------------------------------------------------------------------------
-I_FTCH_SG : entity  axi_vdma_v6_3_16.axi_sg_ftch_sm
+I_FTCH_SG : entity  axi_vdma_v6_3_21.axi_sg_ftch_sm
     generic map(
         C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH                ,
         C_INCLUDE_CH1               => C_INCLUDE_CH1                        ,
@@ -2348,7 +2318,7 @@ I_FTCH_SG : entity  axi_vdma_v6_3_16.axi_sg_ftch_sm
 -------------------------------------------------------------------------------
 --  Scatter Gather Fetch Pointer Manager
 -------------------------------------------------------------------------------
-I_FTCH_PNTR_MNGR : entity  axi_vdma_v6_3_16.axi_sg_ftch_pntr
+I_FTCH_PNTR_MNGR : entity  axi_vdma_v6_3_21.axi_sg_ftch_pntr
     generic map(
         C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH                ,
         C_INCLUDE_CH1               => C_INCLUDE_CH1                        ,
@@ -2410,7 +2380,7 @@ I_FTCH_PNTR_MNGR : entity  axi_vdma_v6_3_16.axi_sg_ftch_pntr
 -------------------------------------------------------------------------------
 --  Scatter Gather Fetch Command / Status Interface
 -------------------------------------------------------------------------------
-I_FTCH_CMDSTS_IF : entity  axi_vdma_v6_3_16.axi_sg_ftch_cmdsts_if
+I_FTCH_CMDSTS_IF : entity  axi_vdma_v6_3_21.axi_sg_ftch_cmdsts_if
     generic map(
         C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH
     )
@@ -2458,31 +2428,23 @@ I_FTCH_CMDSTS_IF : entity  axi_vdma_v6_3_16.axi_sg_ftch_cmdsts_if
 end implementation;
 
 
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
--- axi_sg_afifo_autord.vhd - entity/architecture pair
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010-2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -2491,11 +2453,11 @@ end implementation;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -2504,12 +2466,13 @@ end implementation;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -2595,8 +2558,8 @@ use IEEE.std_logic_1164.all;
 use IEEE.std_logic_arith.all;
 use IEEE.std_logic_unsigned.all;
 
-library lib_fifo_v1_0_17;
-use lib_fifo_v1_0_17.async_fifo_fg;
+library lib_fifo_v1_0_20;
+use lib_fifo_v1_0_20.async_fifo_fg;
 
 -----------------------------------------------------------------------------
 -- Entity section
@@ -2738,7 +2701,7 @@ begin
    -- CoreGen FIFO Generator Async FIFO utility.
    --
    -------------------------------------------------------------------------------
-    I_ASYNC_FIFOGEN_FIFO : entity lib_fifo_v1_0_17.async_fifo_fg
+    I_ASYNC_FIFOGEN_FIFO : entity lib_fifo_v1_0_20.async_fifo_fg
        generic map (
 	  C_XPM_FIFO		=>  1,
           C_ALLOW_2N_DEPTH      =>  1,
@@ -2899,30 +2862,23 @@ begin
 end imp;
 
 
--------------------------------------------------------------------------------
--- axi_sg_ftch_queue
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -2931,11 +2887,11 @@ end imp;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -2944,12 +2900,13 @@ end imp;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -3027,13 +2984,13 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_sg_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_sg_pkg.all;
 
-library lib_pkg_v1_0_2;
-library lib_fifo_v1_0_17;
-use lib_fifo_v1_0_17.sync_fifo_fg;
-use lib_pkg_v1_0_2.lib_pkg.all;
+library lib_pkg_v1_0_4;
+library lib_fifo_v1_0_20;
+use lib_fifo_v1_0_20.sync_fifo_fg;
+use lib_pkg_v1_0_4.lib_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_sg_ftch_queue is
@@ -3265,7 +3222,7 @@ TVALID_TDATA_MUX : process(writing_curdesc,
 GEN_FIFO_FOR_SYNC : if C_AXIS_IS_ASYNC = 0 generate
 begin
     -- Generate Synchronous FIFO
-    I_CH1_FTCH_FIFO : entity lib_fifo_v1_0_17.sync_fifo_fg
+    I_CH1_FTCH_FIFO : entity lib_fifo_v1_0_20.sync_fifo_fg
     generic map (
         C_FAMILY                =>  C_FAMILY                ,
         C_MEMORY_TYPE           =>  MEMORY_TYPE             ,
@@ -3328,7 +3285,7 @@ end generate GEN_FIFO_FOR_SYNC;
 GEN_FIFO_FOR_ASYNC : if C_AXIS_IS_ASYNC = 1 generate
 begin
     -- Generate Asynchronous FIFO
-    I_CH1_FTCH_FIFO : entity axi_vdma_v6_3_16.axi_sg_afifo_autord
+    I_CH1_FTCH_FIFO : entity axi_vdma_v6_3_21.axi_sg_afifo_autord
       generic map(
          C_DWIDTH        => C_M_AXIS_SG_TDATA_WIDTH + 1         ,
          C_DEPTH         => FETCH_QUEUE_DEPTH                   ,
@@ -3424,30 +3381,23 @@ writing_nxtdesc     <= writing_nxtdesc_in;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_sg_ftch_noqueue
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -3456,11 +3406,11 @@ end implementation;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -3469,12 +3419,13 @@ end implementation;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -3520,13 +3471,13 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_sg_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_sg_pkg.all;
 
-library lib_pkg_v1_0_2;
-library lib_fifo_v1_0_17;
-use lib_fifo_v1_0_17.sync_fifo_fg;
-use lib_pkg_v1_0_2.lib_pkg.all;
+library lib_pkg_v1_0_4;
+library lib_fifo_v1_0_20;
+use lib_fifo_v1_0_20.sync_fifo_fg;
+use lib_pkg_v1_0_4.lib_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_sg_ftch_noqueue is
@@ -3745,30 +3696,23 @@ writing_nxtdesc     <= writing_nxtdesc_in;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_sg_ftch_queue
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -3777,11 +3721,11 @@ end implementation;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -3790,12 +3734,13 @@ end implementation;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -3864,13 +3809,13 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_sg_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_sg_pkg.all;
 
-library lib_pkg_v1_0_2;
-library lib_fifo_v1_0_17;
-use lib_fifo_v1_0_17.sync_fifo_fg;
-use lib_pkg_v1_0_2.lib_pkg.all;
+library lib_pkg_v1_0_4;
+library lib_fifo_v1_0_20;
+use lib_fifo_v1_0_20.sync_fifo_fg;
+use lib_pkg_v1_0_4.lib_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_sg_ftch_q_mngr is
@@ -4233,7 +4178,7 @@ begin
     GEN_CH1_QUEUE : if C_SG_FTCH_DESC2QUEUE /= 0 generate
     begin
         -- Instantiate the queue version
-        FTCH_QUEUE_I : entity  axi_vdma_v6_3_16.axi_sg_ftch_queue
+        FTCH_QUEUE_I : entity  axi_vdma_v6_3_21.axi_sg_ftch_queue
             generic map(
                 C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH        ,
                 C_M_AXIS_SG_TDATA_WIDTH     => C_M_AXIS_SG_TDATA_WIDTH      ,
@@ -4284,7 +4229,7 @@ begin
     GEN_NO_CH1_QUEUE : if C_SG_FTCH_DESC2QUEUE = 0 generate
     begin
         -- Instantiate the No queue version
-        NO_FTCH_QUEUE_I : entity  axi_vdma_v6_3_16.axi_sg_ftch_noqueue
+        NO_FTCH_QUEUE_I : entity  axi_vdma_v6_3_21.axi_sg_ftch_noqueue
             generic map (
                 C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH,
                 C_M_AXIS_SG_TDATA_WIDTH     => C_M_AXIS_SG_TDATA_WIDTH
@@ -4360,7 +4305,7 @@ begin
     GEN_CH2_QUEUE : if C_SG_FTCH_DESC2QUEUE /= 0 generate
     begin
         -- Instantiate the queue version
-        FTCH_QUEUE_I : entity  axi_vdma_v6_3_16.axi_sg_ftch_queue
+        FTCH_QUEUE_I : entity  axi_vdma_v6_3_21.axi_sg_ftch_queue
             generic map(
                 C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH        ,
                 C_M_AXIS_SG_TDATA_WIDTH     => C_M_AXIS_SG_TDATA_WIDTH      ,
@@ -4411,7 +4356,7 @@ begin
     GEN_NO_CH2_QUEUE : if C_SG_FTCH_DESC2QUEUE = 0 generate
     begin
         -- Instantiate the No queue version
-        NO_FTCH_QUEUE_I : entity  axi_vdma_v6_3_16.axi_sg_ftch_noqueue
+        NO_FTCH_QUEUE_I : entity  axi_vdma_v6_3_21.axi_sg_ftch_noqueue
             generic map (
                 C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH,
                 C_M_AXIS_SG_TDATA_WIDTH     => C_M_AXIS_SG_TDATA_WIDTH
@@ -4526,30 +4471,23 @@ m_axis_mm2s_tready    <= m_axis_mm2s_tready_i;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_sg_updt_cmdsts_if
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -4558,11 +4496,11 @@ end implementation;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -4571,12 +4509,13 @@ end implementation;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -4639,8 +4578,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_sg_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_sg_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_sg_updt_cmdsts_if is
@@ -4830,30 +4769,23 @@ UPDATE_ERROR_PROCESS : process(m_axi_sg_aclk)
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_sg_updt_sm
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -4862,11 +4794,11 @@ end implementation;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -4875,12 +4807,13 @@ end implementation;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -4942,8 +4875,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_sg_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_sg_pkg.all;
 
 
 -------------------------------------------------------------------------------
@@ -5721,30 +5654,23 @@ LOG_ERROR_ADDR : process(m_axi_sg_aclk)
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_sg_updt_mngr
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -5753,11 +5679,11 @@ end implementation;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -5766,12 +5692,13 @@ end implementation;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -5833,8 +5760,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_sg_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_sg_pkg.all;
 
 
 -------------------------------------------------------------------------------
@@ -5982,7 +5909,7 @@ updt_error      <= updt_error_i;
 -------------------------------------------------------------------------------
 --  Scatter Gather Fetch State Machine
 -------------------------------------------------------------------------------
-I_UPDT_SG : entity  axi_vdma_v6_3_16.axi_sg_updt_sm
+I_UPDT_SG : entity  axi_vdma_v6_3_21.axi_sg_updt_sm
     generic map(
         C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH                ,
         C_INCLUDE_CH1               => C_INCLUDE_CH1                        ,
@@ -6057,7 +5984,7 @@ I_UPDT_SG : entity  axi_vdma_v6_3_16.axi_sg_updt_sm
 -------------------------------------------------------------------------------
 --  Scatter Gather Fetch Command / Status Interface
 -------------------------------------------------------------------------------
-I_UPDT_CMDSTS_IF : entity  axi_vdma_v6_3_16.axi_sg_updt_cmdsts_if
+I_UPDT_CMDSTS_IF : entity  axi_vdma_v6_3_21.axi_sg_updt_cmdsts_if
     generic map(
         C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH
     )
@@ -6099,30 +6026,23 @@ I_UPDT_CMDSTS_IF : entity  axi_vdma_v6_3_16.axi_sg_updt_cmdsts_if
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_sg_ftchq_if
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -6131,11 +6051,11 @@ end implementation;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -6144,12 +6064,13 @@ end implementation;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -6214,13 +6135,13 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_sg_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_sg_pkg.all;
 
-library lib_pkg_v1_0_2;
-library lib_fifo_v1_0_17;
-use lib_fifo_v1_0_17.sync_fifo_fg;
-use lib_pkg_v1_0_2.lib_pkg.all;
+library lib_pkg_v1_0_4;
+library lib_fifo_v1_0_20;
+use lib_fifo_v1_0_20.sync_fifo_fg;
+use lib_pkg_v1_0_4.lib_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_sg_updt_queue is
@@ -6523,7 +6444,7 @@ begin
 GEN_Q_FOR_SYNC : if C_AXIS_IS_ASYNC = 0 generate
 begin
     -- Channel Pointer Queue (Generate Synchronous FIFO)
-    I_UPDT_DATA_FIFO : entity lib_fifo_v1_0_17.sync_fifo_fg
+    I_UPDT_DATA_FIFO : entity lib_fifo_v1_0_20.sync_fifo_fg
     generic map (
         C_FAMILY                =>  C_FAMILY                    ,
         C_MEMORY_TYPE           =>  UPD_Q_MEMORY_TYPE           ,
@@ -6566,7 +6487,7 @@ begin
     );
 
     -- Channel Status Queue (Generate Synchronous FIFO)
-    I_UPDT_STS_FIFO : entity lib_fifo_v1_0_17.sync_fifo_fg
+    I_UPDT_STS_FIFO : entity lib_fifo_v1_0_20.sync_fifo_fg
     generic map (
         C_FAMILY                =>  C_FAMILY                        ,
         C_MEMORY_TYPE           =>  STS_Q_MEMORY_TYPE               ,
@@ -6616,7 +6537,7 @@ begin
 
 
     -- Generate Asynchronous FIFO
-    I_UPDT_DATA_FIFO : entity axi_vdma_v6_3_16.axi_sg_afifo_autord
+    I_UPDT_DATA_FIFO : entity axi_vdma_v6_3_21.axi_sg_afifo_autord
       generic map(
          C_DWIDTH        => C_S_AXIS_UPDPTR_TDATA_WIDTH         ,
          C_DEPTH         => UPDATE_QUEUE_DEPTH                  ,
@@ -6650,7 +6571,7 @@ begin
 
 
     -- Generate Asynchronous FIFO
-    I_UPDT_STS_FIFO : entity axi_vdma_v6_3_16.axi_sg_afifo_autord
+    I_UPDT_STS_FIFO : entity axi_vdma_v6_3_21.axi_sg_afifo_autord
       generic map(
          C_DWIDTH        => C_S_AXIS_UPDSTS_TDATA_WIDTH + 1     ,
          C_DEPTH         => UPDATE_STS_QUEUE_DEPTH              ,
@@ -6935,30 +6856,23 @@ end generate GEN_Q_FOR_ASYNC;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_sg_updt_noqueue
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -6967,11 +6881,11 @@ end implementation;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -6980,12 +6894,13 @@ end implementation;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -7050,13 +6965,13 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_sg_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_sg_pkg.all;
 
-library lib_pkg_v1_0_2;
-library lib_fifo_v1_0_17;
-use lib_fifo_v1_0_17.sync_fifo_fg;
-use lib_pkg_v1_0_2.lib_pkg.all;
+library lib_pkg_v1_0_4;
+library lib_fifo_v1_0_20;
+use lib_fifo_v1_0_20.sync_fifo_fg;
+use lib_pkg_v1_0_4.lib_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_sg_updt_noqueue is
@@ -7463,30 +7378,23 @@ begin
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_sg_updt_q_mngr
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -7495,11 +7403,11 @@ end implementation;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -7508,12 +7416,13 @@ end implementation;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -7577,13 +7486,13 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_sg_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_sg_pkg.all;
 
-library lib_pkg_v1_0_2;
-library lib_fifo_v1_0_17;
-use lib_fifo_v1_0_17.sync_fifo_fg;
-use lib_pkg_v1_0_2.lib_pkg.all;
+library lib_pkg_v1_0_4;
+library lib_fifo_v1_0_20;
+use lib_fifo_v1_0_20.sync_fifo_fg;
+use lib_pkg_v1_0_4.lib_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_sg_updt_q_mngr is
@@ -7774,7 +7683,7 @@ begin
     GEN_CH1_QUEUE : if  C_SG_UPDT_DESC2QUEUE  /= 0 generate
     begin
         -------------------------------------------------------------------------------
-        I_CH1_UPDT_DESC_QUEUE : entity  axi_vdma_v6_3_16.axi_sg_updt_queue
+        I_CH1_UPDT_DESC_QUEUE : entity  axi_vdma_v6_3_21.axi_sg_updt_queue
             generic map(
                 C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH                ,
                 C_M_AXIS_UPDT_DATA_WIDTH    => C_M_AXI_SG_DATA_WIDTH                ,
@@ -7845,7 +7754,7 @@ begin
     GEN_CH1_NO_QUEUE : if C_SG_UPDT_DESC2QUEUE = 0 generate
     begin
 
-        I_NO_CH1_UPDT_DESC_QUEUE : entity  axi_vdma_v6_3_16.axi_sg_updt_noqueue
+        I_NO_CH1_UPDT_DESC_QUEUE : entity  axi_vdma_v6_3_21.axi_sg_updt_noqueue
             generic map(
                 C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH                ,
                 C_M_AXIS_UPDT_DATA_WIDTH    => C_M_AXI_SG_DATA_WIDTH                ,
@@ -7945,7 +7854,7 @@ begin
     GEN_CH2_QUEUE : if  C_SG_UPDT_DESC2QUEUE  /= 0 generate
     begin
     ---------------------------------------------------------------------------
-        I_CH2_UPDT_DESC_QUEUE : entity  axi_vdma_v6_3_16.axi_sg_updt_queue
+        I_CH2_UPDT_DESC_QUEUE : entity  axi_vdma_v6_3_21.axi_sg_updt_queue
             generic map(
                 C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH        ,
                 C_M_AXIS_UPDT_DATA_WIDTH    => C_M_AXI_SG_DATA_WIDTH        ,
@@ -8015,7 +7924,7 @@ begin
     -- No update queue enabled, therefore map internal stream logic
     -- directly to channel port.
     GEN_CH2_NO_QUEUE : if C_SG_UPDT_DESC2QUEUE = 0 generate
-        I_NO_CH2_UPDT_DESC_QUEUE : entity  axi_vdma_v6_3_16.axi_sg_updt_noqueue
+        I_NO_CH2_UPDT_DESC_QUEUE : entity  axi_vdma_v6_3_21.axi_sg_updt_noqueue
             generic map(
                 C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH        ,
                 C_M_AXIS_UPDT_DATA_WIDTH    => C_M_AXI_SG_DATA_WIDTH        ,
@@ -8130,30 +8039,23 @@ m_axis_ch2_updt_tready <= s_axis_s2mm_tready;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_sg_intrpt
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -8162,11 +8064,11 @@ end implementation;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -8175,12 +8077,13 @@ end implementation;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -8267,12 +8170,12 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_sg_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_sg_pkg.all;
 
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.clog2;
-use lib_pkg_v1_0_2.lib_pkg.max2;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.clog2;
+use lib_pkg_v1_0_4.lib_pkg.max2;
 
 -------------------------------------------------------------------------------
 entity  axi_sg_intrpt is
@@ -8769,30 +8672,23 @@ end generate GEN_EXCLUDE_S2MM;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_sg
--------------------------------------------------------------------------------
---
--- *************************************************************************
---
--- (c) Copyright 2010, 2011 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 2010-2011, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -8801,11 +8697,11 @@ end implementation;
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 --
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -8814,12 +8710,13 @@ end implementation;
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 --
 -- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 -- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -8851,7 +8748,7 @@ end implementation;
 --                   |   |- proc_common_v4_0.axi_sg_afifo_autord.vhd
 --                   |   |- axi_sg_updt_noqueue.vhd
 --                   |- axi_sg_intrpt.vhd
---                   |- axi_datamover_v5_1_30.axi_datamover.vhd
+--                   |- axi_datamover_v5_1_35.axi_datamover.vhd
 --
 -------------------------------------------------------------------------------
 -- Author:      Gary Burch
@@ -8913,14 +8810,14 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_sg_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_sg_pkg.all;
 
-library axi_datamover_v5_1_30;
-use axi_datamover_v5_1_30.all;
+library axi_datamover_v5_1_35;
+use axi_datamover_v5_1_35.all;
 
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.max2;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.max2;
 
 -------------------------------------------------------------------------------
 entity  axi_sg is
@@ -9362,7 +9259,7 @@ ch2_dma_decerr_set      <= ch2_dma_decerr_set_i;
 -------------------------------------------------------------------------------
 -- Scatter Gather Fetch Manager
 -------------------------------------------------------------------------------
-I_SG_FETCH_MNGR : entity  axi_vdma_v6_3_16.axi_sg_ftch_mngr
+I_SG_FETCH_MNGR : entity  axi_vdma_v6_3_21.axi_sg_ftch_mngr
     generic map(
         C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH                ,
         C_INCLUDE_CH1               => C_INCLUDE_CH1                        ,
@@ -9450,7 +9347,7 @@ I_SG_FETCH_MNGR : entity  axi_vdma_v6_3_16.axi_sg_ftch_mngr
 -------------------------------------------------------------------------------
 -- Scatter Gather Fetch Queue
 -------------------------------------------------------------------------------
-I_SG_FETCH_QUEUE : entity  axi_vdma_v6_3_16.axi_sg_ftch_q_mngr
+I_SG_FETCH_QUEUE : entity  axi_vdma_v6_3_21.axi_sg_ftch_q_mngr
     generic map(
         C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH                ,
         C_M_AXIS_SG_TDATA_WIDTH     => C_M_AXIS_SG_TDATA_WIDTH              ,
@@ -9533,7 +9430,7 @@ begin
     -------------------------------------------------------------------------------
     -- Scatter Gather Update Manager
     -------------------------------------------------------------------------------
-    I_SG_UPDATE_MNGR : entity  axi_vdma_v6_3_16.axi_sg_updt_mngr
+    I_SG_UPDATE_MNGR : entity  axi_vdma_v6_3_21.axi_sg_updt_mngr
         generic map(
             C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH                ,
             C_INCLUDE_CH1               => C_INCLUDE_CH1                        ,
@@ -9606,7 +9503,7 @@ begin
     -------------------------------------------------------------------------------
     -- Scatter Gather Update Queue
     -------------------------------------------------------------------------------
-    I_SG_UPDATE_QUEUE : entity  axi_vdma_v6_3_16.axi_sg_updt_q_mngr
+    I_SG_UPDATE_QUEUE : entity  axi_vdma_v6_3_21.axi_sg_updt_q_mngr
         generic map(
             C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH                ,
             C_M_AXI_SG_DATA_WIDTH       => C_M_AXI_SG_DATA_WIDTH                ,
@@ -9760,7 +9657,7 @@ end generate GEN_NO_DESC_UPDATE;
 -------------------------------------------------------------------------------
 GEN_INTERRUPT_LOGIC : if C_INCLUDE_INTRPT = 1 generate
 begin
-    I_AXI_SG_INTRPT : entity  axi_vdma_v6_3_16.axi_sg_intrpt
+    I_AXI_SG_INTRPT : entity  axi_vdma_v6_3_21.axi_sg_intrpt
         generic map(
 
             C_INCLUDE_CH1              => C_INCLUDE_CH1                     ,
@@ -9820,7 +9717,7 @@ end generate GEN_NO_INTRPT_LOGIC;
 -------------------------------------------------------------------------------
 -- Scatter Gather DataMover Lite
 -------------------------------------------------------------------------------
-I_SG_AXI_DATAMOVER : entity axi_datamover_v5_1_30.axi_datamover
+I_SG_AXI_DATAMOVER : entity axi_datamover_v5_1_35.axi_datamover
     generic map(
         C_INCLUDE_MM2S              => INCLUDE_DESC_FETCH,          -- Lite
         C_M_AXI_MM2S_ADDR_WIDTH     => C_M_AXI_SG_ADDR_WIDTH,       -- 32 or 64
@@ -9974,57 +9871,51 @@ I_SG_AXI_DATAMOVER : entity axi_datamover_v5_1_30.axi_datamover
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_pkg
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -10108,9 +9999,9 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.clog2;
-use lib_pkg_v1_0_2.lib_pkg.max2;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.clog2;
+use lib_pkg_v1_0_4.lib_pkg.max2;
 
 package axi_vdma_pkg is
 
@@ -11474,57 +11365,51 @@ function enable_internal_genloc(mm2s_enabled    : integer;
 end package body axi_vdma_pkg;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_cdc
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -11609,8 +11494,8 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_cdc is
@@ -13044,57 +12929,51 @@ end generate GENERATE_VECT_S_P_CDC;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_vid_cdc
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -13182,10 +13061,10 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
-library lib_cdc_v1_0_2;
+library lib_cdc_v1_0_3;
 
 
 -------------------------------------------------------------------------------
@@ -13326,7 +13205,7 @@ begin
 --*****************************************************************************
 
     -- From GenLock manager to AXIS clock domain
-----    M_PTR_OUT_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    M_PTR_OUT_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_PULSE_P_S_OPEN_ENDED                           ,
 ----            C_VECTOR_WIDTH          => C_GENLOCK_MSTR_PTR_DWIDTH
@@ -13352,7 +13231,7 @@ begin
 ----
 
 
-M_PTR_OUT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+M_PTR_OUT_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -13458,7 +13337,7 @@ M_PTR_OUT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
     -- Cross other fsync into primary clock domain
-----    OTHR_FSYNC_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    OTHR_FSYNC_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_PULSE_S_P_OPEN_ENDED                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -13480,7 +13359,7 @@ M_PTR_OUT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----            scndry_vect_out         => open
 ----        );
 
-OTHR_FSYNC_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+OTHR_FSYNC_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -13509,7 +13388,7 @@ OTHR_FSYNC_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 --*****************************************************************************
 --** SOF CDC
 --*****************************************************************************
-----    SOF_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    SOF_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_PULSE_S_P_OPEN_ENDED                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -13534,7 +13413,7 @@ OTHR_FSYNC_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-SOF_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+SOF_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -13563,7 +13442,7 @@ SOF_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 --** Frame Sync CDC
 --*****************************************************************************
     -- From axi vdma top out (scndry_aclk) to frame sync gen (prmry_aclk)
-----    FSYNC_IN_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    FSYNC_IN_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_PULSE_S_P_OPEN_ENDED                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -13590,7 +13469,7 @@ SOF_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-FSYNC_IN_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+FSYNC_IN_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -13617,7 +13496,7 @@ FSYNC_IN_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
     -- From frame sync gen (prmry_aclk) to axi vdma top out (scndry_aclk)
-----    FSYNC_OUT_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    FSYNC_OUT_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_PULSE_P_S_OPEN_ENDED                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -13644,7 +13523,7 @@ FSYNC_IN_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-FSYNC_OUT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+FSYNC_OUT_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -13673,7 +13552,7 @@ FSYNC_OUT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
     -- From frame sync gen (prmry_aclk) to axi vdma top out (scndry_aclk)
-----    PRMTR_UPDT_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    PRMTR_UPDT_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_PULSE_P_S_OPEN_ENDED                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -13697,7 +13576,7 @@ FSYNC_OUT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-PRMTR_UPDT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+PRMTR_UPDT_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -13760,57 +13639,51 @@ end generate GEN_NO_CDC_FOR_SYNC;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_sg_cdc
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -13898,10 +13771,10 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
-library lib_cdc_v1_0_2;
+library lib_cdc_v1_0_3;
 -------------------------------------------------------------------------------
 entity  axi_vdma_sg_cdc is
     generic (
@@ -14002,7 +13875,7 @@ begin
 
     -- From register module (primary clock domain) to
     -- scatter gather engine (secondary clock domain)
-----    CUR_DESC_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    CUR_DESC_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_VECTR_P_S                           ,
 ----            C_VECTOR_WIDTH          => C_M_AXI_SG_ADDR_WIDTH
@@ -14042,7 +13915,7 @@ P_IN_CUR_DESC : process(prmry_aclk)
 
 
 
-CUR_DESC_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+CUR_DESC_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 0,	--valid only for level CDC
@@ -14072,7 +13945,7 @@ CUR_DESC_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
     -- From register module (primary clock domain) to
     -- scatter gather engine (secondary clock domain)
-----    TAIL_DESC_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    TAIL_DESC_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_PULSE_P_S_OPEN_ENDED                           ,
 ----            C_VECTOR_WIDTH          => C_M_AXI_SG_ADDR_WIDTH
@@ -14100,7 +13973,7 @@ CUR_DESC_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-TAIL_DESC_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+TAIL_DESC_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -14126,7 +13999,7 @@ TAIL_DESC_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
     -- From register module (primary clock domain) to
     -- scatter gather engine (secondary clock domain)
-----    TAIL_DESC_VECT_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    TAIL_DESC_VECT_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_VECTR_P_S                           ,
 ----            C_VECTOR_WIDTH          => C_M_AXI_SG_ADDR_WIDTH
@@ -14165,7 +14038,7 @@ P_IN_TAIL_DESC : process(prmry_aclk)
 
 
 
-TAIL_DESC_VECT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+TAIL_DESC_VECT_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 0,	--valid only for level CDC
@@ -14192,7 +14065,7 @@ TAIL_DESC_VECT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
     -- From register module (primary clock domain) to
     -- scatter gather engine (secondary clock domain)
-----    RUNSTOP_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    RUNSTOP_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_P_S                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -14216,7 +14089,7 @@ TAIL_DESC_VECT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-RUNSTOP_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+RUNSTOP_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -14246,7 +14119,7 @@ RUNSTOP_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
     -- From register module (primary clock domain) to
     -- scatter gather engine (secondary clock domain)
-----    STOP_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    STOP_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_P_S                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -14270,7 +14143,7 @@ RUNSTOP_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----
 
 
-STOP_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+STOP_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -14300,7 +14173,7 @@ STOP_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
     -- From SG Engine (secondary clock domain) to
     -- DMA Controller (primary clock domain)
-----    FTCH_IDLE_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    FTCH_IDLE_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_S_P                           ,
 ----            C_VECTOR_WIDTH          => 1                                        ,
@@ -14326,7 +14199,7 @@ STOP_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-FTCH_IDLE_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+FTCH_IDLE_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -14356,7 +14229,7 @@ FTCH_IDLE_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
     --sg to reg
     -- From SG Engine (secondary clock domain) to
     -- Register Block (primary clock domain)
-----    FTCH_INTERR_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    FTCH_INTERR_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_S_P                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -14380,7 +14253,7 @@ FTCH_IDLE_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----
 
 
-FTCH_INTERR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+FTCH_INTERR_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -14409,7 +14282,7 @@ FTCH_INTERR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----    FTCH_SLVERR_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    FTCH_SLVERR_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_S_P                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -14434,7 +14307,7 @@ FTCH_INTERR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-FTCH_SLVERR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+FTCH_SLVERR_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -14462,7 +14335,7 @@ FTCH_SLVERR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----    FTCH_DECERR_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    FTCH_DECERR_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_S_P                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -14487,7 +14360,7 @@ FTCH_SLVERR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-FTCH_DECERR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+FTCH_DECERR_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -14519,7 +14392,7 @@ FTCH_DECERR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----    ERR_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    ERR_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_S_P                           ,
 ----            C_VECTOR_WIDTH          => C_M_AXI_SG_ADDR_WIDTH
@@ -14544,7 +14417,7 @@ FTCH_DECERR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-ERR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+ERR_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -14573,7 +14446,7 @@ ERR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----    ERR_VECT_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    ERR_VECT_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_VECTR_S_P                           ,
 ----            C_VECTOR_WIDTH          => C_M_AXI_SG_ADDR_WIDTH
@@ -14612,7 +14485,7 @@ P_IN_ERR_VECT : process(scndry_aclk)
 
 
 
-ERR_VECT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+ERR_VECT_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 0,	--valid only for level CDC
@@ -14666,57 +14539,51 @@ end generate GEN_NO_CDC_FOR_SYNC;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_reset
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -14801,10 +14668,10 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
-library lib_cdc_v1_0_2;
+library lib_cdc_v1_0_3;
 
 
 -------------------------------------------------------------------------------
@@ -15047,7 +14914,7 @@ begin
     ---------------------------------------------------------------------------
     -- Minimum soft reset in lite domain
     ---------------------------------------------------------------------------
-----    LITE_RESET_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+----    LITE_RESET_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE          => CDC_TYPE_PULSE_P_S_OPEN_ENDED_NO_RST                   ,
 ----            C_VECTOR_WIDTH      => 1
@@ -15071,7 +14938,7 @@ begin
 
 
 
-LITE_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+LITE_RESET_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -15099,7 +14966,7 @@ LITE_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----    LITE_IDLE_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+----    LITE_IDLE_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE          => CDC_TYPE_LEVEL_P_S_NO_RST                   ,
 ----            C_VECTOR_WIDTH      => 1
@@ -15122,7 +14989,7 @@ LITE_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----        );
 
 
-LITE_IDLE_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+LITE_IDLE_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -15173,7 +15040,7 @@ LITE_IDLE_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
         end process LITE_MIN_RESET_ASSERTION;
 
     -- Cross back to primary
-----    LITE_MIN_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+----    LITE_MIN_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE          => CDC_TYPE_LEVEL_S_P_NO_RST                   ,
 ----            C_VECTOR_WIDTH      => 1
@@ -15197,7 +15064,7 @@ LITE_IDLE_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----
 
 
-LITE_MIN_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+LITE_MIN_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -15223,7 +15090,7 @@ LITE_MIN_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----    LITE_CLR_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+----    LITE_CLR_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE          => CDC_TYPE_PULSE_P_S_OPEN_ENDED_NO_RST                   ,
 ----            C_VECTOR_WIDTH      => 1
@@ -15247,7 +15114,7 @@ LITE_MIN_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----
 
 
-LITE_CLR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+LITE_CLR_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -15279,7 +15146,7 @@ LITE_CLR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
     ---------------------------------------------------------------------------
     -- Minimum soft reset in axis domain
     ---------------------------------------------------------------------------
-----    AXIS_RESET_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+----    AXIS_RESET_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE          => CDC_TYPE_PULSE_P_S_OPEN_ENDED_NO_RST                   ,
 ----            C_VECTOR_WIDTH      => 1
@@ -15302,7 +15169,7 @@ LITE_CLR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----        );
 
 
-AXIS_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+AXIS_RESET_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -15331,7 +15198,7 @@ AXIS_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----    AXIS_IDLE_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+----    AXIS_IDLE_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE          => CDC_TYPE_LEVEL_P_S_NO_RST                   ,
 ----            C_VECTOR_WIDTH      => 1
@@ -15354,7 +15221,7 @@ AXIS_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----        );
 ----
 
-AXIS_IDLE_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+AXIS_IDLE_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -15400,7 +15267,7 @@ AXIS_IDLE_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
         end process AXIS_MIN_RESET_ASSERTION;
 
     -- Cross back to primary
-----    AXIS_MIN_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+----    AXIS_MIN_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE          => CDC_TYPE_LEVEL_S_P_NO_RST                   ,
 ----            C_VECTOR_WIDTH      => 1
@@ -15424,7 +15291,7 @@ AXIS_IDLE_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-AXIS_MIN_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+AXIS_MIN_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -15450,7 +15317,7 @@ AXIS_MIN_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----    AXIS_CLR_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+----    AXIS_CLR_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE          => CDC_TYPE_PULSE_P_S_OPEN_ENDED_NO_RST                   ,
 ----            C_VECTOR_WIDTH      => 1
@@ -15475,7 +15342,7 @@ AXIS_MIN_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-AXIS_CLR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+AXIS_CLR_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -15507,7 +15374,7 @@ AXIS_CLR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
     GEN_FOR_SG : if C_INCLUDE_SG = 1 generate
     begin
 
-----        SG_RESET_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+----        SG_RESET_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 ----            generic map(
 ----                C_CDC_TYPE          => CDC_TYPE_PULSE_P_S_OPEN_ENDED_NO_RST                   ,
 ----                C_VECTOR_WIDTH      => 1
@@ -15531,7 +15398,7 @@ AXIS_CLR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----
 
 
-SG_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+SG_RESET_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -15558,7 +15425,7 @@ SG_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----        SG_IDLE_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+----        SG_IDLE_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 ----            generic map(
 ----                C_CDC_TYPE          => CDC_TYPE_LEVEL_P_S_NO_RST                   ,
 ----                C_VECTOR_WIDTH      => 1
@@ -15581,7 +15448,7 @@ SG_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----            );
 ----
 
-SG_IDLE_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+SG_IDLE_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -15630,7 +15497,7 @@ SG_IDLE_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
             end process SG_MIN_RESET_ASSERTION;
 
         -- Cross back to primary
-----        SG_MIN_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+----        SG_MIN_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 ----            generic map(
 ----                C_CDC_TYPE          => CDC_TYPE_LEVEL_S_P_NO_RST                   ,
 ----                C_VECTOR_WIDTH      => 1
@@ -15654,7 +15521,7 @@ SG_IDLE_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----
 
 
-SG_MIN_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+SG_MIN_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -15681,7 +15548,7 @@ SG_MIN_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----        SG_CLR_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+----        SG_CLR_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 ----            generic map(
 ----                C_CDC_TYPE          => CDC_TYPE_PULSE_P_S_OPEN_ENDED_NO_RST                   ,
 ----                C_VECTOR_WIDTH      => 1
@@ -15705,7 +15572,7 @@ SG_MIN_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----
 
 
-SG_CLR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+SG_CLR_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -15942,7 +15809,7 @@ GEN_RESET_FOR_ASYNC : if C_PRMRY_IS_ACLK_ASYNC = 1 generate
 begin
 
     -- Cross top level hard reset in from axi_lite to primary (mm2s or s2mm)
-----    HARD_RESET_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+----    HARD_RESET_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE          => CDC_TYPE_LEVEL_P_S_NO_RST                   ,
 ----            C_VECTOR_WIDTH      => 1
@@ -15976,7 +15843,7 @@ begin
 ----
 
 
-HARD_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+HARD_RESET_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -16017,7 +15884,7 @@ HARD_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
     -- Scatter Gather Mode
     GEN_FOR_SG : if C_INCLUDE_SG = 1 generate
     begin
---        AXI_SG_RESET_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+--        AXI_SG_RESET_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 --            generic map(
 --                C_CDC_TYPE          => CDC_TYPE_LEVEL_P_S_NO_RST                   ,
 --                C_VECTOR_WIDTH      => 1
@@ -16050,7 +15917,7 @@ HARD_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 --            );
 --
 
-AXI_SG_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+AXI_SG_RESET_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -16091,7 +15958,7 @@ AXI_SG_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
         axi_sg_resetn    <= '1';
     end generate GEN_FOR_NO_SG;
 
-----    AXIS_RESET_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+----    AXIS_RESET_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE          => CDC_TYPE_LEVEL_P_S_NO_RST                   ,
 ----            C_VECTOR_WIDTH      => 1
@@ -16124,7 +15991,7 @@ AXI_SG_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----        );
 
 
-AXIS_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+AXIS_RESET_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -16201,57 +16068,51 @@ end implementation;
 
 
 
--------------------------------------------------------------------------------
--- axi_vdma_rst_module
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -16339,8 +16200,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 --use proc_common_v4_0.family_support.all;
 
@@ -16534,7 +16395,7 @@ mm2s_dm_prmry_resetn <= sig_mm2s_dm_prmry_resetn;
 
 mm2s_axis_resetn <= sig_mm2s_axis_resetn;
 
-    RESET_I : entity  axi_vdma_v6_3_16.axi_vdma_reset
+    RESET_I : entity  axi_vdma_v6_3_21.axi_vdma_reset
         generic map(
             C_PRMRY_IS_ACLK_ASYNC       => C_PRMRY_IS_ACLK_ASYNC        ,
             C_INCLUDE_SG                => C_INCLUDE_SG                 -- 
@@ -16615,7 +16476,7 @@ s2mm_prmry_resetn <= sig_s2mm_prmry_resetn;
 s2mm_dm_prmry_resetn <= sig_s2mm_dm_prmry_resetn;
 s2mm_axis_resetn <= sig_s2mm_axis_resetn;
 
-    RESET_I : entity  axi_vdma_v6_3_16.axi_vdma_reset
+    RESET_I : entity  axi_vdma_v6_3_21.axi_vdma_reset
         generic map(
             C_PRMRY_IS_ACLK_ASYNC       => C_PRMRY_IS_ACLK_ASYNC        ,
             C_INCLUDE_SG                => C_INCLUDE_SG                 -- 
@@ -16705,57 +16566,51 @@ end implementation;
 
 
 
--------------------------------------------------------------------------------
--- axi_vdma_lite_if
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -16842,12 +16697,12 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
-library lib_cdc_v1_0_2;
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.clog2;
+library lib_cdc_v1_0_3;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.clog2;
 
 
 -------------------------------------------------------------------------------
@@ -17517,7 +17372,7 @@ prepare_wrce_pulse_lite <= prepare_wrce and not prepare_wrce_d1;
 --MM2S
 
 ----
-----      	LITE_WVALID_MM2S_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----      	LITE_WVALID_MM2S_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----      	    generic map(
 ----      	        C_CDC_TYPE              => CDC_TYPE_PULSE_P_S_OPEN_ENDED                           ,
 ----      	        C_VECTOR_WIDTH          => 1 
@@ -17541,7 +17396,7 @@ prepare_wrce_pulse_lite <= prepare_wrce and not prepare_wrce_d1;
 ----
 
 
-LITE_WVALID_MM2S_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+LITE_WVALID_MM2S_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -17592,7 +17447,7 @@ mm2s_axi2ip_wrce     <= mm2s_wrce_gen;
 --S2MM
 
 
-----      	LITE_WVALID_S2MM_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----      	LITE_WVALID_S2MM_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----      	    generic map(
 ----      	        C_CDC_TYPE              => CDC_TYPE_PULSE_P_S_OPEN_ENDED                           ,
 ----      	        C_VECTOR_WIDTH          => 1 
@@ -17616,7 +17471,7 @@ mm2s_axi2ip_wrce     <= mm2s_wrce_gen;
 ----
 
 
-LITE_WVALID_S2MM_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+LITE_WVALID_S2MM_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -17922,7 +17777,7 @@ prepare_wrce_pulse_lite <= prepare_wrce and not prepare_wrce_d1;
 --S2MM
 
 
-----      	LITE_WVALID_S2MM_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----      	LITE_WVALID_S2MM_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----      	    generic map(
 ----      	        C_CDC_TYPE              => CDC_TYPE_PULSE_P_S_OPEN_ENDED                           ,
 ----      	        C_VECTOR_WIDTH          => 1 
@@ -17946,7 +17801,7 @@ prepare_wrce_pulse_lite <= prepare_wrce and not prepare_wrce_d1;
 
 
 
-LITE_WVALID_S2MM_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+LITE_WVALID_S2MM_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -18187,7 +18042,7 @@ prepare_wrce_pulse_lite <= prepare_wrce and not prepare_wrce_d1;
 --MM2S
 
 
-----      	LITE_WVALID_MM2S_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----      	LITE_WVALID_MM2S_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----      	    generic map(
 ----      	        C_CDC_TYPE              => CDC_TYPE_PULSE_P_S_OPEN_ENDED                           ,
 ----      	        C_VECTOR_WIDTH          => 1 
@@ -18210,7 +18065,7 @@ prepare_wrce_pulse_lite <= prepare_wrce and not prepare_wrce_d1;
 ----      	    );
 
 
-LITE_WVALID_MM2S_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+LITE_WVALID_MM2S_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -18420,57 +18275,51 @@ end generate GEN_LITE_IS_ASYNC;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_register
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -18558,8 +18407,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_register is
@@ -20266,57 +20115,51 @@ end generate NO_DMA_IRQ_MASK_GEN;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_regdirect
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -20404,8 +20247,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_regdirect is
@@ -29298,57 +29141,51 @@ end implementation;
 
 
 
--------------------------------------------------------------------------------
--- axi_vdma_reg_mux
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -29435,8 +29272,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_reg_mux is
@@ -38715,57 +38552,51 @@ end generate GEN_READ_MUX_FOR_S2MM;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_reg_module
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -38852,8 +38683,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_reg_module is
@@ -39213,7 +39044,7 @@ reg_module_frmdly              <= reg_module_frmdly_i            ;
 reg_module_strt_addr           <= reg_module_strt_addr_i         ;
 
 
-I_DMA_REGISTER : entity axi_vdma_v6_3_16.axi_vdma_register
+I_DMA_REGISTER : entity axi_vdma_v6_3_21.axi_vdma_register
 generic map (
     C_NUM_REGISTERS             => NUM_REG_PER_CHANNEL      ,
     C_NUM_FSTORES               => C_NUM_FSTORES            ,
@@ -39434,7 +39265,7 @@ end generate GEN_SG_MODE;
 -- In register direct mode instantiate register direct register block
 GEN_REG_DIRECT_MODE : if C_INCLUDE_SG = 0 generate
 begin
-    REGDIRECT_I : entity  axi_vdma_v6_3_16.axi_vdma_regdirect
+    REGDIRECT_I : entity  axi_vdma_v6_3_21.axi_vdma_regdirect
         generic map(
             C_NUM_REGISTERS             => NUM_DIRECT_REG_PER_CHANNEL           ,
             C_NUM_FSTORES               => C_NUM_FSTORES                        ,
@@ -39510,7 +39341,7 @@ end generate GEN_REG_DIRECT_MODE;
 --*****************************************************************************
 -- AXI LITE READ MUX
 --*****************************************************************************
-LITE_READ_MUX_I : entity  axi_vdma_v6_3_16.axi_vdma_reg_mux
+LITE_READ_MUX_I : entity  axi_vdma_v6_3_21.axi_vdma_reg_mux
     generic map(
         C_TOTAL_NUM_REGISTER        => C_TOTAL_NUM_REGISTER                     ,
         C_INCLUDE_SG                => C_INCLUDE_SG                             ,
@@ -39586,57 +39417,51 @@ LITE_READ_MUX_I : entity  axi_vdma_v6_3_16.axi_vdma_reg_mux
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_reg_if
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -39720,10 +39545,10 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
-library lib_cdc_v1_0_2;
+library lib_cdc_v1_0_3;
 -------------------------------------------------------------------------------
 entity  axi_vdma_reg_if is
     generic(
@@ -40014,7 +39839,7 @@ read_region_mux_select(1 downto 0) 	<= sig_axi2ip_lite_rdaddr(3 downto 2);
 -------------------------------------------------------------------------------
 GEN_AXI_LITE_IF : if C_INCLUDE_MM2S = 1 or C_INCLUDE_S2MM = 1 generate
 begin
-    AXI_LITE_IF_I : entity axi_vdma_v6_3_16.axi_vdma_lite_if
+    AXI_LITE_IF_I : entity axi_vdma_v6_3_21.axi_vdma_lite_if
         generic map(
             C_NUM_CE                    => C_TOTAL_NUM_REGISTER     ,
             C_MM2S_IS                   => C_INCLUDE_MM2S           ,
@@ -40132,7 +39957,7 @@ GEN_LITE_MM2S_MISC_CROSSING : process(s_axi_lite_aclk)
     end process GEN_LITE_MM2S_MISC_CROSSING;
 
 
-MM2S_INTRPT_CROSSING_I : entity lib_cdc_v1_0_2.cdc_sync
+MM2S_INTRPT_CROSSING_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -40225,7 +40050,7 @@ GEN_LITE_S2MM_MISC_CROSSING : process(s_axi_lite_aclk)
 
 
 
-S2MM_INTRPT_CROSSING_I : entity lib_cdc_v1_0_2.cdc_sync
+S2MM_INTRPT_CROSSING_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -40385,57 +40210,51 @@ end generate GEN_COMMON_REGION_READ_MUX_NO_STS_REG;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_intrpt
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -40522,12 +40341,12 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.clog2;
-use lib_pkg_v1_0_2.lib_pkg.max2;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.clog2;
+use lib_pkg_v1_0_4.lib_pkg.max2;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_intrpt is
@@ -41092,57 +40911,51 @@ end generate GEN_NO_CH2_FRM_CNTR;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_sofeof_mngr
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -41323,57 +41136,51 @@ SOF_HOLD_REG : process(scndry_aclk)
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_skid_buf.vhd
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -41926,57 +41733,51 @@ begin --(architecture implementation)
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_sfifo.vhd
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -41995,11 +41796,11 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_arith.all;
 use IEEE.std_logic_unsigned.all;
-library fifo_generator_v13_2_8;
-use fifo_generator_v13_2_8.all;
+library fifo_generator_v13_2_11;
+use fifo_generator_v13_2_11.all;
 
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.all;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.all;
 --use proc_common_v4_0.coregen_comp_defs.all;
 --use proc_common_v4_0.family_support.all;
 
@@ -42009,8 +41810,8 @@ use lib_pkg_v1_0_2.lib_pkg.all;
 -- synopsys translate_on
 
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 Library xpm;
 use xpm.vcomponents.all;
 
@@ -42054,9 +41855,9 @@ END ENTITY axi_vdma_sfifo;
 -----------------------------------------------------------------------------
 -- Architecture section
 -----------------------------------------------------------------------------
-ARCHITECTURE xilinx OF axi_vdma_sfifo IS
+ARCHITECTURE AMD OF axi_vdma_sfifo IS
 attribute DowngradeIPIdentifiedWarnings: string;
-attribute DowngradeIPIdentifiedWarnings of xilinx : architecture is "yes";
+attribute DowngradeIPIdentifiedWarnings of AMD : architecture is "yes";
 
   --CONSTANT GND : std_logic := '0';
   CONSTANT VCC : std_logic := '1';
@@ -42343,7 +42144,7 @@ GND <= '0';
 --    dbiterr                             => DBITERR,
 --
 
---  fg_inst : entity fifo_generator_v13_2_8.fifo_generator_v13_2_8
+--  fg_inst : entity fifo_generator_v13_2_11.fifo_generator_v13_2_11
 --  GENERIC MAP (
 --    C_COMMON_CLOCK                      => 1,
 ----    C_COUNT_TYPE                        => C_COUNT_TYPE,
@@ -42874,62 +42675,56 @@ GND <= '0';
 --  );
 --
 --
-END ARCHITECTURE xilinx;
+END ARCHITECTURE AMD;
 
 
 
 
--------------------------------------------------------------------------------
--- axi_vdma_sfifo_autord.vhd
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -43019,12 +42814,12 @@ use IEEE.std_logic_1164.all;
 use IEEE.std_logic_arith.all;
 use IEEE.std_logic_unsigned.all;
 
-library lib_fifo_v1_0_17;
-use lib_fifo_v1_0_17.sync_fifo_fg;
+library lib_fifo_v1_0_20;
+use lib_fifo_v1_0_20.sync_fifo_fg;
 
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 
 -------------------------------------------------------------------------------
@@ -43164,7 +42959,7 @@ begin
     --  Instance for the synchronous fifo from proc common.
     --
     ------------------------------------------------------------
-    I_SYNC_FIFOGEN_FIFO : entity lib_fifo_v1_0_17.sync_fifo_fg
+    I_SYNC_FIFOGEN_FIFO : entity lib_fifo_v1_0_20.sync_fifo_fg
       generic map(
 	 C_XPM_FIFO	      =>  1,
          C_FAMILY             =>  C_FAMILY,        -- requred for FIFO Gen
@@ -43477,58 +43272,51 @@ begin
 end imp;
 
 
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
--- axi_vdma_afifo_builtin.vhd - entity/architecture pair
--------------------------------------------------------------------------------
+-- (c) Copyright 2010, 2012-2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010, 2012-2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -43537,17 +43325,17 @@ end imp;
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-library fifo_generator_v13_2_8;
-use fifo_generator_v13_2_8.all;
+library fifo_generator_v13_2_11;
+use fifo_generator_v13_2_11.all;
 
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.all;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.all;
 --use proc_common_v4_0.coregen_comp_defs.all;
 --use proc_common_v4_0.family_support.all;
 
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 
 -- synopsys translate_off
@@ -43592,9 +43380,9 @@ ENTITY axi_vdma_afifo_builtin IS
     );
 END ENTITY axi_vdma_afifo_builtin;
 
-ARCHITECTURE xilinx OF axi_vdma_afifo_builtin IS
+ARCHITECTURE AMD OF axi_vdma_afifo_builtin IS
 attribute DowngradeIPIdentifiedWarnings: string;
-attribute DowngradeIPIdentifiedWarnings of xilinx : architecture is "yes";
+attribute DowngradeIPIdentifiedWarnings of AMD : architecture is "yes";
 
 
   ---------------------------------------------------------------------------
@@ -44160,7 +43948,7 @@ end generate FAMILY_7;
 ZERO_pntr <= (others => '0');
 GND <= '0';
 
-  fg_builtin_fifo_inst : entity fifo_generator_v13_2_8.fifo_generator_v13_2_8
+  fg_builtin_fifo_inst : entity fifo_generator_v13_2_11.fifo_generator_v13_2_11
   GENERIC MAP (
     C_COMMON_CLOCK                      => 0,
 --    C_COUNT_TYPE                        => C_COUNT_TYPE,
@@ -44669,61 +44457,54 @@ GND <= '0';
   );
 
 
-END ARCHITECTURE xilinx;
+END ARCHITECTURE AMD;
 
 
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
--- axi_vdma_afifo.vhd - entity/architecture pair
--------------------------------------------------------------------------------
+-- (c) Copyright 2010, 2012-2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010, 2012-2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -44732,16 +44513,16 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library fifo_generator_v13_2_8;
-use fifo_generator_v13_2_8.all;
+library fifo_generator_v13_2_11;
+use fifo_generator_v13_2_11.all;
 
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.all;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.all;
 --use proc_common_v4_0.coregen_comp_defs.all;
 --use proc_common_v4_0.family_support.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 Library xpm;
 use xpm.vcomponents.all;
@@ -44789,9 +44570,9 @@ ENTITY axi_vdma_afifo IS
     );
 END ENTITY axi_vdma_afifo;
 
-ARCHITECTURE xilinx OF axi_vdma_afifo IS
+ARCHITECTURE AMD OF axi_vdma_afifo IS
 attribute DowngradeIPIdentifiedWarnings: string;
-attribute DowngradeIPIdentifiedWarnings of xilinx : architecture is "yes";
+attribute DowngradeIPIdentifiedWarnings of AMD : architecture is "yes";
 
   --CONSTANT GND : std_logic := '0';
   CONSTANT VCC : std_logic := '1';
@@ -45055,7 +44836,7 @@ wr_data_count <= sig_data_count_wr_minus1(clog2_uw_fifo_depth-1 downto 0) when (
 --    sbiterr                             => SBITERR,
 --    dbiterr                             => DBITERR,
 
---  fg_inst : entity fifo_generator_v13_2_8.fifo_generator_v13_2_8
+--  fg_inst : entity fifo_generator_v13_2_11.fifo_generator_v13_2_11
 --  GENERIC MAP (
 --    C_COMMON_CLOCK                      => 0,
 ----    C_COUNT_TYPE                        => C_COUNT_TYPE,
@@ -45582,61 +45363,54 @@ wr_data_count <= sig_data_count_wr_minus1(clog2_uw_fifo_depth-1 downto 0) when (
 --              axis_prog_empty         =>  AXIS_PROG_EMPTY       --         : OUT STD_LOGIC := '1';
 --  );
 
-END ARCHITECTURE xilinx;
+END ARCHITECTURE AMD;
 
 
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
--- axi_vdma_afifo_autord.vhd - entity/architecture pair
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -45726,13 +45500,13 @@ use IEEE.std_logic_1164.all;
 use IEEE.std_logic_arith.all;
 use IEEE.std_logic_unsigned.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 
-library lib_cdc_v1_0_2;
-library lib_fifo_v1_0_17;
-use lib_fifo_v1_0_17.async_fifo_fg;
+library lib_cdc_v1_0_3;
+library lib_fifo_v1_0_20;
+use lib_fifo_v1_0_20.async_fifo_fg;
 
 -----------------------------------------------------------------------------
 -- Entity section
@@ -45876,7 +45650,7 @@ begin
    -- CoreGen FIFO Generator Async FIFO utility.
    --
    -------------------------------------------------------------------------------
-    I_ASYNC_FIFOGEN_FIFO : entity lib_fifo_v1_0_17.async_fifo_fg
+    I_ASYNC_FIFOGEN_FIFO : entity lib_fifo_v1_0_20.async_fifo_fg
        generic map (
 	  C_XPM_FIFO		=>  1,
           C_ALLOW_2N_DEPTH      =>  1 ,
@@ -45948,7 +45722,7 @@ begin
     -- AFIFO_Ainit synchronization in AFIFO_Rd_clk domain
     ---------------------------------------------------------------------------
 
-----    AFIFO_Ainit_RESET_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_cdc
+----    AFIFO_Ainit_RESET_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE          => CDC_TYPE_LEVEL_P_S_NO_RST                   ,
 ----            C_VECTOR_WIDTH      => 1
@@ -45983,7 +45757,7 @@ begin
 
 
 
-AFIFO_Ainit_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+AFIFO_Ainit_RESET_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -46107,57 +45881,51 @@ AFIFO_Ainit_RESET_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 end imp;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_mm2s_linebuf
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 
@@ -46242,12 +46010,12 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library lib_cdc_v1_0_2;
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.all;
+library lib_cdc_v1_0_3;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_mm2s_linebuf is
@@ -46607,7 +46375,7 @@ begin
     begin
               
       
-        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_16.axi_vdma_sfifo
+        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_21.axi_vdma_sfifo
             generic map(
                  UW_DATA_WIDTH     => BUFFER_WIDTH        ,
           C_FULL_FLAGS_RST_VAL     => 1        ,
@@ -46644,7 +46412,7 @@ LB_BRAM : if ( (C_ENABLE_DEBUG_INFO_1 = 1 or C_ENABLE_DEBUG_ALL = 1) )
   generate   
     begin
 
-        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_16.axi_vdma_afifo
+        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_21.axi_vdma_afifo
             generic map(
                  UW_DATA_WIDTH   => BUFFER_WIDTH                    ,
           C_FULL_FLAGS_RST_VAL   => 1        ,
@@ -46682,7 +46450,7 @@ LB_BUILT_IN : if ( (C_ENABLE_DEBUG_INFO_1 = 0 and C_ENABLE_DEBUG_ALL = 0) )
   generate   
     begin
 
-        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_16.axi_vdma_afifo_builtin
+        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_21.axi_vdma_afifo_builtin
             generic map(
                  PL_FIFO_TYPE    => "BUILT_IN"                    ,
                  PL_READ_MODE    => "FWFT"                    ,
@@ -46942,7 +46710,7 @@ end generate LB_BUILT_IN;
     --*********************************************************--
     --**               MM2S MASTER SKID BUFFER               **--
     --*********************************************************--
-    I_MSTR_SKID : entity axi_vdma_v6_3_16.axi_vdma_skid_buf
+    I_MSTR_SKID : entity axi_vdma_v6_3_21.axi_vdma_skid_buf
         generic map(
             C_WDATA_WIDTH           => C_DATA_WIDTH             ,
             C_TUSER_WIDTH           => C_M_AXIS_MM2S_TUSER_BITS
@@ -47127,7 +46895,7 @@ GEN_FOR_ASYNC : if C_PRMRY_IS_ACLK_ASYNC = 1 generate
 begin
 
     -- Pipe Empty and Shutdown reset CDC
-----    SHUTDOWN_RST_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    SHUTDOWN_RST_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_P_S                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -47151,7 +46919,7 @@ begin
 ----
 
 
-SHUTDOWN_RST_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+SHUTDOWN_RST_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -47180,7 +46948,7 @@ SHUTDOWN_RST_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-ALL_LINES_XFRED_P_S_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+ALL_LINES_XFRED_P_S_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -47210,7 +46978,7 @@ ALL_LINES_XFRED_P_S_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-ALL_LINES_XFRED_S_P_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+ALL_LINES_XFRED_S_P_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -47250,7 +47018,7 @@ VSIZE_CNT_CROSSING : process(m_axis_aclk)
 
 
 
-STOP_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+STOP_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -47275,7 +47043,7 @@ STOP_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
     -- Cross datamover halt and threshold signals
-----    HALT_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    HALT_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_S_P                           ,
 ----            C_VECTOR_WIDTH          => 1 
@@ -47298,7 +47066,7 @@ STOP_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----        );
 ----
 
-HALT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+HALT_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -47610,7 +47378,7 @@ begin
     begin
                 
       
-        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_16.axi_vdma_sfifo
+        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_21.axi_vdma_sfifo
             generic map(
                  UW_DATA_WIDTH     => BUFFER_WIDTH        ,
           C_FULL_FLAGS_RST_VAL     => 1        ,
@@ -47649,7 +47417,7 @@ LB_BRAM : if ( (C_ENABLE_DEBUG_INFO_1 = 1 or C_ENABLE_DEBUG_ALL = 1) )
   generate   
     begin
 
-        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_16.axi_vdma_afifo
+        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_21.axi_vdma_afifo
             generic map(
                  UW_DATA_WIDTH   => BUFFER_WIDTH                    ,
           C_FULL_FLAGS_RST_VAL   => 1        ,
@@ -47687,7 +47455,7 @@ LB_BUILT_IN : if ( (C_ENABLE_DEBUG_INFO_1 = 0 and C_ENABLE_DEBUG_ALL = 0) )
   generate   
     begin
 
-        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_16.axi_vdma_afifo_builtin
+        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_21.axi_vdma_afifo_builtin
             generic map(
                  PL_FIFO_TYPE    => "BUILT_IN"                    ,
                  PL_READ_MODE    => "FWFT"                    ,
@@ -47916,7 +47684,7 @@ end generate LB_BUILT_IN;
     --*********************************************************--
     --**               MM2S MASTER SKID BUFFER               **--
     --*********************************************************--
-    I_MSTR_SKID : entity axi_vdma_v6_3_16.axi_vdma_skid_buf
+    I_MSTR_SKID : entity axi_vdma_v6_3_21.axi_vdma_skid_buf
         generic map(
             C_WDATA_WIDTH           => C_DATA_WIDTH             ,
             C_TUSER_WIDTH           => C_M_AXIS_MM2S_TUSER_BITS
@@ -48101,7 +47869,7 @@ GEN_FOR_ASYNC : if C_PRMRY_IS_ACLK_ASYNC = 1 generate
 begin
 
     -- Pipe Empty and Shutdown reset CDC
-----    SHUTDOWN_RST_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    SHUTDOWN_RST_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_P_S                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -48125,7 +47893,7 @@ begin
 ----
 
 
-SHUTDOWN_RST_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+SHUTDOWN_RST_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -48154,7 +47922,7 @@ SHUTDOWN_RST_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-ALL_LINES_XFRED_P_S_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+ALL_LINES_XFRED_P_S_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -48184,7 +47952,7 @@ ALL_LINES_XFRED_P_S_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-ALL_LINES_XFRED_S_P_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+ALL_LINES_XFRED_S_P_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -48232,7 +48000,7 @@ VSIZE_CNT_CROSSING : process(m_axis_aclk)
 
 
     -- Cross stop signal  (
-----    STOP_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    STOP_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_S_P                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -48254,7 +48022,7 @@ VSIZE_CNT_CROSSING : process(m_axis_aclk)
 ----            scndry_vect_out         => open
 ----        );
 
-STOP_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+STOP_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -48281,7 +48049,7 @@ STOP_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----    MM2S_RUN_STOP_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    MM2S_RUN_STOP_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_S_P                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -48304,7 +48072,7 @@ STOP_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----        );
 
 
-MM2S_RUN_STOP_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+MM2S_RUN_STOP_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -48334,7 +48102,7 @@ MM2S_RUN_STOP_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----    MM2S_FSIZE_ERR_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    MM2S_FSIZE_ERR_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_PULSE_P_S_OPEN_ENDED                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -48359,7 +48127,7 @@ MM2S_RUN_STOP_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-MM2S_FSIZE_ERR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+MM2S_FSIZE_ERR_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -48386,7 +48154,7 @@ MM2S_FSIZE_ERR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----    MM2S_FSYNC_OUT_CDC_I_FLUSH_SOF : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    MM2S_FSYNC_OUT_CDC_I_FLUSH_SOF : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_PULSE_P_S_OPEN_ENDED                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -48410,7 +48178,7 @@ MM2S_FSIZE_ERR_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----
 
 
-MM2S_FSYNC_OUT_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_2.cdc_sync
+MM2S_FSYNC_OUT_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -48452,7 +48220,7 @@ fsync_src_select_s_int <= fsync_src_select_d1;
 
 
     -- Cross datamover halt and threshold signals
-----    HALT_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    HALT_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_S_P                           ,
 ----            C_VECTOR_WIDTH          => 1 
@@ -48476,7 +48244,7 @@ fsync_src_select_s_int <= fsync_src_select_d1;
 ----
 
 
-HALT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+HALT_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -48525,7 +48293,7 @@ GEN_ASYNC_CROSS_FSYNC : if C_INCLUDE_S2MM = 1 generate
 begin
 
 
-----    CROSS_FSYNC_CDC_I_FLUSH_MM2S_SOF : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    CROSS_FSYNC_CDC_I_FLUSH_MM2S_SOF : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_PULSE_P_S_OPEN_ENDED                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -48550,7 +48318,7 @@ begin
 
 
 
-CROSS_FSYNC_CDC_I_FLUSH_MM2S_SOF : entity lib_cdc_v1_0_2.cdc_sync
+CROSS_FSYNC_CDC_I_FLUSH_MM2S_SOF : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -48982,56 +48750,51 @@ end generate GEN_LINEBUF_FLUSH_SOF;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_s2mm_linebuf
--------------------------------------------------------------------------------
--- *************************************************************************
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -49115,12 +48878,12 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library lib_cdc_v1_0_2;
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.all;
+library lib_cdc_v1_0_3;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_s2mm_linebuf is
@@ -49575,7 +49338,7 @@ begin
                
       
 
-        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_16.axi_vdma_sfifo
+        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_21.axi_vdma_sfifo
             generic map(
                  UW_DATA_WIDTH     => BUFFER_WIDTH        ,
           C_FULL_FLAGS_RST_VAL     => 1        ,
@@ -49618,7 +49381,7 @@ LB_BRAM : if ( (C_ENABLE_DEBUG_INFO_9 = 1 or C_ENABLE_DEBUG_ALL = 1) )
     begin
 
 
-        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_16.axi_vdma_afifo
+        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_21.axi_vdma_afifo
             generic map(
                  UW_DATA_WIDTH   => BUFFER_WIDTH                    ,
           C_FULL_FLAGS_RST_VAL   => 1        ,
@@ -49654,7 +49417,7 @@ LB_BUILT_IN : if ( (C_ENABLE_DEBUG_INFO_9 = 0 and C_ENABLE_DEBUG_ALL = 0) )
     begin
 
 
-        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_16.axi_vdma_afifo_builtin
+        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_21.axi_vdma_afifo_builtin
             generic map(
                  PL_FIFO_TYPE    => "BUILT_IN"                    ,
                  PL_READ_MODE    => "FWFT"                    ,
@@ -49823,7 +49586,7 @@ end generate LB_BUILT_IN;
  --*********************************************************--
     --**               S2MM SLAVE SKID BUFFER                **--
     --*********************************************************--
-----    I_MSTR_SKID : entity axi_vdma_v6_3_16.axi_vdma_skid_buf
+----    I_MSTR_SKID : entity axi_vdma_v6_3_21.axi_vdma_skid_buf
 ----        generic map(
 ----            C_WDATA_WIDTH           => C_DATA_WIDTH		,
 ----            C_TUSER_WIDTH           => C_S_AXIS_S2MM_TUSER_BITS
@@ -49995,7 +49758,7 @@ VSIZE_CNT_CROSSING : process(s_axis_aclk)
 
 
         -- Cross datamover halt and fifo threshold to secondary for reset use
-----        STRM_WR_HALT_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----        STRM_WR_HALT_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----            generic map(
 ----                C_CDC_TYPE              => CDC_TYPE_LEVEL_P_S                           ,
 ----                C_VECTOR_WIDTH          => 1 
@@ -50018,7 +49781,7 @@ VSIZE_CNT_CROSSING : process(s_axis_aclk)
 ----            );
   
 
-STRM_WR_HALT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+STRM_WR_HALT_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -50066,7 +49829,7 @@ THRESH_CNT_CROSSING : process(s_axis_aclk)
 
 
       -- Cross run_stop  to secondary 
-----    RUNSTOP_AXIS_1_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    RUNSTOP_AXIS_1_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_P_S                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -50090,7 +49853,7 @@ THRESH_CNT_CROSSING : process(s_axis_aclk)
 ----
 
 
-RUNSTOP_AXIS_1_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+RUNSTOP_AXIS_1_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -50119,7 +49882,7 @@ RUNSTOP_AXIS_1_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
         -- 
-----        FSYNC_OUT_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----        FSYNC_OUT_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----            generic map(
 ----                C_CDC_TYPE              => CDC_TYPE_PULSE_S_P_OPEN_ENDED                           ,
 ----                C_VECTOR_WIDTH          => 1
@@ -50145,7 +49908,7 @@ RUNSTOP_AXIS_1_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-FSYNC_OUT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+FSYNC_OUT_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -50176,7 +49939,7 @@ FSYNC_OUT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
         -- Cross tuser fsync to primary
-----        TUSER_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----        TUSER_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----            generic map(
 ----                C_CDC_TYPE              => CDC_TYPE_PULSE_S_P_OPEN_ENDED                           ,
 ----                C_VECTOR_WIDTH          => 1
@@ -50200,7 +49963,7 @@ FSYNC_OUT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----
 
 
-TUSER_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+TUSER_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -50228,7 +49991,7 @@ TUSER_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
  
 
---       WR_PENDING_P_S_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+--       WR_PENDING_P_S_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 --            generic map(
 --                C_CDC_TYPE              => CDC_TYPE_LEVEL_P_S                           ,
 --                C_VECTOR_WIDTH          => DATACOUNT_WIDTH
@@ -50252,7 +50015,7 @@ TUSER_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 --
 
 
-WR_PENDING_P_S_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+WR_PENDING_P_S_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -50280,7 +50043,7 @@ WR_PENDING_P_S_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----       WR_PENDING_S_P_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----       WR_PENDING_S_P_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----            generic map(
 ----                C_CDC_TYPE              => CDC_TYPE_LEVEL_S_P                           ,
 ----                C_VECTOR_WIDTH          => DATACOUNT_WIDTH
@@ -50303,7 +50066,7 @@ WR_PENDING_P_S_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----            );
 ----
 
-WR_PENDING_S_P_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+WR_PENDING_S_P_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -50655,7 +50418,7 @@ begin
 
      
       
-        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_16.axi_vdma_sfifo
+        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_21.axi_vdma_sfifo
             generic map(
                  UW_DATA_WIDTH     => BUFFER_WIDTH        ,
           C_FULL_FLAGS_RST_VAL     => 1        ,
@@ -50709,7 +50472,7 @@ LB_BRAM : if ((C_ENABLE_DEBUG_INFO_9 = 1 or C_ENABLE_DEBUG_ALL = 1) )
     begin
 
 
-        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_16.axi_vdma_afifo
+        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_21.axi_vdma_afifo
             generic map(
                  UW_DATA_WIDTH   => BUFFER_WIDTH                    ,
           C_FULL_FLAGS_RST_VAL   => 1        ,
@@ -50745,7 +50508,7 @@ LB_BUILT_IN : if ( (C_ENABLE_DEBUG_INFO_9 = 0 and C_ENABLE_DEBUG_ALL = 0) )
     begin
 
 
-        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_16.axi_vdma_afifo_builtin
+        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_21.axi_vdma_afifo_builtin
             generic map(
                  PL_FIFO_TYPE    => "BUILT_IN"                    ,
                  PL_READ_MODE    => "FWFT"                    ,
@@ -50936,7 +50699,7 @@ end generate LB_BUILT_IN;
     --*********************************************************--
     --**               S2MM SLAVE SKID BUFFER                **--
     --*********************************************************--
-   ---- I_MSTR_SKID : entity axi_vdma_v6_3_16.axi_vdma_skid_buf
+   ---- I_MSTR_SKID : entity axi_vdma_v6_3_21.axi_vdma_skid_buf
    ----     generic map(
    ----         C_WDATA_WIDTH           => C_DATA_WIDTH             ,
    ----         C_TUSER_WIDTH           => C_S_AXIS_S2MM_TUSER_BITS
@@ -51070,7 +50833,7 @@ VSIZE_CNT_CROSSING : process(s_axis_aclk)
 
 
         -- Cross datamover halt and fifo threshold to secondary for reset use
-----        STRM_WR_HALT_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----        STRM_WR_HALT_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----            generic map(
 ----                C_CDC_TYPE              => CDC_TYPE_LEVEL_P_S                           ,
 ----                C_VECTOR_WIDTH          => 1 
@@ -51092,7 +50855,7 @@ VSIZE_CNT_CROSSING : process(s_axis_aclk)
 ----                scndry_vect_out         => open
 ----            );
   
-STRM_WR_HALT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+STRM_WR_HALT_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -51139,7 +50902,7 @@ THRESH_CNT_CROSSING : process(s_axis_aclk)
 
         -- Cross run_stop  to secondary 
 
-----    RUNSTOP_AXIS_0_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    RUNSTOP_AXIS_0_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_P_S                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -51163,7 +50926,7 @@ THRESH_CNT_CROSSING : process(s_axis_aclk)
 ----
 
 
-RUNSTOP_AXIS_0_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+RUNSTOP_AXIS_0_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -51190,7 +50953,7 @@ RUNSTOP_AXIS_0_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
         -- 
-----        FSYNC_OUT_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----        FSYNC_OUT_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----            generic map(
 ----                C_CDC_TYPE              => CDC_TYPE_PULSE_S_P_OPEN_ENDED                           ,
 ----                C_VECTOR_WIDTH          => 1
@@ -51215,7 +50978,7 @@ RUNSTOP_AXIS_0_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-FSYNC_OUT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+FSYNC_OUT_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -51242,7 +51005,7 @@ FSYNC_OUT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
         -- Cross tuser fsync to primary
-----        TUSER_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----        TUSER_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----            generic map(
 ----                C_CDC_TYPE              => CDC_TYPE_PULSE_S_P_OPEN_ENDED                           ,
 ----                C_VECTOR_WIDTH          => 1
@@ -51266,7 +51029,7 @@ FSYNC_OUT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----
 
 
-TUSER_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+TUSER_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -51493,7 +51256,7 @@ begin
 
                 
       
-        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_16.axi_vdma_sfifo
+        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_21.axi_vdma_sfifo
             generic map(
                  UW_DATA_WIDTH     => BUFFER_WIDTH        ,
           C_FULL_FLAGS_RST_VAL     => 1        ,
@@ -51537,7 +51300,7 @@ LB_BRAM : if ((C_ENABLE_DEBUG_INFO_9 = 1 or C_ENABLE_DEBUG_ALL = 1) )
     begin
 
 
-        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_16.axi_vdma_afifo
+        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_21.axi_vdma_afifo
             generic map(
                  UW_DATA_WIDTH   => BUFFER_WIDTH                    ,
           C_FULL_FLAGS_RST_VAL   => 1        ,
@@ -51573,7 +51336,7 @@ LB_BUILT_IN : if ((C_ENABLE_DEBUG_INFO_9 = 0 and C_ENABLE_DEBUG_ALL = 0) )
     begin
 
 
-        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_16.axi_vdma_afifo_builtin
+        I_LINEBUFFER_FIFO : entity axi_vdma_v6_3_21.axi_vdma_afifo_builtin
             generic map(
                  PL_FIFO_TYPE    => "BUILT_IN"                    ,
                  PL_READ_MODE    => "FWFT"                    ,
@@ -51711,7 +51474,7 @@ end generate LB_BUILT_IN;
     --*********************************************************--
     --**               S2MM SLAVE SKID BUFFER                **--
     --*********************************************************--
---    I_MSTR_SKID_FLUSH_SOF : entity axi_vdma_v6_3_16.axi_vdma_skid_buf
+--    I_MSTR_SKID_FLUSH_SOF : entity axi_vdma_v6_3_21.axi_vdma_skid_buf
 --        generic map(
 --            C_WDATA_WIDTH           => C_DATA_WIDTH             ,
 --            C_TUSER_WIDTH           => C_S_AXIS_S2MM_TUSER_BITS
@@ -51845,7 +51608,7 @@ VSIZE_CNT_CROSSING : process(s_axis_aclk)
 
 
         -- Cross datamover halt and fifo threshold to secondary for reset use
-----        STRM_WR_HALT_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----        STRM_WR_HALT_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----            generic map(
 ----                C_CDC_TYPE              => CDC_TYPE_LEVEL_P_S                           ,
 ----                C_VECTOR_WIDTH          => 1 
@@ -51867,7 +51630,7 @@ VSIZE_CNT_CROSSING : process(s_axis_aclk)
 ----                scndry_vect_out         => open
 ----            );
   
-STRM_WR_HALT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+STRM_WR_HALT_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -51913,7 +51676,7 @@ THRESH_CNT_CROSSING : process(s_axis_aclk)
 
         -- Cross run_stop  to secondary 
 
-----    RUNSTOP_AXIS_0_CDC_I_FLUSH_SOF : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    RUNSTOP_AXIS_0_CDC_I_FLUSH_SOF : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_P_S                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -51937,7 +51700,7 @@ THRESH_CNT_CROSSING : process(s_axis_aclk)
 ----
 
 
-RUNSTOP_AXIS_0_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_2.cdc_sync
+RUNSTOP_AXIS_0_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -51963,7 +51726,7 @@ RUNSTOP_AXIS_0_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_2.cdc_sync
 
 
         -- 
-----        FSYNC_OUT_CDC_I_FLUSH_SOF : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----        FSYNC_OUT_CDC_I_FLUSH_SOF : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----            generic map(
 ----                C_CDC_TYPE              => CDC_TYPE_PULSE_S_P_OPEN_ENDED                           ,
 ----                C_VECTOR_WIDTH          => 1
@@ -51987,7 +51750,7 @@ RUNSTOP_AXIS_0_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_2.cdc_sync
 ----
 
 
-FSYNC_OUT_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_2.cdc_sync
+FSYNC_OUT_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -52014,7 +51777,7 @@ FSYNC_OUT_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_2.cdc_sync
 
 
         -- Cross tuser fsync to primary
-----        TUSER_CDC_I_FLUSH_SOF : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----        TUSER_CDC_I_FLUSH_SOF : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----            generic map(
 ----                C_CDC_TYPE              => CDC_TYPE_PULSE_S_P_OPEN_ENDED                           ,
 ----                C_VECTOR_WIDTH          => 1
@@ -52038,7 +51801,7 @@ FSYNC_OUT_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-TUSER_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_2.cdc_sync
+TUSER_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -52064,7 +51827,7 @@ TUSER_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----    MMAP_NOT_FINISHED_CDC_I_FLUSH_SOF : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    MMAP_NOT_FINISHED_CDC_I_FLUSH_SOF : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_P_S                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -52088,7 +51851,7 @@ TUSER_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_2.cdc_sync
 ----
 
 
-MMAP_NOT_FINISHED_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_2.cdc_sync
+MMAP_NOT_FINISHED_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -52131,7 +51894,7 @@ GEN_FOR_ASYNC_CROSS_FSYNC : if C_INCLUDE_MM2S = 1 generate
 begin
 
 
-----    CROSS_FSYNC_CDC_I_FLUSH_SOF : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    CROSS_FSYNC_CDC_I_FLUSH_SOF : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_PULSE_P_S_OPEN_ENDED                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -52155,7 +51918,7 @@ begin
 ----
 
 
-CROSS_FSYNC_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_2.cdc_sync
+CROSS_FSYNC_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -52417,57 +52180,51 @@ end generate GEN_S2MM_FLUSH_SOF_LOGIC;
 end implementation;
 
 
--------------------------------------------------------------------------------
---axi_vdma_blkmem.vhd
--------------------------------------------------------------------------------
+-- (c) Copyright 2010, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -52553,8 +52310,8 @@ end implementation;
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-library lib_bmg_v1_0_15;
-use lib_bmg_v1_0_15.blk_mem_gen_wrapper;
+library lib_bmg_v1_0_18;
+use lib_bmg_v1_0_18.blk_mem_gen_wrapper;
 library xpm;
 --use proc_common_v4_0.family_support.all;
 
@@ -52820,7 +52577,7 @@ end generate;
 blk_mem_gen : if (C_SELECT_XPM = 0) generate
 -- For V6 and S6 use block memory generator to
 -- generate BRAM
-I_BLK_MEM : entity lib_bmg_v1_0_15.blk_mem_gen_wrapper
+I_BLK_MEM : entity lib_bmg_v1_0_18.blk_mem_gen_wrapper
     generic map (
         c_family                  =>  C_FAMILY,
         c_xdevicefamily           =>  C_FAMILY,
@@ -52902,57 +52659,51 @@ end generate;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_fsync_gen
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -53039,8 +52790,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_fsync_gen is
@@ -53781,57 +53532,51 @@ end generate GEN_FSYNC_MODE_S2MM_FLUSH_SOF;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_vregister
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -53917,12 +53662,12 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.clog2;
-use lib_pkg_v1_0_2.lib_pkg.max2;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.clog2;
+use lib_pkg_v1_0_4.lib_pkg.max2;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_vregister is
@@ -54072,57 +53817,51 @@ end generate GEN_START_ADDR_REG;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_vregister_64
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -54208,12 +53947,12 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.clog2;
-use lib_pkg_v1_0_2.lib_pkg.max2;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.clog2;
+use lib_pkg_v1_0_4.lib_pkg.max2;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_vregister_64 is
@@ -54363,57 +54102,51 @@ end generate GEN_START_ADDR_REG;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_sgregister.vhd
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -54500,15 +54233,15 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.clog2;
-use lib_pkg_v1_0_2.lib_pkg.max2;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.clog2;
+use lib_pkg_v1_0_4.lib_pkg.max2;
 --use proc_common_v4_0.family_support.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_sgregister is
@@ -55153,7 +54886,7 @@ signal copyram_addr_pong_p    : std_logic_vector(STRT_ADDR_CNT_WIDTH-1 downto 0)
 
 begin
 
-    GEN_BUFFER1 : entity axi_vdma_v6_3_16.axi_vdma_blkmem
+    GEN_BUFFER1 : entity axi_vdma_v6_3_21.axi_vdma_blkmem
         generic map(
             C_DATA_WIDTH        => C_ADDR_WIDTH         ,
             C_ADDR_WIDTH        => STRT_ADDR_CNT_WIDTH  ,
@@ -55262,7 +54995,7 @@ begin
             end if;
         end process PING_PONG_PROCESS;
 
-    GEN_BUFFER_PING : entity axi_vdma_v6_3_16.axi_vdma_blkmem
+    GEN_BUFFER_PING : entity axi_vdma_v6_3_21.axi_vdma_blkmem
         generic map(
             C_DATA_WIDTH        => C_ADDR_WIDTH         ,
             C_ADDR_WIDTH        => STRT_ADDR_CNT_WIDTH  ,
@@ -55285,7 +55018,7 @@ begin
             Rd_Data     =>  start_address_ping
         );
 
-    GEN_BUFFER_PONG : entity axi_vdma_v6_3_16.axi_vdma_blkmem
+    GEN_BUFFER_PONG : entity axi_vdma_v6_3_21.axi_vdma_blkmem
         generic map(
             C_DATA_WIDTH        => C_ADDR_WIDTH         ,
             C_ADDR_WIDTH        => STRT_ADDR_CNT_WIDTH  ,
@@ -55387,57 +55120,51 @@ REG_ADDR_OUT : process(prmry_aclk)
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_vaddrreg_mux
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -55526,8 +55253,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_vaddrreg_mux is
@@ -55616,57 +55343,51 @@ end implementation;
 
 
 
--------------------------------------------------------------------------------
--- axi_vdma_vaddrreg_mux_64
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -55755,8 +55476,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_vaddrreg_mux_64 is
@@ -55845,57 +55566,51 @@ end implementation;
 
 
 
--------------------------------------------------------------------------------
--- axi_vdma_vidreg_module
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -55985,8 +55700,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_vidreg_module is
@@ -56169,7 +55884,7 @@ begin
         run_stop_re <= run_stop and not run_stop_d1;
 
     -- Scatter Gather Start Address Register Block (LUTRAM)
-    SG_ADDREG_I : entity  axi_vdma_v6_3_16.axi_vdma_sgregister
+    SG_ADDREG_I : entity  axi_vdma_v6_3_21.axi_vdma_sgregister
         generic map(
             C_NUM_FSTORES               => C_NUM_FSTORES                        ,
             C_ADDR_WIDTH                => C_ADDR_WIDTH                         ,
@@ -56268,7 +55983,7 @@ begin
     ftch_complete_clr <= '0'; -- Not Used in Register Direct Mode
 
     -- Register Direct Mode - Video Register Block
--------    REGDIR_REGBLOCK_I : entity  axi_vdma_v6_3_16.axi_vdma_vregister
+-------    REGDIR_REGBLOCK_I : entity  axi_vdma_v6_3_21.axi_vdma_vregister
 -------        generic map(
 -------            C_NUM_FSTORES               => C_NUM_FSTORES                        ,
 -------            C_ADDR_WIDTH                => C_ADDR_WIDTH
@@ -56357,7 +56072,7 @@ begin
 
 
     -- Video Register Block
-    VIDREGISTER_I : entity  axi_vdma_v6_3_16.axi_vdma_vregister
+    VIDREGISTER_I : entity  axi_vdma_v6_3_21.axi_vdma_vregister
         generic map(
             C_NUM_FSTORES               => C_NUM_FSTORES                        ,
             C_ADDR_WIDTH                => C_ADDR_WIDTH
@@ -56398,7 +56113,7 @@ begin
         );
 
     -- Video Start Address MUX
-    VIDADDR_MUX_I : entity  axi_vdma_v6_3_16.axi_vdma_vaddrreg_mux
+    VIDADDR_MUX_I : entity  axi_vdma_v6_3_21.axi_vdma_vaddrreg_mux
         generic map(
             C_NUM_FSTORES               => C_NUM_FSTORES                        ,
             C_ADDR_WIDTH                => C_ADDR_WIDTH
@@ -56489,7 +56204,7 @@ start_address_vid(i) 	<= reg_module_strt_addr(i);
 end generate GEN_START_ADDR_REG;
 
     -- Video Start Address MUX
-    VIDADDR_MUX_I : entity  axi_vdma_v6_3_16.axi_vdma_vaddrreg_mux
+    VIDADDR_MUX_I : entity  axi_vdma_v6_3_21.axi_vdma_vaddrreg_mux
         generic map(
             C_NUM_FSTORES               => C_NUM_FSTORES                        ,
             C_ADDR_WIDTH                => C_ADDR_WIDTH
@@ -56517,57 +56232,51 @@ end implementation;
 
 
 
--------------------------------------------------------------------------------
--- axi_vdma_vidreg_module_64
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -56657,8 +56366,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_vidreg_module_64 is
@@ -56841,7 +56550,7 @@ begin
         run_stop_re <= run_stop and not run_stop_d1;
 
     -- Scatter Gather Start Address Register Block (LUTRAM)
-    SG_ADDREG_I : entity  axi_vdma_v6_3_16.axi_vdma_sgregister
+    SG_ADDREG_I : entity  axi_vdma_v6_3_21.axi_vdma_sgregister
         generic map(
             C_NUM_FSTORES               => C_NUM_FSTORES                        ,
             C_ADDR_WIDTH                => C_ADDR_WIDTH                         ,
@@ -56940,7 +56649,7 @@ begin
     ftch_complete_clr <= '0'; -- Not Used in Register Direct Mode
 
     -- Register Direct Mode - Video Register Block
--------    REGDIR_REGBLOCK_I : entity  axi_vdma_v6_3_16.axi_vdma_vregister
+-------    REGDIR_REGBLOCK_I : entity  axi_vdma_v6_3_21.axi_vdma_vregister
 -------        generic map(
 -------            C_NUM_FSTORES               => C_NUM_FSTORES                        ,
 -------            C_ADDR_WIDTH                => C_ADDR_WIDTH
@@ -57029,7 +56738,7 @@ begin
 
 
     -- Video Register Block
-    VIDREGISTER_I : entity  axi_vdma_v6_3_16.axi_vdma_vregister_64
+    VIDREGISTER_I : entity  axi_vdma_v6_3_21.axi_vdma_vregister_64
         generic map(
             C_NUM_FSTORES               => C_NUM_FSTORES                        ,
             C_ADDR_WIDTH                => C_ADDR_WIDTH
@@ -57070,7 +56779,7 @@ begin
         );
 
     -- Video Start Address MUX
-    VIDADDR_MUX_I : entity  axi_vdma_v6_3_16.axi_vdma_vaddrreg_mux_64
+    VIDADDR_MUX_I : entity  axi_vdma_v6_3_21.axi_vdma_vaddrreg_mux_64
         generic map(
             C_NUM_FSTORES               => C_NUM_FSTORES                        ,
             C_ADDR_WIDTH                => C_ADDR_WIDTH
@@ -57161,7 +56870,7 @@ start_address_vid(i) 	<= reg_module_strt_addr(i);
 end generate GEN_START_ADDR_REG;
 
     -- Video Start Address MUX
-    VIDADDR_MUX_I : entity  axi_vdma_v6_3_16.axi_vdma_vaddrreg_mux_64
+    VIDADDR_MUX_I : entity  axi_vdma_v6_3_21.axi_vdma_vaddrreg_mux_64
         generic map(
             C_NUM_FSTORES               => C_NUM_FSTORES                        ,
             C_ADDR_WIDTH                => C_ADDR_WIDTH
@@ -57189,57 +56898,51 @@ end implementation;
 
 
 
--------------------------------------------------------------------------------
--- axi_vdma_genlock_mux
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -57329,8 +57032,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_genlock_mux is
@@ -58179,57 +57882,51 @@ end generate GEN_1_MASTERS;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_greycoder
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -58318,8 +58015,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_greycoder is
@@ -58426,57 +58123,51 @@ binary_out <= binary_out_i;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_genlock_mngr
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -58562,12 +58253,12 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_misc.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.clog2;
-use lib_pkg_v1_0_2.lib_pkg.max2;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.clog2;
+use lib_pkg_v1_0_4.lib_pkg.max2;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_genlock_mngr is
@@ -58853,7 +58544,7 @@ begin
         -- Phase 3 : Grey Encode
         -- Encode binary coded frame pointer
         ---------------------------------------------------------------------------
-        GREY_CODER_I : entity  axi_vdma_v6_3_16.axi_vdma_greycoder
+        GREY_CODER_I : entity  axi_vdma_v6_3_21.axi_vdma_greycoder
             generic map(
                 C_DWIDTH                    => FRAME_NUMBER_WIDTH
             )
@@ -59130,7 +58821,7 @@ begin
 
 
     -- Mux frame pointer in from Master based on master in control
-    GENLOCK_MUX_I : entity  axi_vdma_v6_3_16.axi_vdma_genlock_mux
+    GENLOCK_MUX_I : entity  axi_vdma_v6_3_21.axi_vdma_genlock_mux
         generic map(
             C_GENLOCK_NUM_MASTERS       => C_GENLOCK_NUM_MASTERS    ,
             C_INTERNAL_GENLOCK_ENABLE   => C_INTERNAL_GENLOCK_ENABLE
@@ -59203,7 +58894,7 @@ begin
             end case;
         end process ADJUST_4_FRM_STRS;
 
-    S_GREY_CODER_I : entity  axi_vdma_v6_3_16.axi_vdma_greycoder
+    S_GREY_CODER_I : entity  axi_vdma_v6_3_21.axi_vdma_greycoder
         generic map(
             C_DWIDTH                    => GREY_NUM_BITS
         )
@@ -59541,7 +59232,7 @@ begin
         -- Phase 3 : Grey Encode
         -- Encode binary coded frame pointer
         ---------------------------------------------------------------------------
-        GREY_CODER_I : entity  axi_vdma_v6_3_16.axi_vdma_greycoder
+        GREY_CODER_I : entity  axi_vdma_v6_3_21.axi_vdma_greycoder
             generic map(
                 C_DWIDTH                    => FRAME_NUMBER_WIDTH
             )
@@ -59849,7 +59540,7 @@ begin
 
 
     -- Mux frame pointer in from Master based on master in control
-    GENLOCK_MUX_I : entity  axi_vdma_v6_3_16.axi_vdma_genlock_mux
+    GENLOCK_MUX_I : entity  axi_vdma_v6_3_21.axi_vdma_genlock_mux
         generic map(
             C_GENLOCK_NUM_MASTERS       => C_GENLOCK_NUM_MASTERS    ,
             C_INTERNAL_GENLOCK_ENABLE   => C_INTERNAL_GENLOCK_ENABLE
@@ -59922,7 +59613,7 @@ begin
             end case;
         end process ADJUST_4_FRM_STRS;
 
-    GREY_CODER_I : entity  axi_vdma_v6_3_16.axi_vdma_greycoder
+    GREY_CODER_I : entity  axi_vdma_v6_3_21.axi_vdma_greycoder
         generic map(
             C_DWIDTH                    => GREY_NUM_BITS
         )
@@ -60248,7 +59939,7 @@ begin
         -- Phase 3 : Grey Encode
         -- Encode binary coded frame pointer
         ---------------------------------------------------------------------------
-        GREY_CODER_I : entity  axi_vdma_v6_3_16.axi_vdma_greycoder
+        GREY_CODER_I : entity  axi_vdma_v6_3_21.axi_vdma_greycoder
             generic map(
                 C_DWIDTH                    => FRAME_NUMBER_WIDTH
             )
@@ -60554,7 +60245,7 @@ begin
 
 
     -- Mux frame pointer in from Master based on master in control
-    GENLOCK_MUX_I : entity  axi_vdma_v6_3_16.axi_vdma_genlock_mux
+    GENLOCK_MUX_I : entity  axi_vdma_v6_3_21.axi_vdma_genlock_mux
         generic map(
             C_GENLOCK_NUM_MASTERS       => C_GENLOCK_NUM_MASTERS    ,
             C_INTERNAL_GENLOCK_ENABLE   => C_INTERNAL_GENLOCK_ENABLE
@@ -60627,7 +60318,7 @@ begin
             end case;
         end process ADJUST_4_FRM_STRS;
 
-    GREY_CODER_I : entity  axi_vdma_v6_3_16.axi_vdma_greycoder
+    GREY_CODER_I : entity  axi_vdma_v6_3_21.axi_vdma_greycoder
         generic map(
             C_DWIDTH                    => GREY_NUM_BITS
         )
@@ -60962,7 +60653,7 @@ begin
         -- Phase 3 : Grey Encode
         -- Encode binary coded frame pointer
         ---------------------------------------------------------------------------
-        GREY_CODER_I : entity  axi_vdma_v6_3_16.axi_vdma_greycoder
+        GREY_CODER_I : entity  axi_vdma_v6_3_21.axi_vdma_greycoder
             generic map(
                 C_DWIDTH                    => FRAME_NUMBER_WIDTH
             )
@@ -61264,57 +60955,51 @@ end generate DYNAMIC_GENLOCK_FOR_SLAVE;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_sg_if
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -61403,8 +61088,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 
 -------------------------------------------------------------------------------
@@ -61651,57 +61336,51 @@ desc_data_wren  <= desc_data_wren_i;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_sm
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -61789,13 +61468,13 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
-library lib_cdc_v1_0_2;
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.clog2;
-use lib_pkg_v1_0_2.lib_pkg.max2;
+library lib_cdc_v1_0_3;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.clog2;
+use lib_pkg_v1_0_4.lib_pkg.max2;
 
 
 -------------------------------------------------------------------------------
@@ -62689,7 +62368,7 @@ GEN_FOR_ASYNC : if C_PRMRY_IS_ACLK_ASYNC = 1 generate
 begin
 
 
-----    FSIZE_MISMATCH_CDC_I_FLUSH_SOF : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    FSIZE_MISMATCH_CDC_I_FLUSH_SOF : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_PULSE_S_P_OPEN_ENDED                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -62712,7 +62391,7 @@ begin
 ----        );
 ----
 
-FSIZE_MISMATCH_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_2.cdc_sync
+FSIZE_MISMATCH_CDC_I_FLUSH_SOF : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -62861,57 +62540,51 @@ fsize_mismatch_err <= fsize_mismatch_err_int;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_cmdsts_if
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -62999,8 +62672,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_cmdsts_if is
@@ -63288,12 +62961,12 @@ begin
 
     -- 
     uf_err <= '1' when m_axis_sts_tvalid = '1'
-                   and  (ext_crnt_hsize /= m_axis_sts_tdata(BRCVD_MSB_BIT      -- Underflow
+                   and  (ext_crnt_hsize > m_axis_sts_tdata(BRCVD_MSB_BIT      -- Underflow--CR1156705 changed to > from /=
                                                  downto BRCVD_LSB_BIT))
            else '0';
 
     of_err <= '1' when m_axis_sts_tvalid = '1'
-                   and  (ext_crnt_hsize = m_axis_sts_tdata(BRCVD_MSB_BIT      
+                   and  (ext_crnt_hsize <= m_axis_sts_tdata(BRCVD_MSB_BIT      --CR1156705 changed to <=
                                                  downto BRCVD_LSB_BIT))
                    and  (m_axis_sts_tdata(DATAMOVER_STS_TLAST_BIT) = '0')      -- Overflow
            else '0';
@@ -63450,57 +63123,51 @@ err_o <= err_i;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_sts_mngr
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -63587,8 +63254,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_sts_mngr is
@@ -63810,57 +63477,51 @@ idle_clr <= ftch_idle_fe;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_mngr
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -63948,8 +63609,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_mngr is
@@ -65772,7 +65433,7 @@ REG_DELAY_ERR : process(prmry_aclk)
 ---------------------------------------------------------------------------
 -- Primary DMA Controller State Machine
 ---------------------------------------------------------------------------
-I_SM : entity  axi_vdma_v6_3_16.axi_vdma_sm
+I_SM : entity  axi_vdma_v6_3_21.axi_vdma_sm
     generic map(
         C_M_AXI_ADDR_WIDTH              => C_M_AXI_ADDR_WIDTH           ,
         C_INCLUDE_SF                    => C_INCLUDE_SF                 ,
@@ -65848,7 +65509,7 @@ begin
     ---------------------------------------------------------------------------
     -- Scatter Gather State Machine
     ---------------------------------------------------------------------------
-    I_SG_IF : entity  axi_vdma_v6_3_16.axi_vdma_sg_if
+    I_SG_IF : entity  axi_vdma_v6_3_21.axi_vdma_sg_if
         generic map(
 
             -------------------------------------------------------------------
@@ -65911,7 +65572,7 @@ end generate GEN_NO_SG_INTERFACE;
 -------------------------------------------------------------------------------
 -- Primary DataMover command status interface
 -------------------------------------------------------------------------------
-I_CMDSTS : entity  axi_vdma_v6_3_16.axi_vdma_cmdsts_if
+I_CMDSTS : entity  axi_vdma_v6_3_21.axi_vdma_cmdsts_if
     generic map(
         C_M_AXI_ADDR_WIDTH              => C_M_AXI_ADDR_WIDTH           ,
         C_DM_STATUS_WIDTH               => C_DM_STATUS_WIDTH            ,
@@ -65988,7 +65649,7 @@ I_CMDSTS : entity  axi_vdma_v6_3_16.axi_vdma_cmdsts_if
 ---------------------------------------------------------------------------
 -- Halt / Idle Status Manager
 ---------------------------------------------------------------------------
-I_STS_MNGR : entity  axi_vdma_v6_3_16.axi_vdma_sts_mngr
+I_STS_MNGR : entity  axi_vdma_v6_3_21.axi_vdma_sts_mngr
     port map(
         prmry_aclk                      => prmry_aclk                   ,
         prmry_resetn                    => prmry_resetn                 ,
@@ -66022,7 +65683,7 @@ I_STS_MNGR : entity  axi_vdma_v6_3_16.axi_vdma_sts_mngr
 ---------------------------------------------------------------------------
 -- Video Register Bank
 ---------------------------------------------------------------------------
-VIDEO_REG_I : entity  axi_vdma_v6_3_16.axi_vdma_vidreg_module
+VIDEO_REG_I : entity  axi_vdma_v6_3_21.axi_vdma_vidreg_module
     generic map(
         C_INCLUDE_SG                    => C_INCLUDE_SG                 ,
         C_NUM_FSTORES                   => C_NUM_FSTORES                ,
@@ -66078,7 +65739,7 @@ VIDEO_REG_I : entity  axi_vdma_v6_3_16.axi_vdma_vidreg_module
 ---------------------------------------------------------------------------
 -- Gen Lock
 ---------------------------------------------------------------------------
-VIDEO_GENLOCK_I : entity axi_vdma_v6_3_16.axi_vdma_genlock_mngr
+VIDEO_GENLOCK_I : entity axi_vdma_v6_3_21.axi_vdma_genlock_mngr
     generic map(
         C_GENLOCK_MODE                  => C_GENLOCK_MODE               ,
         C_GENLOCK_NUM_MASTERS           => C_GENLOCK_NUM_MASTERS        ,
@@ -66116,57 +65777,51 @@ VIDEO_GENLOCK_I : entity axi_vdma_v6_3_16.axi_vdma_genlock_mngr
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_mngr_64
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -66254,8 +65909,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 -------------------------------------------------------------------------------
 entity  axi_vdma_mngr_64 is
@@ -68074,7 +67729,7 @@ REG_DELAY_ERR : process(prmry_aclk)
 ---------------------------------------------------------------------------
 -- Primary DMA Controller State Machine
 ---------------------------------------------------------------------------
-I_SM : entity  axi_vdma_v6_3_16.axi_vdma_sm
+I_SM : entity  axi_vdma_v6_3_21.axi_vdma_sm
     generic map(
         C_M_AXI_ADDR_WIDTH              => C_M_AXI_ADDR_WIDTH           ,
         C_INCLUDE_SF                    => C_INCLUDE_SF                 ,
@@ -68149,7 +67804,7 @@ begin
     ---------------------------------------------------------------------------
     -- Scatter Gather State Machine
     ---------------------------------------------------------------------------
-    I_SG_IF : entity  axi_vdma_v6_3_16.axi_vdma_sg_if
+    I_SG_IF : entity  axi_vdma_v6_3_21.axi_vdma_sg_if
         generic map(
 
             -------------------------------------------------------------------
@@ -68212,7 +67867,7 @@ end generate GEN_NO_SG_INTERFACE;
 -------------------------------------------------------------------------------
 -- Primary DataMover command status interface
 -------------------------------------------------------------------------------
-I_CMDSTS : entity  axi_vdma_v6_3_16.axi_vdma_cmdsts_if
+I_CMDSTS : entity  axi_vdma_v6_3_21.axi_vdma_cmdsts_if
     generic map(
         C_M_AXI_ADDR_WIDTH              => C_M_AXI_ADDR_WIDTH           ,
         C_DM_STATUS_WIDTH               => C_DM_STATUS_WIDTH            ,
@@ -68289,7 +67944,7 @@ I_CMDSTS : entity  axi_vdma_v6_3_16.axi_vdma_cmdsts_if
 ---------------------------------------------------------------------------
 -- Halt / Idle Status Manager
 ---------------------------------------------------------------------------
-I_STS_MNGR : entity  axi_vdma_v6_3_16.axi_vdma_sts_mngr
+I_STS_MNGR : entity  axi_vdma_v6_3_21.axi_vdma_sts_mngr
     port map(
         prmry_aclk                      => prmry_aclk                   ,
         prmry_resetn                    => prmry_resetn                 ,
@@ -68323,7 +67978,7 @@ I_STS_MNGR : entity  axi_vdma_v6_3_16.axi_vdma_sts_mngr
 ---------------------------------------------------------------------------
 -- Video Register Bank
 ---------------------------------------------------------------------------
-VIDEO_REG_I : entity  axi_vdma_v6_3_16.axi_vdma_vidreg_module_64
+VIDEO_REG_I : entity  axi_vdma_v6_3_21.axi_vdma_vidreg_module_64
     generic map(
         C_INCLUDE_SG                    => C_INCLUDE_SG                 ,
         C_NUM_FSTORES                   => C_NUM_FSTORES                ,
@@ -68379,7 +68034,7 @@ VIDEO_REG_I : entity  axi_vdma_v6_3_16.axi_vdma_vidreg_module_64
 ---------------------------------------------------------------------------
 -- Gen Lock
 ---------------------------------------------------------------------------
-VIDEO_GENLOCK_I : entity axi_vdma_v6_3_16.axi_vdma_genlock_mngr
+VIDEO_GENLOCK_I : entity axi_vdma_v6_3_21.axi_vdma_genlock_mngr
     generic map(
         C_GENLOCK_MODE                  => C_GENLOCK_MODE               ,
         C_GENLOCK_NUM_MASTERS           => C_GENLOCK_NUM_MASTERS        ,
@@ -68417,57 +68072,51 @@ VIDEO_GENLOCK_I : entity axi_vdma_v6_3_16.axi_vdma_genlock_mngr
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_mm2s_axis_dwidth_converter
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -68555,8 +68204,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 
 entity  axi_vdma_mm2s_axis_dwidth_converter is
@@ -68641,7 +68290,7 @@ constant VSIZE_ZERO_VALUE           : std_logic_vector(VSIZE_DWIDTH-1 downto 0)
 -- Verilog module component declarations
 -------------------------------------------------------------------------------
 
-  component axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwidth_converter is
+  component axi_vdma_v6_3_21_axis_dwidth_converter_v1_0_axis_dwidth_converter is
      generic ( 	C_S_AXIS_TDATA_WIDTH         	: integer   			:= 32;
  		C_M_AXIS_TDATA_WIDTH         	: integer   			:= 32;
  		C_AXIS_TID_WIDTH         	: integer       		:= 1;
@@ -68704,7 +68353,7 @@ begin
     M_AXIS_TVALID   <= M_AXIS_TVALID_OUT;
     M_AXIS_TLAST    <= M_AXIS_TLAST_OUT;
 
-    MM2S_AXIS_DWIDTH_CONVERTER_I : axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwidth_converter
+    MM2S_AXIS_DWIDTH_CONVERTER_I : axi_vdma_v6_3_21_axis_dwidth_converter_v1_0_axis_dwidth_converter
      generic map( 	C_S_AXIS_TDATA_WIDTH         =>		C_M_AXIS_MM2S_TDATA_WIDTH_CALCULATED		, 
  			C_M_AXIS_TDATA_WIDTH         =>		C_M_AXIS_MM2S_TDATA_WIDTH		, 
  			C_AXIS_TID_WIDTH             =>		C_AXIS_TID_WIDTH		, 
@@ -68810,7 +68459,7 @@ DWIDTH_VERT_COUNTER : process(ACLK)
     M_AXIS_TLAST    <= M_AXIS_TLAST_OUT;
     all_lines_xfred_s_dwidth    <= all_lines_xfred;
 
-    MM2S_AXIS_DWIDTH_CONVERTER_I : axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwidth_converter
+    MM2S_AXIS_DWIDTH_CONVERTER_I : axi_vdma_v6_3_21_axis_dwidth_converter_v1_0_axis_dwidth_converter
      generic map( 	C_S_AXIS_TDATA_WIDTH         =>		C_M_AXIS_MM2S_TDATA_WIDTH_CALCULATED		, 
  			C_M_AXIS_TDATA_WIDTH         =>		C_M_AXIS_MM2S_TDATA_WIDTH		, 
  			C_AXIS_TID_WIDTH             =>		C_AXIS_TID_WIDTH		, 
@@ -68907,57 +68556,51 @@ DWIDTH_VERT_COUNTER : process(ACLK)
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma_s2mm_axis_dwidth_converter
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -69045,8 +68688,8 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 
 entity  axi_vdma_s2mm_axis_dwidth_converter is
@@ -69134,7 +68777,7 @@ constant VSIZE_ZERO_VALUE           : std_logic_vector(VSIZE_DWIDTH-1 downto 0)
 -- Verilog module component declarations
 -------------------------------------------------------------------------------
 
-  component axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwidth_converter is
+  component axi_vdma_v6_3_21_axis_dwidth_converter_v1_0_axis_dwidth_converter is
      generic ( 	C_S_AXIS_TDATA_WIDTH         	: integer   			:= 32;
  		C_M_AXIS_TDATA_WIDTH         	: integer   			:= 32;
  		C_AXIS_TID_WIDTH         	: integer       		:= 1;
@@ -69195,7 +68838,7 @@ begin
 
 
 
-    S2MM_AXIS_DWIDTH_CONVERTER_I : axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwidth_converter
+    S2MM_AXIS_DWIDTH_CONVERTER_I : axi_vdma_v6_3_21_axis_dwidth_converter_v1_0_axis_dwidth_converter
      generic map( 	C_S_AXIS_TDATA_WIDTH         =>		C_S_AXIS_S2MM_TDATA_WIDTH		, 
  			C_M_AXIS_TDATA_WIDTH         =>		C_S_AXIS_S2MM_TDATA_WIDTH_CALCULATED		, 
  			C_AXIS_TID_WIDTH             =>		C_AXIS_TID_WIDTH		, 
@@ -69238,7 +68881,7 @@ begin
 
 
 
-    S2MM_AXIS_DWIDTH_CONVERTER_I : axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwidth_converter
+    S2MM_AXIS_DWIDTH_CONVERTER_I : axi_vdma_v6_3_21_axis_dwidth_converter_v1_0_axis_dwidth_converter
      generic map( 	C_S_AXIS_TDATA_WIDTH         =>		C_S_AXIS_S2MM_TDATA_WIDTH		, 
  			C_M_AXIS_TDATA_WIDTH         =>		C_S_AXIS_S2MM_TDATA_WIDTH_CALCULATED		, 
  			C_AXIS_TID_WIDTH             =>		C_AXIS_TID_WIDTH		, 
@@ -69332,57 +68975,51 @@ S_AXIS_TREADY <= S_AXIS_TREADY_OUT;
 end implementation;
 
 
--------------------------------------------------------------------------------
--- axi_vdma
--------------------------------------------------------------------------------
+-- (c) Copyright 2010-2011, 2013, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
---  (c) Copyright 2010-2011, 2013 Xilinx, Inc. All rights reserved.
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
---  This file contains confidential and proprietary information
---  of Xilinx, Inc. and is protected under U.S. and
---  international copyright and other intellectual property
---  laws.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---  DISCLAIMER
---  This disclaimer is not a license and does not grant any
---  rights to the materials distributed herewith. Except as
---  otherwise provided in a valid license issued to you by
---  Xilinx, and to the maximum extent permitted by applicable
---  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
---  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
---  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
---  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
---  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
---  (2) Xilinx shall not be liable (whether in contract or tort,
---  including negligence, or under any other theory of
---  liability) for any loss or damage of any kind or nature
---  related to, arising under or in connection with these
---  materials, including for any direct, or any indirect,
---  special, incidental, or consequential loss or damage
---  (including loss of data, profits, goodwill, or any type of
---  loss or damage suffered as a result of any action brought
---  by a third party) even if such damage or loss was
---  reasonably foreseeable or Xilinx had been advised of the
---  possibility of the same.
---
---  CRITICAL APPLICATIONS
---  Xilinx products are not designed or intended to be fail-
---  safe, or for use in any application requiring fail-safe
---  performance, such as life-support or safety devices or
---  systems, Class III medical devices, nuclear facilities,
---  applications related to the deployment of airbags, or any
---  other applications that could lead to death, personal
---  injury, or severe property or environmental damage
---  (individually and collectively, "Critical
---  Applications"). Customer assumes the sole risk and
---  liability of any use of Xilinx products in Critical
---  Applications, subject only to applicable laws and
---  regulations governing limitations on product liability.
---
---  THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
---  PART OF THIS FILE AT ALL TIMES. 
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -- *************************************************************************
 --
@@ -69457,8 +69094,8 @@ end implementation;
 --                   |   |- axi_vdma_skid_buf.vhd (s2mm)
 --                   |   |- axi_vdma_cdc.vhd (s2mm)
 --                   |
---                   |- axi_datamover_v5_1_30.axi_datamover.vhd (FULL)
---                   |- axi_vdma_v6_3_16.axi_sg_v4_03.axi_sg.vhd
+--                   |- axi_datamover_v5_1_35.axi_datamover.vhd (FULL)
+--                   |- axi_vdma_v6_3_21.axi_sg_v4_03.axi_sg.vhd
 --
 -------------------------------------------------------------------------------
 library ieee;
@@ -69469,18 +69106,18 @@ use ieee.std_logic_misc.all;
 library unisim;
 use unisim.vcomponents.all;
 
-library axi_vdma_v6_3_16;
-use axi_vdma_v6_3_16.axi_vdma_pkg.all;
+library axi_vdma_v6_3_21;
+use axi_vdma_v6_3_21.axi_vdma_pkg.all;
 
 --library axi_sg_v4_03;
 --use axi_sg_v4_03.all;
 
-library axi_datamover_v5_1_30;
-use axi_datamover_v5_1_30.all;
+library axi_datamover_v5_1_35;
+use axi_datamover_v5_1_35.all;
 
-library lib_cdc_v1_0_2;
-library lib_pkg_v1_0_2;
-use lib_pkg_v1_0_2.lib_pkg.max2;
+library lib_cdc_v1_0_3;
+library lib_pkg_v1_0_4;
+use lib_pkg_v1_0_4.lib_pkg.max2;
 
 --use proc_common_v4_0.family_support.all;
 
@@ -70849,7 +70486,7 @@ end generate DISABLE_S2MM_FSYNC_OUT;
 
 
 
--- AXI DMA Test Vector (For Xilinx Internal Use Only)
+-- AXI DMA Test Vector (For AMD Internal Use Only)
 axi_vdma_tstvec_i(63 downto 59)   		<= s2mm_tstvect_frm_ptr_out;		---
 axi_vdma_tstvec_i(58 downto 54)   		<= mm2s_tstvect_frm_ptr_out;		---
 axi_vdma_tstvec_i(53 downto 49)   		<= s2mm_tstvect_frame;		---
@@ -70943,7 +70580,7 @@ s2mm_frame_ptr_out  <= s2mm_frame_ptr_out_i ;
 --*****************************************************************************
 --**                             RESET MODULE                                **
 --*****************************************************************************
-I_RST_MODULE : entity  axi_vdma_v6_3_16.axi_vdma_rst_module
+I_RST_MODULE : entity  axi_vdma_v6_3_21.axi_vdma_rst_module
     generic map(
         C_INCLUDE_MM2S              => C_INCLUDE_MM2S                       ,
         C_INCLUDE_S2MM              => C_INCLUDE_S2MM                       ,
@@ -71040,7 +70677,7 @@ I_RST_MODULE : entity  axi_vdma_v6_3_16.axi_vdma_rst_module
 -- Provides the s_axi_lite inteface and clock domain crossing between
 -- axi lite and mm2s/s2mm register modules
 -------------------------------------------------------------------------------
-AXI_LITE_REG_INTERFACE_I :  entity axi_vdma_v6_3_16.axi_vdma_reg_if
+AXI_LITE_REG_INTERFACE_I :  entity axi_vdma_v6_3_21.axi_vdma_reg_if
     generic map(
         C_INCLUDE_MM2S              => C_INCLUDE_MM2S                       ,
         C_INCLUDE_S2MM              => C_INCLUDE_S2MM                       ,
@@ -71133,7 +70770,7 @@ AXI_LITE_REG_INTERFACE_I :  entity axi_vdma_v6_3_16.axi_vdma_reg_if
 --*****************************************************************************
 --**                       INTERRUPT CONTROLLER                              **
 --*****************************************************************************
-I_AXI_DMA_INTRPT : entity  axi_vdma_v6_3_16.axi_vdma_intrpt
+I_AXI_DMA_INTRPT : entity  axi_vdma_v6_3_21.axi_vdma_intrpt
     generic map(
 
         C_INCLUDE_CH1              => C_INCLUDE_MM2S                            ,
@@ -71212,7 +70849,7 @@ GEN_SG_ENGINE : if C_INCLUDE_SG = 1 generate
     -------------------------------------------------------------------------------
     -- Scatter Gather Engine
     -------------------------------------------------------------------------------
-    I_SG_ENGINE : entity  axi_vdma_v6_3_16.axi_sg
+    I_SG_ENGINE : entity  axi_vdma_v6_3_21.axi_sg
         generic map(
             C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH            ,
             C_M_AXI_SG_DATA_WIDTH       => C_M_AXI_SG_DATA_WIDTH            ,
@@ -71405,7 +71042,7 @@ GEN_SG_ENGINE : if C_INCLUDE_SG = 1 generate
     --*********************************************************************
     --** MM2S Clock Domain To/From Scatter Gather Clock Domain           **
     --*********************************************************************
-    MM2S_SG_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_sg_cdc
+    MM2S_SG_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_sg_cdc
         generic map(
             C_PRMRY_IS_ACLK_ASYNC       => C_PRMRY_IS_ACLK_ASYNC            ,
             C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH
@@ -71453,7 +71090,7 @@ GEN_SG_ENGINE : if C_INCLUDE_SG = 1 generate
     --*********************************************************************
     --** S2MM Clock Domain To/From Scatter Gather Clock Domain           **
     --*********************************************************************
-    S2MM_SG_CDC_I : entity  axi_vdma_v6_3_16.axi_vdma_sg_cdc
+    S2MM_SG_CDC_I : entity  axi_vdma_v6_3_21.axi_vdma_sg_cdc
         generic map(
             C_PRMRY_IS_ACLK_ASYNC       => C_PRMRY_IS_ACLK_ASYNC            ,
             C_M_AXI_SG_ADDR_WIDTH       => C_M_AXI_SG_ADDR_WIDTH
@@ -71613,7 +71250,7 @@ end generate GEN_NO_FLUSH_SOF_MM2S;
 		
 
 
-    AXIS_MM2S_DWIDTH_CONVERTER_I: entity  axi_vdma_v6_3_16.axi_vdma_mm2s_axis_dwidth_converter
+    AXIS_MM2S_DWIDTH_CONVERTER_I: entity  axi_vdma_v6_3_21.axi_vdma_mm2s_axis_dwidth_converter
         generic map(C_M_AXIS_MM2S_TDATA_WIDTH_CALCULATED 		=>	C_M_AXIS_MM2S_TDATA_WIDTH_CALCULATED		, 
  		C_M_AXIS_MM2S_TDATA_WIDTH         	 		=>	C_M_AXIS_MM2S_TDATA_WIDTH		, 
  		--C_AXIS_SIGNAL_SET            		 		=>	255		, 
@@ -71692,7 +71329,7 @@ end generate GEN_NO_FLUSH_SOF_MM2S;
     ---------------------------------------------------------------------------
     -- MM2S Register Module
     ---------------------------------------------------------------------------
-    MM2S_REGISTER_MODULE_I : entity  axi_vdma_v6_3_16.axi_vdma_reg_module
+    MM2S_REGISTER_MODULE_I : entity  axi_vdma_v6_3_21.axi_vdma_reg_module
         generic map(
             C_TOTAL_NUM_REGISTER    => TOTAL_NUM_REGISTER                   ,
             C_INCLUDE_SG            => C_INCLUDE_SG                         ,
@@ -71818,7 +71455,7 @@ begin
     ---------------------------------------------------------------------------
     -- MM2S DMA Controller
     ---------------------------------------------------------------------------
-    I_MM2S_DMA_MNGR : entity  axi_vdma_v6_3_16.axi_vdma_mngr
+    I_MM2S_DMA_MNGR : entity  axi_vdma_v6_3_21.axi_vdma_mngr
         generic map(
             C_PRMY_CMDFIFO_DEPTH        => DM_CMDSTS_FIFO_DEPTH             ,
             C_INCLUDE_SF                => DM_MM2S_INCLUDE_SF               ,
@@ -72001,7 +71638,7 @@ begin
     ---------------------------------------------------------------------------
     -- MM2S DMA Controller
     ---------------------------------------------------------------------------
-    I_MM2S_DMA_MNGR : entity  axi_vdma_v6_3_16.axi_vdma_mngr_64
+    I_MM2S_DMA_MNGR : entity  axi_vdma_v6_3_21.axi_vdma_mngr_64
         generic map(
             C_PRMY_CMDFIFO_DEPTH        => DM_CMDSTS_FIFO_DEPTH             ,
             C_INCLUDE_SF                => DM_MM2S_INCLUDE_SF               ,
@@ -72173,7 +71810,7 @@ end generate ADDR64;
     ---------------------------------------------------------------------------
     -- MM2S Frame sync generator
     ---------------------------------------------------------------------------
-    MM2S_FSYNC_I : entity  axi_vdma_v6_3_16.axi_vdma_fsync_gen
+    MM2S_FSYNC_I : entity  axi_vdma_v6_3_21.axi_vdma_fsync_gen
         generic map(
             C_USE_FSYNC                 => C_USE_MM2S_FSYNC                      ,
             ENABLE_FLUSH_ON_S2MM_FSYNC  => 0                      ,
@@ -72216,7 +71853,7 @@ end generate ADDR64;
         );
 
     -- Clock Domain Crossing between m_axi_mm2s_aclk and m_axis_mm2s_aclk
-    MM2S_VID_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_vid_cdc
+    MM2S_VID_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_vid_cdc
         generic map(
             C_PRMRY_IS_ACLK_ASYNC       => C_PRMRY_IS_ACLK_ASYNC            ,
             C_GENLOCK_MSTR_PTR_DWIDTH   => NUM_FRM_STORE_WIDTH          ,
@@ -72264,7 +71901,7 @@ end generate ADDR64;
     mm2s_fsync_out_sig  <= mm2s_fsync_out_i;
 
     -- Start of Frame Detection - used for interrupt coalescing
-    MM2S_SOF_I : entity  axi_vdma_v6_3_16.axi_vdma_sof_gen
+    MM2S_SOF_I : entity  axi_vdma_v6_3_21.axi_vdma_sof_gen
         port map(
             scndry_aclk                 => m_axis_mm2s_aclk                 ,
             scndry_resetn               => mm2s_axis_resetn                 ,
@@ -72281,7 +71918,7 @@ end generate ADDR64;
     ---------------------------------------------------------------------------
     -- Primary MM2S Line Buffer
     ---------------------------------------------------------------------------
-    MM2S_LINEBUFFER_I : entity  axi_vdma_v6_3_16.axi_vdma_mm2s_linebuf
+    MM2S_LINEBUFFER_I : entity  axi_vdma_v6_3_21.axi_vdma_mm2s_linebuf
         generic map(
             C_DATA_WIDTH                => C_M_AXIS_MM2S_TDATA_WIDTH_CALCULATED        ,
             C_M_AXIS_MM2S_TDATA_WIDTH   => C_M_AXIS_MM2S_TDATA_WIDTH        ,
@@ -72523,7 +72160,7 @@ begin
     --*********************************************************--
     --**               S2MM SLAVE SKID BUFFER                **--
     --*********************************************************--
-    I_S2MM_SKID_FLUSH_SOF : entity axi_vdma_v6_3_16.axi_vdma_skid_buf
+    I_S2MM_SKID_FLUSH_SOF : entity axi_vdma_v6_3_21.axi_vdma_skid_buf
         generic map(
             C_WDATA_WIDTH           => C_S_AXIS_S2MM_TDATA_WIDTH             ,
             C_TUSER_WIDTH           => C_S_AXIS_S2MM_TUSER_BITS
@@ -72564,7 +72201,7 @@ begin
     --*********************************************************--
     --**               S2MM SLAVE SKID BUFFER                **--
     --*********************************************************--
-    I_S2MM_SKID_FLUSH_SOF : entity axi_vdma_v6_3_16.axi_vdma_skid_buf
+    I_S2MM_SKID_FLUSH_SOF : entity axi_vdma_v6_3_21.axi_vdma_skid_buf
         generic map(
             C_WDATA_WIDTH           => C_S_AXIS_S2MM_TDATA_WIDTH             ,
             C_TUSER_WIDTH           => C_S_AXIS_S2MM_TUSER_BITS
@@ -72973,7 +72610,7 @@ GEN_FOR_ASYNC_FLUSH_SOF : if C_PRMRY_IS_ACLK_ASYNC = 1 generate
 begin
 
 
-----    S2MM_PRM_UPDT_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    S2MM_PRM_UPDT_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_PULSE_P_S_OPEN_ENDED                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -72997,7 +72634,7 @@ begin
 ----
 
 
-S2MM_PRM_UPDT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+S2MM_PRM_UPDT_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 0,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -73025,7 +72662,7 @@ S2MM_PRM_UPDT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----    S2MM_HALTED_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    S2MM_HALTED_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_P_S                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -73050,7 +72687,7 @@ S2MM_PRM_UPDT_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-S2MM_HALTED_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+S2MM_HALTED_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -73079,7 +72716,7 @@ S2MM_HALTED_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 
 
 
-----    SOF_LATE_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_cdc
+----    SOF_LATE_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_cdc
 ----        generic map(
 ----            C_CDC_TYPE              => CDC_TYPE_LEVEL_S_P                           ,
 ----            C_VECTOR_WIDTH          => 1
@@ -73103,7 +72740,7 @@ S2MM_HALTED_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
 ----
 
 
-SOF_LATE_CDC_I : entity lib_cdc_v1_0_2.cdc_sync
+SOF_LATE_CDC_I : entity lib_cdc_v1_0_3.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_FLOP_INPUT               => 1,	--valid only for level CDC
@@ -73228,7 +72865,7 @@ end generate GEN_FOR_SYNC_FLUSH_SOF;
 		
 		s_axis_s2mm_tuser_i(C_S_AXIS_S2MM_TUSER_BITS-1 downto 0)		<= s_axis_s2mm_dwidth_tuser_i(C_S_AXIS_S2MM_TUSER_BITS-1 downto 0);
 
-    AXIS_S2MM_DWIDTH_CONVERTER_I: entity  axi_vdma_v6_3_16.axi_vdma_s2mm_axis_dwidth_converter
+    AXIS_S2MM_DWIDTH_CONVERTER_I: entity  axi_vdma_v6_3_21.axi_vdma_s2mm_axis_dwidth_converter
         generic map(C_S_AXIS_S2MM_TDATA_WIDTH_CALCULATED 	=>	C_S_AXIS_S2MM_TDATA_WIDTH_CALCULATED		, 
  		C_S_AXIS_S2MM_TDATA_WIDTH         	 	=>	C_S_AXIS_S2MM_TDATA_WIDTH		, 
  		--C_AXIS_SIGNAL_SET            		 	=>	255		, 
@@ -73409,7 +73046,7 @@ s2mm_all_vount_rcvd		<= all_vount_rcvd_no_dwidth;
     ---------------------------------------------------------------------------
     -- S2MM Register Module
     ---------------------------------------------------------------------------
-    S2MM_REGISTER_MODULE_I : entity  axi_vdma_v6_3_16.axi_vdma_reg_module
+    S2MM_REGISTER_MODULE_I : entity  axi_vdma_v6_3_21.axi_vdma_reg_module
         generic map(
             C_TOTAL_NUM_REGISTER    => TOTAL_NUM_REGISTER                   ,
             C_INCLUDE_SG            => C_INCLUDE_SG                         ,
@@ -73536,7 +73173,7 @@ begin
     ---------------------------------------------------------------------------
     -- S2MM DMA Controller
     ---------------------------------------------------------------------------
-    I_S2MM_DMA_MNGR : entity  axi_vdma_v6_3_16.axi_vdma_mngr
+    I_S2MM_DMA_MNGR : entity  axi_vdma_v6_3_21.axi_vdma_mngr
         generic map(
             C_PRMY_CMDFIFO_DEPTH        => DM_CMDSTS_FIFO_DEPTH             ,
             C_PRMRY_IS_ACLK_ASYNC       => C_PRMRY_IS_ACLK_ASYNC            ,
@@ -73720,7 +73357,7 @@ begin
     ---------------------------------------------------------------------------
     -- S2MM DMA Controller
     ---------------------------------------------------------------------------
-    I_S2MM_DMA_MNGR : entity  axi_vdma_v6_3_16.axi_vdma_mngr_64
+    I_S2MM_DMA_MNGR : entity  axi_vdma_v6_3_21.axi_vdma_mngr_64
         generic map(
             C_PRMY_CMDFIFO_DEPTH        => DM_CMDSTS_FIFO_DEPTH             ,
             C_PRMRY_IS_ACLK_ASYNC       => C_PRMRY_IS_ACLK_ASYNC            ,
@@ -73892,7 +73529,7 @@ end generate S2MMADDR64;
     ---------------------------------------------------------------------------
     -- MM2S Frame sync generator
     ---------------------------------------------------------------------------
-    S2MM_FSYNC_I : entity  axi_vdma_v6_3_16.axi_vdma_fsync_gen
+    S2MM_FSYNC_I : entity  axi_vdma_v6_3_21.axi_vdma_fsync_gen
         generic map(
             C_USE_FSYNC                 => C_USE_S2MM_FSYNC_01                      ,
             ENABLE_FLUSH_ON_S2MM_FSYNC  => ENABLE_FLUSH_ON_S2MM_FSYNC                      ,
@@ -73935,7 +73572,7 @@ end generate S2MMADDR64;
         );
 
     -- Clock Domain Crossing between m_axi_s2mm_aclk and s_axis_s2mm_aclk
-    S2MM_VID_CDC_I : entity axi_vdma_v6_3_16.axi_vdma_vid_cdc
+    S2MM_VID_CDC_I : entity axi_vdma_v6_3_21.axi_vdma_vid_cdc
         generic map(
             C_PRMRY_IS_ACLK_ASYNC       => C_PRMRY_IS_ACLK_ASYNC            ,
             C_GENLOCK_MSTR_PTR_DWIDTH   => NUM_FRM_STORE_WIDTH          ,
@@ -73982,7 +73619,7 @@ end generate S2MMADDR64;
     s2mm_fsync_out_sig  <= s2mm_fsync_out_i;
 
     -- Start of Frame Detection - used for interrupt coalescing
-    S2MM_SOF_I : entity  axi_vdma_v6_3_16.axi_vdma_sof_gen
+    S2MM_SOF_I : entity  axi_vdma_v6_3_21.axi_vdma_sof_gen
         port map(
             scndry_aclk                 => s_axis_s2mm_aclk                 ,
             scndry_resetn               => s2mm_axis_resetn                 ,
@@ -73998,7 +73635,7 @@ end generate S2MMADDR64;
     -------------------------------------------------------------------------------
     -- Primary S2MM Line Buffer
     -------------------------------------------------------------------------------
-    S2MM_LINEBUFFER_I : entity  axi_vdma_v6_3_16.axi_vdma_s2mm_linebuf
+    S2MM_LINEBUFFER_I : entity  axi_vdma_v6_3_21.axi_vdma_s2mm_linebuf
         generic map(
             C_DATA_WIDTH                => C_S_AXIS_S2MM_TDATA_WIDTH_CALCULATED            ,
             C_S2MM_SOF_ENABLE           => S2MM_SOF_ENABLE                      ,
@@ -74219,7 +73856,7 @@ end generate GEN_NO_SPRT_FOR_S2MM;
 -------------------------------------------------------------------------------
 -- Primary MM2S and S2MM DataMover
 -------------------------------------------------------------------------------
-I_PRMRY_DATAMOVER : entity axi_datamover_v5_1_30.axi_datamover
+I_PRMRY_DATAMOVER : entity axi_datamover_v5_1_35.axi_datamover
     generic map(
         C_INCLUDE_MM2S              => MM2S_AXI_FULL_MODE                   ,
         C_M_AXI_MM2S_ADDR_WIDTH     => C_M_AXI_MM2S_ADDR_WIDTH_NEW              ,

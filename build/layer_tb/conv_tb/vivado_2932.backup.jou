@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Nov 22 15:51:40 2025
+# Process ID         : 2932
+# Current directory  : C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent18488 C:\Users\ralph\Vivado projects\Digital systems\Term_Project\build\layer_tb\conv_tb\conv_tb.xpr
+# Log file           : C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/vivado.log
+# Journal file       : C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb\vivado.jou
+# Running On         : BOOK-PDMLPL2P14
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 256V
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 16687 MB
+# Swap memory        : 11811 MB
+# Total Virtual      : 28498 MB
+# Available Virtual  : 9676 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+generate_target all [get_files {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/ip/axi_vdma_0/axi_vdma_0.xci}]
+export_ip_user_files -of_objects [get_files {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/ip/axi_vdma_0/axi_vdma_0.xci}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/ip/axi_vdma_0/axi_vdma_0.xci}}] -directory {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.ip_user_files} -ipstatic_source_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.cache/compile_simlib/modelsim} {questa=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.cache/compile_simlib/questa} {riviera=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.cache/compile_simlib/riviera} {activehdl=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset axi_vdma_0
+set_property top axi_vdma_0 [get_fileset axi_vdma_0]
+move_files -fileset [get_fileset axi_vdma_0] [get_files -of_objects [get_fileset sources_1] {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/ip/axi_vdma_0/axi_vdma_0.xci}}]
+launch_run axi_vdma_0_synth_1
+wait_on_run axi_vdma_0_synth_1
+
+launch_simulation
+launch_simulation
+launch_simulation

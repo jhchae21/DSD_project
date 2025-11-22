@@ -1,55 +1,48 @@
--- blk_mem_gen_wrapper.vhd - entity/architecture pair
--------------------------------------------------------------------------------
+-- (c) Copyright 2008-2010, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- ****************************************************************************
--- **  DISCLAIMER OF LIABILITY                                               **
--- **                                                                        **
--- **  This text/file contains proprietary, confidential                     **
--- **  information of Xilinx, Inc., is distributed under                     **
--- **  license from Xilinx, Inc., and may be used, copied                    **
--- **  and/or disclosed only pursuant to the terms of a valid                **
--- **  license agreement with Xilinx, Inc. Xilinx hereby                     **
--- **  grants you a license to use this text/file solely for                 **
--- **  design, simulation, implementation and creation of                    **
--- **  design files limited to Xilinx devices or technologies.               **
--- **  Use with non-Xilinx devices or technologies is expressly              **
--- **  prohibited and immediately terminates your license unless             **
--- **  covered by a separate agreement.                                      **
--- **                                                                        **
--- **  Xilinx is providing this design, code, or information                 **
--- **  "as-is" solely for use in developing programs and                     **
--- **  solutions for Xilinx devices, with no obligation on the               **
--- **  part of Xilinx to provide support. By providing this design,          **
--- **  code, or information as one possible implementation of                **
--- **  this feature, application or standard, Xilinx is making no            **
--- **  representation that this implementation is free from any              **
--- **  claims of infringement. You are responsible for obtaining             **
--- **  any rights you may require for your implementation.                   **
--- **  Xilinx expressly disclaims any warranty whatsoever with               **
--- **  respect to the adequacy of the implementation, including              **
--- **  but not limited to any warranties or representations that this        **
--- **  implementation is free from claims of infringement, implied           **
--- **  warranties of merchantability or fitness for a particular             **
--- **  purpose.                                                              **
--- **                                                                        **
--- **  Xilinx products are not intended for use in life support              **
--- **  appliances, devices, or systems. Use in such applications is          **
--- **  expressly prohibited.                                                 **
--- **                                                                        **
--- **  Any modifications that are made to the Source Code are                **
--- **  done at the users sole risk and will be unsupported.                  **
--- **  The Xilinx Support Hotline does not have access to source             **
--- **  code and therefore cannot answer specific questions related           **
--- **  to source HDL. The Xilinx Hotline support of original source          **
--- **  code IP shall only address issues and questions related               **
--- **  to the standard Netlist version of the core (and thus                 **
--- **  indirectly, the original core source).                                **
--- **                                                                        **
--- **  Copyright (c) 2008, 2009. 2010 Xilinx, Inc. All rights reserved.      **
--- **                                                                        **
--- **  This copyright and support notice must be retained as part            **
--- **  of this text at all times.                                            **
--- ****************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
+--
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
+--
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
+--
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -------------------------------------------------------------------------------
 -- Filename:        blk_mem_gen_wrapper.vhd
@@ -63,8 +56,8 @@ USE ieee.std_logic_1164.ALL;
 Library xpm;
 use xpm.vcomponents.all;
 
-library blk_mem_gen_v8_4_6;
-use blk_mem_gen_v8_4_6.all;
+library blk_mem_gen_v8_4_9;
+use blk_mem_gen_v8_4_9.all;
 
 
 ------------------------------------------------------------------------------
@@ -381,7 +374,7 @@ begin
     -- for new IP BRAM implementations.
     --
     -------------------------------------------------------------------------------
-    I_TRUE_DUAL_PORT_BLK_MEM_GEN : entity blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6
+    I_TRUE_DUAL_PORT_BLK_MEM_GEN : entity blk_mem_gen_v8_4_9.blk_mem_gen_v8_4_9
       generic map
         (
         --C_CORENAME                => c_corename              ,                                       

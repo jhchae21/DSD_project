@@ -517,14 +517,34 @@ module top_simulation
       .M_AXIS_TDATA(M_AXIS_TDATA),
       .M_AXIS_TKEEP(M_AXIS_TKEEP),
       .M_AXIS_TLAST(M_AXIS_TLAST),
-      .M_AXIS_TVALID(M_AXIS_TVALID)
+      .M_AXIS_TVALID(M_AXIS_TVALID),
       
       
       /////////////////////////////////////////////////////////
       // TODO: Add ports
       /////////////////////////////////////////////////////////
-
       
+      // Control Inputs from TB
+      .command(COMMAND),
+      .input_ch(InCh),
+      .output_ch(OutCh),
+      .feature_length(FLength),
+
+      // Status Outputs to TB (완료 신호)
+      .f_writedone(F_writedone),          // Feature Load 완료
+      .b_writedone(B_writedone),          // Bias Load 완료
+      .cal_done(rdy_to_transmit),         // 연산 완료 (전송 준비됨)
+      .transmit_done(transmit_done),      // 전송 완료
+
+      // Handshake Inputs from TB (응답 신호)
+      .f_writedone_ack(F_writedone_respond),
+      .b_writedone_ack(B_writedone_respond),
+      .cal_done_ack(rdy_to_transmit_respond),
+      .transmit_done_ack(transmit_done_respond),
+      
+      // 보드용 start/done 포트 (APB용, 시뮬레이션에선 사용 안 함)
+      .conv_start(1'b0), 
+      .conv_done()
     );
         
 endmodule

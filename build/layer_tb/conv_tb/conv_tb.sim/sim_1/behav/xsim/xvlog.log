@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.gen/sources_1/ip/sram_32x131072/sim/sram_32x131072.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_32x131072
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/ip/axi_interconnect_0/sim/axi_interconnect_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_interconnect_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/axi_m_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_m_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_simulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/vdma_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vdma_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

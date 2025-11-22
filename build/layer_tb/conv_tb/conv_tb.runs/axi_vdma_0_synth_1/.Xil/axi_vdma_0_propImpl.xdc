@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/hsjang0918/Desktop/2022_dsd_final_project-nexys/src/tb/conv/ip/axi_vdma_0/axi_vdma_0.xdc rfile:../../../../../../src/tb/conv/ip/axi_vdma_0/axi_vdma_0.xdc id:1 order:EARLY scoped_inst:U0} [current_design]
+set_property SRC_FILE_INFO {cfile:{c:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/ip/axi_vdma_0/axi_vdma_0.xdc} rfile:../../../../../../src/tb/conv/ip/axi_vdma_0/axi_vdma_0.xdc id:1 order:EARLY scoped_inst:U0} [current_design]
 current_instance U0
 set_property src_info {type:SCOPED_XDC file:1 line:68 export:INPUT save:INPUT read:READ} [current_design]
 create_waiver -internal -scope -type CDC -id {CDC-4} -user "axi_vdma" -tags "9601" -desc "The CDC-4 warning is waived as it is safe in the context of AXI VDMA. The Address and Data value do not change until AXI transaction is complete." -to [get_pins -hier -quiet -filter {NAME =~*AXI_LITE_REG_INTERFACE_I/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_LITE_IS_ASYNC.GEN_ASYNC_LITE_ACCESS.ip2axi_rddata_captured_mm2s_cdc_tig_reg[*]/D}]

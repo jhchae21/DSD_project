@@ -1,14 +1,24 @@
 #-----------------------------------------------------------
-# Vivado v2023.1 (64-bit)
-# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
-# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Thu Nov  9 00:15:32 2023
-# Process ID: 1601947
-# Current directory: /home/hsjang0918/Desktop/2022_dsd_final_project-nexys/build/layer_tb/conv_tb/conv_tb.runs/axi_vdma_0_synth_1
-# Command line: vivado -log axi_vdma_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_vdma_0.tcl
-# Log file: /home/hsjang0918/Desktop/2022_dsd_final_project-nexys/build/layer_tb/conv_tb/conv_tb.runs/axi_vdma_0_synth_1/axi_vdma_0.vds
-# Journal file: /home/hsjang0918/Desktop/2022_dsd_final_project-nexys/build/layer_tb/conv_tb/conv_tb.runs/axi_vdma_0_synth_1/vivado.jou
-# Running On: aisys-fpga00, OS: Linux, CPU Frequency: 4740.354 MHz, CPU Physical cores: 24, Host memory: 135044 MB
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Nov 22 15:54:20 2025
+# Process ID         : 5332
+# Current directory  : C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.runs/axi_vdma_0_synth_1
+# Command line       : vivado.exe -log axi_vdma_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_vdma_0.tcl
+# Log file           : C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.runs/axi_vdma_0_synth_1/axi_vdma_0.vds
+# Journal file       : C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.runs/axi_vdma_0_synth_1\vivado.jou
+# Running On         : BOOK-PDMLPL2P14
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 256V
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 16687 MB
+# Swap memory        : 11811 MB
+# Total Virtual      : 28498 MB
+# Available Virtual  : 8346 MB
 #-----------------------------------------------------------
 source axi_vdma_0.tcl -notrace

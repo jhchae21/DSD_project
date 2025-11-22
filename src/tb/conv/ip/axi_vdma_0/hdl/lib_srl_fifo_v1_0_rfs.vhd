@@ -1,57 +1,48 @@
--- cntr_incr_decr_addn_f - entity / architecture pair
--------------------------------------------------------------------------------
+-- (c) Copyright 2005-2010, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
--- **                                                                     **
--- ** DISCLAIMER OF LIABILITY                                             **
--- **                                                                     **
--- ** This text/file contains proprietary, confidential                   **
--- ** information of Xilinx, Inc., is distributed under                   **
--- ** license from Xilinx, Inc., and may be used, copied                  **
--- ** and/or disclosed only pursuant to the terms of a valid              **
--- ** license agreement with Xilinx, Inc. Xilinx hereby                   **
--- ** grants you a license to use this text/file solely for               **
--- ** design, simulation, implementation and creation of                  **
--- ** design files limited to Xilinx devices or technologies.             **
--- ** Use with non-Xilinx devices or technologies is expressly            **
--- ** prohibited and immediately terminates your license unless           **
--- ** covered by a separate agreement.                                    **
--- **                                                                     **
--- ** Xilinx is providing this design, code, or information               **
--- ** "as-is" solely for use in developing programs and                   **
--- ** solutions for Xilinx devices, with no obligation on the             **
--- ** part of Xilinx to provide support. By providing this design,        **
--- ** code, or information as one possible implementation of              **
--- ** this feature, application or standard, Xilinx is making no          **
--- ** representation that this implementation is free from any            **
--- ** claims of infringement. You are responsible for obtaining           **
--- ** any rights you may require for your implementation.                 **
--- ** Xilinx expressly disclaims any warranty whatsoever with             **
--- ** respect to the adequacy of the implementation, including            **
--- ** but not limited to any warranties or representations that this      **
--- ** implementation is free from claims of infringement, implied         **
--- ** warranties of merchantability or fitness for a particular           **
--- ** purpose.                                                            **
--- **                                                                     **
--- ** Xilinx products are not intended for use in life support            **
--- ** appliances, devices, or systems. Use in such applications is        **
--- ** expressly prohibited.                                               **
--- **                                                                     **
--- ** Any modifications that are made to the Source Code are              **
--- ** done at the user’s sole risk and will be unsupported.               **
--- ** The Xilinx Support Hotline does not have access to source           **
--- ** code and therefore cannot answer specific questions related         **
--- ** to source HDL. The Xilinx Hotline support of original source        **
--- ** code IP shall only address issues and questions related             **
--- ** to the standard Netlist version of the core (and thus               **
--- ** indirectly, the original core source).                              **
--- **                                                                     **
--- ** Copyright (c) 2005 - 2010 Xilinx, Inc. All rights reserved.         **
--- **                                                                     **
--- ** This copyright and support notice must be retained as part          **
--- ** of this text at all times.                                          **
--- **                                                                     **
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
+--
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
+--
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
+--
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -------------------------------------------------------------------------------
 -- Filename:        cntr_incr_decr_addn_f.vhd
@@ -133,7 +124,7 @@ end entity cntr_incr_decr_addn_f;
 
 
 ---(
-library lib_srl_fifo_v1_0_2;
+library lib_srl_fifo_v1_0_4;
 library ieee;
 use     ieee.numeric_std.UNSIGNED;
 use     ieee.numeric_std."+";
@@ -242,110 +233,51 @@ end architecture imp;
 ---)
 
 
--- srl_fifo_rbu_f - entity / architecture pair
--------------------------------------------------------------------------------
+-- (c) Copyright 2005-2010, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
--- **                                                                     **
--- ** DISCLAIMER OF LIABILITY                                             **
--- **                                                                     **
--- ** This text/file contains proprietary, confidential                   **
--- ** information of Xilinx, Inc., is distributed under                   **
--- ** license from Xilinx, Inc., and may be used, copied                  **
--- ** and/or disclosed only pursuant to the terms of a valid              **
--- ** license agreement with Xilinx, Inc. Xilinx hereby                   **
--- ** grants you a license to use this text/file solely for               **
--- ** design, simulation, implementation and creation of                  **
--- ** design files limited to Xilinx devices or technologies.             **
--- ** Use with non-Xilinx devices or technologies is expressly            **
--- ** prohibited and immediately terminates your license unless           **
--- ** covered by a separate agreement.                                    **
--- **                                                                     **
--- ** Xilinx is providing this design, code, or information               **
--- ** "as-is" solely for use in developing programs and                   **
--- ** solutions for Xilinx devices, with no obligation on the             **
--- ** part of Xilinx to provide support. By providing this design,        **
--- ** code, or information as one possible implementation of              **
--- ** this feature, application or standard, Xilinx is making no          **
--- ** representation that this implementation is free from any            **
--- ** claims of infringement. You are responsible for obtaining           **
--- ** any rights you may require for your implementation.                 **
--- ** Xilinx expressly disclaims any warranty whatsoever with             **
--- ** respect to the adequacy of the implementation, including            **
--- ** but not limited to any warranties or representations that this      **
--- ** implementation is free from claims of infringement, implied         **
--- ** warranties of merchantability or fitness for a particular           **
--- ** purpose.                                                            **
--- **                                                                     **
--- ** Xilinx products are not intended for use in life support            **
--- ** appliances, devices, or systems. Use in such applications is        **
--- ** expressly prohibited.                                               **
--- **                                                                     **
--- ** Any modifications that are made to the Source Code are              **
--- ** done at the user’s sole risk and will be unsupported.               **
--- ** The Xilinx Support Hotline does not have access to source           **
--- ** code and therefore cannot answer specific questions related         **
--- ** to source HDL. The Xilinx Hotline support of original source        **
--- ** code IP shall only address issues and questions related             **
--- ** to the standard Netlist version of the core (and thus               **
--- ** indirectly, the original core source).                              **
--- **                                                                     **
--- ** Copyright (c) 2005-2010 Xilinx, Inc. All rights reserved.           **
--- **                                                                     **
--- ** This copyright and support notice must be retained as part          **
--- ** of this text at all times.                                          **
--- **                                                                     **
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
--------------------------------------------------------------------------------
--- Filename:      dynshreg_f.vhd
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
--- Description:   This module implements a dynamic shift register with clock
---                enable. (Think, for example, of the function of the SRL16E.)
---                The width and depth of the shift register are selectable
---                via generics C_WIDTH and C_DEPTH, respectively. The C_FAMILY
---                allows the implementation to be tailored to the target
---                FPGA family. An inferred implementation is used if C_FAMILY
---                is "nofamily" (the default) or if synthesis will not produce
---                an optimal implementation.  Otherwise, a structural
---                implementation will be generated.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---                There is no restriction on the values of C_WIDTH and
---                C_DEPTH and, in particular, the C_DEPTH does not have
---                to be a power of two.
---
---
--- VHDL-Standard:   VHDL'93
--------------------------------------------------------------------------------
--- Structure:   
---
--------------------------------------------------------------------------------
--- Author:          Farrell Ostler
---
--- History:
---   FLO   12/05/05   First Version. Derived from srl_fifo_rbu.
---
--- ~~~~~~
---  FLO         06/07/15
--- ^^^^^^
---  -XST was observed in some cases to produce a suboptimal implementation when
---   the depth, C_DEPTH, is a power of two and less than the native depth
---   of the SRL. Now a structural implementation is used for these cases.
---   (The particular case where a problem was found was for C_DEPTH=4 and
---    C_FAMILY="virtex5". In this case, rather than use an SRL, XST
---    made an implementation out of discrete FFs and LUTs.)
---  -Added Description.
--- ~~~~~~
---  FLO         07/12/12
--- ^^^^^^
---  Using function clog2 now instead of log2 to eliminate superfluous warnings.
--- ~~~~~~
---
---     DET     1/17/2008     v5_0
--- ~~~~~~
---     - Changed proc_common library version to v5_0
---     - Incorporated new disclaimer header
--- ^^^^^^
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -------------------------------------------------------------------------------
 -- Naming Conventions:
@@ -373,8 +305,8 @@ library ieee;
 use     ieee.std_logic_1164.all;
 use     ieee.numeric_std.UNSIGNED;
 use     ieee.numeric_std.TO_INTEGER;
-library lib_pkg_v1_0_2;
-use     lib_pkg_v1_0_2.lib_pkg.clog2;
+library lib_pkg_v1_0_4;
+use     lib_pkg_v1_0_4.lib_pkg.clog2;
 
 entity dynshreg_f is
   generic (
@@ -503,142 +435,51 @@ end behavioral;
 ---)
 
 
--- srl_fifo_rbu_f - entity / architecture pair
--------------------------------------------------------------------------------
+-- (c) Copyright 2007-2010, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
--- **                                                                     **
--- ** DISCLAIMER OF LIABILITY                                             **
--- **                                                                     **
--- ** This text/file contains proprietary, confidential                   **
--- ** information of Xilinx, Inc., is distributed under                   **
--- ** license from Xilinx, Inc., and may be used, copied                  **
--- ** and/or disclosed only pursuant to the terms of a valid              **
--- ** license agreement with Xilinx, Inc. Xilinx hereby                   **
--- ** grants you a license to use this text/file solely for               **
--- ** design, simulation, implementation and creation of                  **
--- ** design files limited to Xilinx devices or technologies.             **
--- ** Use with non-Xilinx devices or technologies is expressly            **
--- ** prohibited and immediately terminates your license unless           **
--- ** covered by a separate agreement.                                    **
--- **                                                                     **
--- ** Xilinx is providing this design, code, or information               **
--- ** "as-is" solely for use in developing programs and                   **
--- ** solutions for Xilinx devices, with no obligation on the             **
--- ** part of Xilinx to provide support. By providing this design,        **
--- ** code, or information as one possible implementation of              **
--- ** this feature, application or standard, Xilinx is making no          **
--- ** representation that this implementation is free from any            **
--- ** claims of infringement. You are responsible for obtaining           **
--- ** any rights you may require for your implementation.                 **
--- ** Xilinx expressly disclaims any warranty whatsoever with             **
--- ** respect to the adequacy of the implementation, including            **
--- ** but not limited to any warranties or representations that this      **
--- ** implementation is free from claims of infringement, implied         **
--- ** warranties of merchantability or fitness for a particular           **
--- ** purpose.                                                            **
--- **                                                                     **
--- ** Xilinx products are not intended for use in life support            **
--- ** appliances, devices, or systems. Use in such applications is        **
--- ** expressly prohibited.                                               **
--- **                                                                     **
--- ** Any modifications that are made to the Source Code are              **
--- ** done at the user’s sole risk and will be unsupported.               **
--- ** The Xilinx Support Hotline does not have access to source           **
--- ** code and therefore cannot answer specific questions related         **
--- ** to source HDL. The Xilinx Hotline support of original source        **
--- ** code IP shall only address issues and questions related             **
--- ** to the standard Netlist version of the core (and thus               **
--- ** indirectly, the original core source).                              **
--- **                                                                     **
--- ** Copyright (c) 2007-2010 Xilinx, Inc. All rights reserved.           **
--- **                                                                     **
--- ** This copyright and support notice must be retained as part          **
--- ** of this text at all times.                                          **
--- **                                                                     **
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
--------------------------------------------------------------------------------
--- Filename:        srl_fifo_rbu_f.vhd
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
--- Description:     A small-to-medium depth FIFO with optional
---                  capability to back up and reread data.  For
---                  data storage, the SRL elements native to the
---                  target FGPA family are used. If the FIFO depth
---                  exceeds the available depth of the SRL elements,
---                  then SRLs are cascaded and MUXFN elements are
---                  used to select the output of the appropriate SRL stage.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---                  Features:
---                      - Width and depth are arbitrary, but each doubling of
---                        depth, starting from the native SRL depth, adds
---                        a level of MUXFN. Generally, in performance-oriented
---                        applications, the fifo depth may need to be limited to
---                        not exceed the SRL cascade depth supported by local
---                        fast interconnect or the number of MUXFN levels.
---                        However, deeper fifos will correctly build.
---                      - Commands: read, write, and reread n.
---                      - Flags: empty and full.
---                      - The reread n command (executed by applying
---                        a non-zero value, n, to signal Num_To_Reread
---                        for one clock period) allows n
---                        previously read elements to be restored to the FIFO,
---                        limited, however, to the number of elements that have
---                        not been overwritten. (It is the user's responsibility
---                        to assure that the elements being restored are
---                        actually in the FIFO storage; once the depth of the
---                        FIFO has been written, the maximum number that can
---                        be restored is equal to the vacancy.)
---                        The reread capability does not cost extra LUTs or FFs.
---                      - Commands may be asserted simultaneously.
---                        However, if read and reread n are asserted
---                        simultaneously, only the read is carried out.
---                      - Overflow and underflow are detected and latched until
---                        Reset. The state of the FIFO is undefined during
---                        status of underflow or overflow.
---                        Underflow can occur only by reading the FIFO when empty.
---                        Overflow can occur either from a write, a reread n,
---                        or a combination of both that would result in more
---                        elements occupying the FIFO that its C_DEPTH.
---                      - Any of the signals FIFO_Full, Underflow, or Overflow
---                        left unconnected can be expected to be trimmed.
---                      - The Addr output is always one less than the current
---                        occupancy when the FIFO is non-empty, and is all ones
---                        otherwise. Therefore, the value <FIFO_Empty, Addr>--
---                        i.e. FIFO_Empty concatenated on the left with Addr--
---                        when taken as a signed value, is one less than the
---                        current occupancy.
---                        This information can be used to generate additional
---                        flags, if needed.
---
--- VHDL-Standard:   VHDL'93
--------------------------------------------------------------------------------
--- Structure:   
---              srl_fifo_rbu_f.vhd
---                  dynshreg_f.vhd
---                  cntr_incr_decr_addn_f.vhd
---
--------------------------------------------------------------------------------
--- Author:          Farrell Ostler
---
--- History:
---   FLO   12/05/05   First Version. Derived from srl_fifo_rbu.
--- ~~~~~~
---  FLO         2007-12-12
--- ^^^^^^
---  Using function clog2 now instead of log2 to eliminate superfluous warnings.
--- ~~~~~~
---
---     DET     1/17/2008     v5_0
--- ~~~~~~
---     - Changed lib library version to v5_0
---     - Incorporated new disclaimer header
--- ^^^^^^
---  FLO         2008-11-25
--- ^^^^^^
---  Changed to functionally equivalent code to generate FIFO_Full. The new code
---  steers the current XST toward a better implementation. CR 496211.
--- ~~~~~~
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -------------------------------------------------------------------------------
 -- Naming Conventions:
@@ -667,9 +508,9 @@ use     ieee.std_logic_1164.all;
 use     ieee.numeric_std.UNSIGNED;
 use     ieee.numeric_std.">=";
 use     ieee.numeric_std.TO_UNSIGNED;
-library lib_pkg_v1_0_2;
-use     lib_pkg_v1_0_2.lib_pkg.clog2;
-library lib_srl_fifo_v1_0_2;
+library lib_pkg_v1_0_4;
+use     lib_pkg_v1_0_4.lib_pkg.clog2;
+library lib_srl_fifo_v1_0_4;
 
 entity srl_fifo_rbu_f is
   generic (
@@ -727,7 +568,7 @@ begin
     -- The FIFO address counter. Addresses the next element to be read.
     -- All ones when the FIFO is empty. 
     ----------------------------------------------------------------------------
-    CNTR_INCR_DECR_ADDN_F_I : entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f
+    CNTR_INCR_DECR_ADDN_F_I : entity lib_srl_fifo_v1_0_4.cntr_incr_decr_addn_f
         generic map (
           C_SIZE   => ADDR_BITS + 1,
           C_FAMILY => C_FAMILY 
@@ -746,7 +587,7 @@ begin
     ----------------------------------------------------------------------------
     -- The dynamic shift register that holds the FIFO elements.
     ----------------------------------------------------------------------------
-    DYNSHREG_F_I : entity lib_srl_fifo_v1_0_2.dynshreg_f
+    DYNSHREG_F_I : entity lib_srl_fifo_v1_0_4.dynshreg_f
         generic map (
             C_DEPTH   => C_DEPTH,
             C_DWIDTH  => C_DWIDTH,
@@ -837,115 +678,51 @@ begin
 end architecture imp;
 
 
--- srl_fifo_f - entity / architecture pair
--------------------------------------------------------------------------------
+-- (c) Copyright 2005-2010, 2023 Advanced Micro Devices, Inc. All rights reserved.
 --
--- *************************************************************************
--- **                                                                     **
--- ** DISCLAIMER OF LIABILITY                                             **
--- **                                                                     **
--- ** This text/file contains proprietary, confidential                   **
--- ** information of Xilinx, Inc., is distributed under                   **
--- ** license from Xilinx, Inc., and may be used, copied                  **
--- ** and/or disclosed only pursuant to the terms of a valid              **
--- ** license agreement with Xilinx, Inc. Xilinx hereby                   **
--- ** grants you a license to use this text/file solely for               **
--- ** design, simulation, implementation and creation of                  **
--- ** design files limited to Xilinx devices or technologies.             **
--- ** Use with non-Xilinx devices or technologies is expressly            **
--- ** prohibited and immediately terminates your license unless           **
--- ** covered by a separate agreement.                                    **
--- **                                                                     **
--- ** Xilinx is providing this design, code, or information               **
--- ** "as-is" solely for use in developing programs and                   **
--- ** solutions for Xilinx devices, with no obligation on the             **
--- ** part of Xilinx to provide support. By providing this design,        **
--- ** code, or information as one possible implementation of              **
--- ** this feature, application or standard, Xilinx is making no          **
--- ** representation that this implementation is free from any            **
--- ** claims of infringement. You are responsible for obtaining           **
--- ** any rights you may require for your implementation.                 **
--- ** Xilinx expressly disclaims any warranty whatsoever with             **
--- ** respect to the adequacy of the implementation, including            **
--- ** but not limited to any warranties or representations that this      **
--- ** implementation is free from claims of infringement, implied         **
--- ** warranties of merchantability or fitness for a particular           **
--- ** purpose.                                                            **
--- **                                                                     **
--- ** Xilinx products are not intended for use in life support            **
--- ** appliances, devices, or systems. Use in such applications is        **
--- ** expressly prohibited.                                               **
--- **                                                                     **
--- ** Any modifications that are made to the Source Code are              **
--- ** done at the user’s sole risk and will be unsupported.               **
--- ** The Xilinx Support Hotline does not have access to source           **
--- ** code and therefore cannot answer specific questions related         **
--- ** to source HDL. The Xilinx Hotline support of original source        **
--- ** code IP shall only address issues and questions related             **
--- ** to the standard Netlist version of the core (and thus               **
--- ** indirectly, the original core source).                              **
--- **                                                                     **
--- ** Copyright (c) 2005-2010 Xilinx, Inc. All rights reserved.           **
--- **                                                                     **
--- ** This copyright and support notice must be retained as part          **
--- ** of this text at all times.                                          **
--- **                                                                     **
--- *************************************************************************
+-- This file contains confidential and proprietary information
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 --
--------------------------------------------------------------------------------
--- Filename:        srl_fifo_f.vhd
+-- DISCLAIMER
+-- This disclaimer is not a license and does not grant any
+-- rights to the materials distributed herewith. Except as
+-- otherwise provided in a valid license issued to you by
+-- AMD, and to the maximum extent permitted by applicable
+-- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+-- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+-- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+-- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+-- (2) AMD shall not be liable (whether in contract or tort,
+-- including negligence, or under any other theory of
+-- liability) for any loss or damage of any kind or nature
+-- related to, arising under or in connection with these
+-- materials, including for any direct, or any indirect,
+-- special, incidental, or consequential loss or damage
+-- (including loss of data, profits, goodwill, or any type of
+-- loss or damage suffered as a result of any action brought
+-- by a third party) even if such damage or loss was
+-- reasonably foreseeable or AMD had been advised of the
+-- possibility of the same.
 --
--- Description:     A small-to-medium depth FIFO. For
---                  data storage, the SRL elements native to the
---                  target FGPA family are used. If the FIFO depth
---                  exceeds the available depth of the SRL elements,
---                  then SRLs are cascaded and MUXFN elements are
---                  used to select the output of the appropriate SRL stage.
+-- CRITICAL APPLICATIONS
+-- AMD products are not designed or intended to be fail-
+-- safe, or for use in any application requiring fail-safe
+-- performance, such as life-support or safety devices or
+-- systems, Class III medical devices, nuclear facilities,
+-- applications related to the deployment of airbags, or any
+-- other applications that could lead to death, personal
+-- injury, or severe property or environmental damage
+-- (individually and collectively, "Critical
+-- Applications"). Customer assumes the sole risk and
+-- liability of any use of AMD products in Critical
+-- Applications, subject only to applicable laws and
+-- regulations governing limitations on product liability.
 --
---                  Features:
---                      - Width and depth are arbitrary, but each doubling of
---                        depth, starting from the native SRL depth, adds
---                        a level of MUXFN. Generally, in performance-oriented
---                        applications, the fifo depth may need to be limited to
---                        not exceed the SRL cascade depth supported by local
---                        fast interconnect or the number of MUXFN levels.
---                        However, deeper fifos will correctly build.
---                      - Commands: read, write.
---                      - Flags: empty and full.
---                      - The Addr output is always one less than the current
---                        occupancy when the FIFO is non-empty, and is all ones
---                        otherwise. Therefore, the value <FIFO_Empty, Addr>--
---                        i.e. FIFO_Empty concatenated on the left to Addr--
---                        when taken as a signed value, is one less than the
---                        current occupancy.
---
--- VHDL-Standard:   VHDL'93
--------------------------------------------------------------------------------
--- Structure:   
---              srl_fifo_f.vhd
---                srl_fifo_rbu_f.vhd
---                proc_common_pkg.vhd
---
--------------------------------------------------------------------------------
--- Author:          Farrell Ostler
---
--- History:
---   FLO   12/13/05   First Version.
---
--- FLO            04/27/06
--- ^^^^^^
---   C_FAMILY made to default to "nofamily".
--- ~~~~~~
---  FLO         2007-12-12
--- ^^^^^^
---  Using function clog2 now instead of log2 to eliminate superfluous warnings.
--- ~~~~~~
---
---     DET     1/17/2008     v5_0
--- ~~~~~~
---     - Changed proc_common library version to v5_0
---     - Incorporated new disclaimer header
--- ^^^^^^
+-- THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+-- PART OF THIS FILE AT ALL TIMES.
+------------------------------------------------------------
 --
 -------------------------------------------------------------------------------
 -- Naming Conventions:
@@ -971,9 +748,9 @@ end architecture imp;
 
 library ieee;
 use     ieee.std_logic_1164.all;
-library lib_srl_fifo_v1_0_2;
-library lib_pkg_v1_0_2;
-use     lib_pkg_v1_0_2.lib_pkg.clog2;
+library lib_srl_fifo_v1_0_4;
+library lib_pkg_v1_0_4;
+use     lib_pkg_v1_0_4.lib_pkg.clog2;
 --
 entity srl_fifo_f is
   generic (
@@ -1006,7 +783,7 @@ attribute DowngradeIPIdentifiedWarnings of imp : architecture is "yes";
     constant ZEROES : std_logic_vector(0 to clog2(C_DEPTH)-1) := (others => '0');
 begin
 
-    I_SRL_FIFO_RBU_F : entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f
+    I_SRL_FIFO_RBU_F : entity lib_srl_fifo_v1_0_4.srl_fifo_rbu_f
     generic map (
                  C_DWIDTH => C_DWIDTH,
                  C_DEPTH  => C_DEPTH,

@@ -1,0 +1,33 @@
+sv xpm --include "../../../../../../src/tb/conv/ip/axi_vdma_0/hdl" \
+"C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
+"C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+
+verilog fifo_generator_v13_2_11 --include "../../../../../../src/tb/conv/ip/axi_vdma_0/hdl" \
+"../../ipstatic/simulation/fifo_generator_vlog_beh.v" \
+"../../ipstatic/hdl/fifo_generator_v13_2_rfs.v" \
+
+verilog blk_mem_gen_v8_4_9 --include "../../../../../../src/tb/conv/ip/axi_vdma_0/hdl" \
+"../../ipstatic/simulation/blk_mem_gen_v8_4.v" \
+
+verilog axi_vdma_v6_3_21 --include "../../../../../../src/tb/conv/ip/axi_vdma_0/hdl" \
+"../../ipstatic/hdl/axi_vdma_v6_3_rfs.v" \
+
+verilog xil_defaultlib --include "../../../../../../src/tb/conv/ip/axi_vdma_0/hdl" \
+"../../../conv_tb.gen/sources_1/ip/sram_32x131072/sim/sram_32x131072.v" \
+
+verilog axi_interconnect_v1_7_24 --include "../../../../../../src/tb/conv/ip/axi_vdma_0/hdl" \
+"../../ipstatic/hdl/axi_interconnect_v1_7_vl_rfs.v" \
+
+verilog xil_defaultlib --include "../../../../../../src/tb/conv/ip/axi_vdma_0/hdl" \
+"../../../../../../src/tb/conv/ip/axi_interconnect_0/sim/axi_interconnect_0.v" \
+"../../../../../../src/tb/conv/axi_m_interface.v" \
+"../../../../../../src/modules/conv_module/conv_module.v" \
+"../../../../../../src/tb/conv/top_simulation.v" \
+"../../../../../../src/tb/conv/vdma_controller.v" \
+"../../../../../../src/tb/conv/tb.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
