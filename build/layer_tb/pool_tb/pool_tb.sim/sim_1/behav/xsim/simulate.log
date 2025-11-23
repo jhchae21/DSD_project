@@ -29,11 +29,6 @@ input file :                                                                    
 import result(no write) is done. 
 
 Index:           0
-
-Result is different!
-Expected value: 7f597f7f
-Output value: 7f59007f
-
 Index:           1
 Index:           2
 Index:           3
@@ -65,6 +60,9 @@ Index:          28
 Index:          29
 Index:          30
 Index:          31
+
+Result is correct!
+
 - Comparing result is done!! -
 
-$finish called at time : 4187500 ps : File "C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/pool/tb.v" Line 292
+$finish called at time : 4190 ns : File "C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/pool/tb.v" Line 293
