@@ -15,12 +15,13 @@ module pool_apb
 
     input wire [31:0] clk_counter,
     input wire [0:0] pool_done,
-    output reg [0:0] pool_start
+    output reg [0:0] pool_start,
 
     //////////////////////////////////////////////////////////////////////////
     // TODO : Add ports if you need them
     //////////////////////////////////////////////////////////////////////////
-    
+    output reg [5:0] input_size,
+    output reg [8:0] input_channel_size
   );
   
   wire state_enable;
@@ -62,6 +63,8 @@ module pool_apb
     if (PRESETB == 1'b0) begin
       /*WRITERES*/
       pool_start <= 1'b0;
+      input_size <= 6'd0;
+      input_channel_size <= 9'd0;
     end
     else begin
       if (PWRITE & state_enable) begin
@@ -69,6 +72,14 @@ module pool_apb
           /*WRITEIN*/
           32'h00000000 : begin
             pool_start <= PWDATA[0];
+          end
+          // 주소 0x10에 쓰면 input_size에 저장
+          32'h00000010 : begin
+            input_size <= PWDATA[5:0];
+          end
+          // 주소 0x14에 쓰면 input_channel_size에 저장
+          32'h00000014 : begin
+            input_channel_size <= PWDATA[8:0];
           end
           default: ;
         endcase

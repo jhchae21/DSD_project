@@ -45,6 +45,19 @@ module fc_top
   wire [31:0] max_index;
   assign PREADY = 1'b1;
   assign PSLVERR = 1'b0;
+
+  //////////////////////////////////////////////////////////////////////////
+  // [NEW] Wires for Inter-module connection (Command, Status, Config)
+  //////////////////////////////////////////////////////////////////////////
+  wire [2:0] fc_cmd;           // APB -> Module: Current Command
+  wire F_writedone;            // Module -> APB: Status Flag
+  wire B_writedone;            // Module -> APB: Status Flag
+  wire cal_done;               // Module -> APB: Status Flag
+  
+  // [NEW] Wires for Variable Size Configuration
+  wire [31:0] num_input_words; // APB -> Module: Input Size (FC1/2/3)
+  wire [31:0] num_output_words;// APB -> Module: Output Size (FC1/2/3)
+  //////////////////////////////////////////////////////////////////////////
   
   clk_counter_fc u_clk_counter(
     .clk   (CLK),
@@ -68,12 +81,19 @@ module fc_top
     .fc_start    (fc_start),
     .fc_done     (fc_done),
     .clk_counter (clk_counter),
-    .max_index   (max_index)
 
     //////////////////////////////////////////////////////////////////////////
     // TODO : Add ports as you need
     //////////////////////////////////////////////////////////////////////////
 
+    .COMMAND          (fc_cmd),           // Output to fc_module
+    .F_writedone      (F_writedone),      // Input from fc_module
+    .B_writedone      (B_writedone),      // Input from fc_module
+    .cal_done         (cal_done),         // Input from fc_module
+    .max_index        (max_index),       // Input from fc_module
+    
+    .num_input_words  (num_input_words),  // Output to fc_module (Register Value)
+    .num_output_words (num_output_words)  // Output to fc_module (Register Value)
   );
   
   fc_module u_fc_module(
@@ -95,10 +115,18 @@ module fc_top
     .M_AXIS_TVALID (M_AXIS_TVALID),
 
     .fc_start      (fc_start),
-    .fc_done       (fc_done)
+    .fc_done       (fc_done),
     //////////////////////////////////////////////////////////////////////////
     // TODO : Add ports as you need
     //////////////////////////////////////////////////////////////////////////
+    .COMMAND          (fc_cmd),           // Input Command
+    .F_writedone      (F_writedone),      // Output Status
+    .B_writedone      (B_writedone),      // Output Status
+    .cal_done         (cal_done),         // Output Status
+    .max_index        (max_index),        // Output Max Index
+    
+    .num_input_words  (num_input_words),  // Input Config (Size)
+    .num_output_words (num_output_words)  // Input Config (Size)
   );
   
 endmodule

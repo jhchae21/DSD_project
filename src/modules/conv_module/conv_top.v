@@ -80,7 +80,21 @@ module conv_top
     //////////////////////////////////////////////////////////////////////////
     // TODO : Add ports if you need them
     //////////////////////////////////////////////////////////////////////////
+    .command(command_wire),
+    .input_ch(input_ch_wire),
+    .output_ch(output_ch_wire),
+    .feature_length(feature_length_wire),
 
+    .f_writedone(f_done_wire),
+    .b_writedone(b_done_wire),
+    .cal_done(cal_done_wire),
+    .transmit_done(tx_done_wire),
+
+    // Ack 신호는 보드에선 보통 안 쓰므로 0으로 고정
+    .f_writedone_ack(1'b0),
+    .b_writedone_ack(1'b0),
+    .cal_done_ack(1'b0),
+    .transmit_done_ack(1'b0)
   );
   
   conv_apb u_conv_apb(
@@ -100,6 +114,15 @@ module conv_top
     //////////////////////////////////////////////////////////////////////////
     // TODO : Add ports if you need them
     //////////////////////////////////////////////////////////////////////////
+    .command(command_wire),
+    .input_ch(input_ch_wire),
+    .output_ch(output_ch_wire),
+    .feature_length(feature_length_wire),
+
+    .f_writedone(f_done_wire),
+    .b_writedone(b_done_wire),
+    .cal_done_stat(cal_done_wire),
+    .transmit_done(tx_done_wire)
   );
   
 endmodule

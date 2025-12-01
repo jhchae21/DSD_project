@@ -44,6 +44,8 @@ module pool_top
   wire [31:0] clk_counter;
   assign PREADY = 1'b1;
   assign PSLVERR = 1'b0;
+  wire [5:0] input_size_wire;
+  wire [8:0] input_channel_size_wire;
   
   clk_counter_pool u_clk_counter(
     .clk(CLK),
@@ -75,12 +77,13 @@ module pool_top
     .M_AXIS_TVALID (M_AXIS_TVALID),
 
     .pool_start(pool_start),
-    .pool_done(pool_done)
+    .pool_done(pool_done),
 
     //////////////////////////////////////////////////////////////////////////
     // TODO : Add ports if you need them
     //////////////////////////////////////////////////////////////////////////
-
+    .input_size(input_size_wire),
+    .input_channel_size(input_channel_size_wire)
   );
 
   pool_apb u_pool_apb(
@@ -95,12 +98,13 @@ module pool_top
 
     .pool_start(pool_start),
     .pool_done(pool_done),
-    .clk_counter(clk_counter)
+    .clk_counter(clk_counter),
 
     //////////////////////////////////////////////////////////////////////////
     // TODO : Add ports if you need them
     //////////////////////////////////////////////////////////////////////////
-
+    .input_size(input_size_wire),
+    .input_channel_size(input_channel_size_wire)
   );
   
 endmodule

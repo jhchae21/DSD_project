@@ -13,4 +13,4 @@
 #   2. Any Snn_AXI_ACLK or Mnn_AXI_ACLK ports of this component that are associated with an asynchronous
 #      clock conversion should not be connected to the same clock source as INTERCONNECT_ACLK.
 #
-set_disable_timing -from CLK -to O [filter [get_cells -hierarchical -filter {NAME =~ *inst_fifo_gen/*gntv_or_sync_fifo.mem/gdm.dm*/RAM_reg*/RAM*}] {REF_NAME =~ RAM*}]
+set_disable_timing -from CLK -to O [filter [get_cells -hierarchical -filter {NAME =~ *inst_fifo_gen/*gntv_or_sync_fifo.mem/gdm.dm*/RAM_reg*/*}] {REF_NAME =~ RAM*}]

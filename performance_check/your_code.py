@@ -192,7 +192,7 @@ def inference(SU: Scale_UART, n_data: int):
 		##############################################################################################
 		# Below code can be revised according to your apb register setting
 		##############################################################################################
-		pred = SU.su_read_data(FC_BASE_ADDR + 0x20)
+		pred = SU.su_read_data(FC_BASE_ADDR + 0x10)
 		pred = int.from_bytes(pred, 'big', signed=True)
 		
 		pred_list.append(pred - 1)

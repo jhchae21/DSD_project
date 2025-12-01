@@ -209,19 +209,29 @@ class Scale_UART:
 		self.su_write_data(vaddr + 0x54, F['HSIZE'])
 		self.su_write_data(vaddr + 0x50, F['VSIZE'])
 
-		self.su_write_data(faddr + 0x04, F['HSIZE']*F['VSIZE'])
-		self.su_write_data(faddr + 0x08, B['HSIZE']*B['VSIZE'])
+		## Write size info to FC module
+		self.su_write_data(faddr + 0x14, F['HSIZE']*F['VSIZE'])
+		self.su_write_data(faddr + 0x18, B['HSIZE']*B['VSIZE'])
 
 		## Start FC module, timer
-		self.su_write_data(faddr + 0x00, 0x8)
+		# if(PWDATA[2:0] != 3'b000) fc_start <= 1'b1;
+		# COMMAND <= PWDATA[2:0];
+		self.su_write_data(faddr + 0x00, 0x1) 
+
+		
+		# done = 0
+		# while (True):
+		#    done = self.su_read_data(faddr + 0x14)
+		#    if (int.from_bytes(done, 'big', signed=True) == 1):
+		#       break
 
 		## feature receive
-		done = 0
-		self.su_write_data(faddr + 0x00, 0x1)
 		while (True):
-			done = self.su_read_data(faddr + 0x14)
-			if (int.from_bytes(done, 'big', signed=True) == 1):
+			status = self.su_read_data(faddr + 0x04)
+			status_val = int.from_bytes(status, 'big', signed=False)
+			if (status_val & 0x1): # Bit 0 is F_writedone
 				break
+
 
 		# Set bias param to vdma0
 		self.su_write_data(vaddr + 0x00, 0x00010091)
@@ -230,13 +240,16 @@ class Scale_UART:
 		self.su_write_data(vaddr + 0x54, B['HSIZE'])
 		self.su_write_data(vaddr + 0x50, B['VSIZE'])
 
+		# TB: COMMAND = 3'b010
+		self.su_write_data(faddr + 0x00, 0x2)   
+
 		## bias receive
-		done = 0
-		self.su_write_data(faddr + 0x00, 0x2)
 		while (True):
-			done = self.su_read_data(faddr + 0x18)
-			if (int.from_bytes(done, 'big', signed=True) == 1):
+			status = self.su_read_data(faddr + 0x04)
+			status_val = int.from_bytes(status, 'big', signed=False)
+			if (status_val & 0x2): # Bit 1 is B_writedone
 				break
+
 
 		# Set weight param to vdma0
 		self.su_write_data(vaddr + 0x00, 0x00010091)
@@ -244,25 +257,33 @@ class Scale_UART:
 		self.su_write_data(vaddr + 0x58, W['STRIDE_SIZE'])
 		self.su_write_data(vaddr + 0x54, W['HSIZE'])
 		self.su_write_data(vaddr + 0x50, W['VSIZE'])
+		
+		# TB: COMMAND = 3'b100
+		self.su_write_data(faddr + 0x00, 0x4)   
+		
 		## weight receive
-
-		done = 0
-		# Fix size for each weight receive
-		self.su_write_data(faddr + 0x00, 0x4)
 		while (True):
-			done = self.su_read_data(faddr + 0x1c)
-			if (int.from_bytes(done, 'big', signed=True) == 1):
+			status = self.su_read_data(faddr + 0x04)
+			status_val = int.from_bytes(status, 'big', signed=False)
+			if (status_val & 0x4): # Bit 2 is cal_done
 				break
 
-		# Wait for done signal
-		done = 0
+
+		# TB: COMMAND = 3'b101
 		self.su_write_data(faddr + 0x00, 0x5)
-		while (True):
-			done = self.su_read_data(faddr + 0x04)
+
+		# wait for done signal
+		done = 0
+		while True:
+			done = self.su_read_data(faddr + 0x0C) # poll fc_done
 			if (int.from_bytes(done, 'big', signed=True) == 1):
 				break
-		#self.check_timing("FC", faddr)
-		self.su_write_data(faddr + 0x00, 0x0) # Reset module
+
+		# TB: fc_start = 0, COMMAND = 0
+		self.su_write_data(faddr + 0x00, 0x0)
+
+
+		self.check_timing("FC", faddr)
 		self.su_write_data(vaddr + 0x00, 0x00010094)
 		return 1
 
@@ -295,7 +316,14 @@ class Scale_UART:
 		# You should revise below code
 		# Your apb-register and FSM will not match below control flow
 		#######################################################################
-
+		# I: Input 정보 (채널, 크기 등)
+    	# F: Feature Map 주소 정보
+    	# W: Weight 주소 정보
+    	# B: Bias 주소 정보
+    	# R: Result 저장할 주소 정보
+		# vaddr: VDMA의 베이스 주소
+    	# caddr: CONV 모듈(APB)의 베이스 주소 (예: 0x0D100000)
+		
 		# VDMA1 Setting
 		# Set result param to vdma1
 		self.su_write_data(vaddr + 0x30, 0x00010091)
@@ -304,13 +332,14 @@ class Scale_UART:
 		self.su_write_data(vaddr + 0xa4, R['HSIZE'])
 		self.su_write_data(vaddr + 0xa0, R['VSIZE'])
 		# Set input param to conv addr
-		self.su_write_data(caddr + 0x04, I['IN_CH'])
-		self.su_write_data(caddr + 0x08, I['OUT_CH'])
-		self.su_write_data(caddr + 0x0c, I['FLEN'])
-		self.su_write_data(caddr + 0x10, 0x0) 
-		self.su_write_data(caddr + 0x14, 0x0) 
-		self.su_write_data(caddr + 0x18, 0x0) 
-		self.su_write_data(caddr + 0x1c, 0x0) 
+		self.su_write_data(caddr + 0x24, I['IN_CH'])
+		self.su_write_data(caddr + 0x28, I['OUT_CH'])
+		self.su_write_data(caddr + 0x2c, I['FLEN'])
+		
+		## Start Conv module, timer
+		self.su_write_data(caddr + 0x00, 1) 
+
+		## Feature load (Command 1)
 		# Set feature param to vdma1
 		self.su_write_data(vaddr + 0x00, 0x00010091)
 		self.su_write_data(vaddr + 0x5c, F['BASE_ADDR'])
@@ -318,31 +347,33 @@ class Scale_UART:
 		self.su_write_data(vaddr + 0x54, F['HSIZE'])
 		self.su_write_data(vaddr + 0x50, F['VSIZE'])
 
-		## Start Conv module, timer
-		self.su_write_data(caddr + 0x00, 0x5) 
-
-		## feature receive
+		self.su_write_data(caddr + 0x20, 0x1) # Command 1로 씀
+		# 완료대기 (Polling): caddr + 0x10번지(f_writedone)를 계속 읽어서 1이 될 때까지 기다림
 		done = 0
-		self.su_write_data(caddr + 0x00, 0x1) #command: RECV X
 		while (True):
-			done = self.su_read_data(caddr + 0x20)
+			done = self.su_read_data(caddr + 0x10)
 			if (int.from_bytes(done, 'big', signed=True) == 1):
 				break
 		#self.su_write_data(caddr + 0x10, 0x1) #respond
+
+		## Bias load (Command 2)
 		# Set bias param to vdma1
 		self.su_write_data(vaddr + 0x00, 0x00010091)
 		self.su_write_data(vaddr + 0x5c, B['BASE_ADDR'])
 		self.su_write_data(vaddr + 0x58, B['STRIDE_SIZE'])
 		self.su_write_data(vaddr + 0x54, B['HSIZE'])
 		self.su_write_data(vaddr + 0x50, B['VSIZE'])
-		## feature receive
+
+		self.su_write_data(caddr + 0x20, 2) # Command 2로 씀
+		## 완료 대기: 0x14(b_writedone)
 		done = 0
-		self.su_write_data(caddr + 0x00, 0x2) #command: RECV B
 		while (True):
-			done = self.su_read_data(caddr + 0x24)
+			done = self.su_read_data(caddr + 0x14)
 			if (int.from_bytes(done, 'big', signed=True) == 1):
 				break
 		#self.su_write_data(caddr + 0x14, 0x1) #respond
+
+		## Weight load & Calculate (Command 3)
 		# Set weight param to vdma1
 		self.su_write_data(vaddr + 0x00, 0x00010091)
 		self.su_write_data(vaddr + 0x5c, W['BASE_ADDR'])
@@ -350,19 +381,25 @@ class Scale_UART:
 		self.su_write_data(vaddr + 0x54, W['HSIZE'])
 		self.su_write_data(vaddr + 0x50, W['VSIZE'])
 
-		## weight receive
+		self.su_write_data(caddr + 0x20, 3) # Command 3으로 씀
+		# 완료 대기: 0x18(cal_done)
 		done = 0
-		self.su_write_data(caddr + 0x00, 0x3) #command: RECV W & CALCULATE
 		while (True):
-			done = self.su_read_data(caddr + 0x28)
+			done = self.su_read_data(caddr + 0x18)
 			if (int.from_bytes(done, 'big', signed=True) == 1):
 				break
 		#self.su_write_data(caddr + 0x18, 0x1) #respond
-		# Wait for done signal
-		done = 0
-		self.su_write_data(caddr + 0x00, 0x4) #command: SEND Y
 
-		if (I['IN_CH'] == 256):
+		## Send Result (Command 4)
+		self.su_write_data(caddr + 0x20, 4) # Command 4로 씀
+		# 완료 대기: 0x1C(transmit_done)
+		done = 0
+		while (True):
+			done = self.su_read_data(caddr + 0x1c)
+			if (int.from_bytes(done, 'big', signed=True) == 1):
+				break
+
+		'''if (I['IN_CH'] == 256):
 			while (True):
 				done = self.su_read_data(caddr + 0x2c)  # poll transmit_done
 				if (int.from_bytes(done, 'big', signed=True) == 1):
@@ -377,15 +414,20 @@ class Scale_UART:
 			# Wait for done signal
 			done = 0
 			self.su_write_data(caddr + 0x00, 0x4) #command: SEND Y
+		'''
 
+		# 최종 완료 확인: 0x04(conv_done)
 		while (True):
-			done = self.su_read_data(caddr + 0x4)  # poll conv_done
+			done = self.su_read_data(caddr + 0x04)  # poll conv_done
 			if (int.from_bytes(done, 'big', signed=True) == 1):
 				break
 		#self.check_timing("Conv", caddr)
 		#self.su_write_data(caddr + 0x1c, 0x1) #respond
-		self.su_write_data(caddr + 0x00, 0x0) # Reset module
-		self.su_write_data(vaddr + 0x00, 0x00010094)
+		
+		# Finish & Reset
+		self.su_write_data(caddr + 0x00, 0) # Start 신호 끄기
+		self.su_write_data(caddr + 0x20, 0) # Command reset
+		self.su_write_data(vaddr + 0x00, 0x00010094) # VDMA 초기화
 		# print("Conv done.")
 		return 1
 
@@ -412,8 +454,8 @@ class Scale_UART:
 		self.su_write_data(vaddr + 0xa0, R['VSIZE'])
 
 		# Set input param, then start the max-pool proc
-		self.su_write_data(paddr + 0x04, I['FLEN'])
-		self.su_write_data(paddr + 0x0C, I['IN_CH'])
+		self.su_write_data(paddr + 0x10, I['FLEN'])
+		self.su_write_data(paddr + 0x14, I['IN_CH'])
 
 		# Set feature param to vdma2
 		self.su_write_data(vaddr + 0x00, 0x00010091)
@@ -423,12 +465,12 @@ class Scale_UART:
 		self.su_write_data(vaddr + 0x50, F['VSIZE'])
 
 		## Start Pool module, timer
-		self.su_write_data(paddr + 0x00, 0x1) 
+		self.su_write_data(paddr + 0x00, 1) 
 
 		done = 0
-		# Spinlock for pool_done
+		# 완료 대기 (Done: 0x04)
 		while (True):
-			done = self.su_read_data(paddr + 0x4)
+			done = self.su_read_data(paddr + 0x04)
 			if (int.from_bytes(done, 'big', signed=True) == 1):
 				break
 		#self.check_timing("Pool", paddr)

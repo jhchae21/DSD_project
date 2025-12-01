@@ -1,11 +1,11 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-// Date        : Wed Nov  8 22:24:56 2023
-// Host        : aisys-fpga00 running 64-bit Ubuntu 20.04.6 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/hsjang0918/2022_dsd_final_project-team18-nexys/src/common_ip/mig_dram/mig_dram_stub.v
+// Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+// Date        : Mon Dec  1 22:23:19 2025
+// Host        : BOOK-PDMLPL2P14 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub {c:/Users/ralph/Vivado projects/Digital
+//               systems/Term_Project/src/common_ip/mig_dram/mig_dram_stub.v}
 // Design      : mig_dram
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-1

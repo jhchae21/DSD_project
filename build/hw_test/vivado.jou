@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Nov 26 13:53:49 2025
+# Process ID         : 33188
+# Current directory  : C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent33004 C:\Users\ralph\Vivado projects\Digital systems\Term_Project\build\hw_test\hw_test.xpr
+# Log file           : C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/vivado.log
+# Journal file       : C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test\vivado.jou
+# Running On         : BOOK-PDMLPL2P14
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 256V
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 16687 MB
+# Swap memory        : 12884 MB
+# Total Virtual      : 29572 MB
+# Available Virtual  : 9245 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.xpr}
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {axi4_32_to_axilite axi_crossbar_0 axi_crossbar_1 axi_interconnect_1 axi_to_apb axi_vdma_0 clk_gen}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {axi4_32_to_axilite axi_crossbar_0 axi_crossbar_1 axi_interconnect_1 axi_to_apb axi_vdma_0 clk_gen}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi4_32_to_axilite/axi4_32_to_axilite.xci} {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_crossbar_0/axi_crossbar_0.xci} {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_crossbar_1/axi_crossbar_1.xci} {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_interconnect_1/axi_interconnect_1.xci} {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_to_apb/axi_to_apb.xci} {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_vdma_0/axi_vdma_0.xci} {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/clk_gen/clk_gen.xci}}]
+catch { config_ip_cache -export [get_ips -all axi4_32_to_axilite] }
+catch { config_ip_cache -export [get_ips -all axi_crossbar_0] }
+catch { config_ip_cache -export [get_ips -all axi_crossbar_1] }
+catch { config_ip_cache -export [get_ips -all axi_interconnect_1] }
+catch { config_ip_cache -export [get_ips -all axi_to_apb] }
+catch { config_ip_cache -export [get_ips -all axi_vdma_0] }
+catch { config_ip_cache -export [get_ips -all clk_gen] }
+export_ip_user_files -of_objects [get_files {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi4_32_to_axilite/axi4_32_to_axilite.xci}}] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_crossbar_0/axi_crossbar_0.xci}}] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_crossbar_1/axi_crossbar_1.xci}}] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_interconnect_1/axi_interconnect_1.xci}}] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_to_apb/axi_to_apb.xci}}] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_vdma_0/axi_vdma_0.xci}}] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/clk_gen/clk_gen.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi4_32_to_axilite/axi4_32_to_axilite.xci}}]
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_crossbar_0/axi_crossbar_0.xci}}]
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_crossbar_1/axi_crossbar_1.xci}}]
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_interconnect_1/axi_interconnect_1.xci}}]
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_to_apb/axi_to_apb.xci}}]
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_vdma_0/axi_vdma_0.xci}}]
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/clk_gen/clk_gen.xci}}]
+launch_runs axi4_32_to_axilite_synth_1 axi_crossbar_0_synth_1 axi_crossbar_1_synth_1 axi_interconnect_1_synth_1 axi_to_apb_synth_1 axi_vdma_0_synth_1 clk_gen_synth_1 -jobs 8
+wait_on_run axi4_32_to_axilite_synth_1
+wait_on_run axi_crossbar_0_synth_1
+wait_on_run axi_crossbar_1_synth_1
+wait_on_run axi_interconnect_1_synth_1
+wait_on_run axi_to_apb_synth_1
+wait_on_run axi_vdma_0_synth_1
+wait_on_run clk_gen_synth_1
+export_simulation -lib_map_path [list {modelsim=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/modelsim} {questa=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/questa} {riviera=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/riviera} {activehdl=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/activehdl}] -of_objects [get_files {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi4_32_to_axilite/axi4_32_to_axilite.xci}}] -directory {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files} -ipstatic_source_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files/ipstatic} -use_ip_compiled_libs -force -quiet
+export_simulation -lib_map_path [list {modelsim=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/modelsim} {questa=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/questa} {riviera=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/riviera} {activehdl=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/activehdl}] -of_objects [get_files {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_crossbar_0/axi_crossbar_0.xci}}] -directory {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files} -ipstatic_source_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files/ipstatic} -use_ip_compiled_libs -force -quiet
+export_simulation -lib_map_path [list {modelsim=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/modelsim} {questa=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/questa} {riviera=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/riviera} {activehdl=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/activehdl}] -of_objects [get_files {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_crossbar_1/axi_crossbar_1.xci}}] -directory {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files} -ipstatic_source_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files/ipstatic} -use_ip_compiled_libs -force -quiet
+export_simulation -lib_map_path [list {modelsim=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/modelsim} {questa=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/questa} {riviera=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/riviera} {activehdl=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/activehdl}] -of_objects [get_files {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_interconnect_1/axi_interconnect_1.xci}}] -directory {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files} -ipstatic_source_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files/ipstatic} -use_ip_compiled_libs -force -quiet
+export_simulation -lib_map_path [list {modelsim=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/modelsim} {questa=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/questa} {riviera=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/riviera} {activehdl=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/activehdl}] -of_objects [get_files {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_to_apb/axi_to_apb.xci}}] -directory {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files} -ipstatic_source_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files/ipstatic} -use_ip_compiled_libs -force -quiet
+export_simulation -lib_map_path [list {modelsim=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/modelsim} {questa=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/questa} {riviera=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/riviera} {activehdl=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/activehdl}] -of_objects [get_files {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_vdma_0/axi_vdma_0.xci}}] -directory {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files} -ipstatic_source_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files/ipstatic} -use_ip_compiled_libs -force -quiet
+export_simulation -lib_map_path [list {modelsim=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/modelsim} {questa=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/questa} {riviera=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/riviera} {activehdl=C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.cache/compile_simlib/activehdl}] -of_objects [get_files {{C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/clk_gen/clk_gen.xci}}] -directory {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files} -ipstatic_source_dir {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.ip_user_files/ipstatic} -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
