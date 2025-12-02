@@ -8,7 +8,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Mon Dec  1 22:23:22 2025
+  **** Start of session at: Tue Dec  2 18:52:21 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -20,9 +20,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 46040
+INFO: [Synth 8-7075] Helper process launched with PID 18100
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1101.871 ; gain = 467.043
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1100.496 ; gain = 466.320
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-11065] parameter 'IDLE' becomes localparam in 'axi_m_interface' with formal parameter declaration list [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/ip/host_decoder/rtl/axi_m_interface.v:121]
 WARNING: [Synth 8-11065] parameter 'WRITE' becomes localparam in 'axi_m_interface' with formal parameter declaration list [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/ip/host_decoder/rtl/axi_m_interface.v:124]
@@ -38,8 +38,8 @@ INFO: [Synth 8-11241] undeclared symbol 'tx_done_wire', assumed default net type
 INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/main.v:5]
 INFO: [Synth 8-6157] synthesizing module 'interface_top' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/interface_top.v:5]
 	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/clk_gen_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/clk_gen_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/clk_gen_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/clk_gen_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'host_decoder_top' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/ip/host_decoder/rtl/host_decoder_top.v:4]
 INFO: [Synth 8-6157] synthesizing module 'axi_m_interface' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/ip/host_decoder/rtl/axi_m_interface.v:4]
 	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -76,27 +76,27 @@ INFO: [Synth 8-6155] done synthesizing module 'host_decoder_top' (0#1) [C:/Users
 WARNING: [Synth 8-7071] port 'm00_axi_wlast' of module 'host_decoder_top' is unconnected for instance 'u_host_decoder_top' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/interface_top.v:555]
 WARNING: [Synth 8-7071] port 'm00_axi_rlast' of module 'host_decoder_top' is unconnected for instance 'u_host_decoder_top' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/interface_top.v:555]
 WARNING: [Synth 8-7023] instance 'u_host_decoder_top' of module 'host_decoder_top' has 29 connections declared, but only 27 given [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/interface_top.v:555]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_0' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/axi_vdma_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_0' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/axi_vdma_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'mig_dram' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/mig_dram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'mig_dram' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/mig_dram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_0' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/axi_vdma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_0' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/axi_vdma_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mig_dram' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/mig_dram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mig_dram' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/mig_dram_stub.v:6]
 WARNING: [Synth 8-689] width (32) of port connection 's_axi_awaddr' does not match port width (27) of module 'mig_dram' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/interface_top.v:870]
 WARNING: [Synth 8-689] width (32) of port connection 's_axi_araddr' does not match port width (27) of module 'mig_dram' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/interface_top.v:893]
 INFO: [Synth 8-6157] synthesizing module 'axi_subsystem' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/system/rtl/axi_subsystem.v:1]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_0_top' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/ip/axi_crossbar_0/wrapper/axi_crossbar_0_top.v:1]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_0' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/axi_crossbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_0' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/axi_crossbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_0' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/axi_crossbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_0' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/axi_crossbar_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_0_top' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/ip/axi_crossbar_0/wrapper/axi_crossbar_0_top.v:1]
-INFO: [Synth 8-6157] synthesizing module 'axi4_32_to_axilite' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/axi4_32_to_axilite_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi4_32_to_axilite' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/axi4_32_to_axilite_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'axi_interconnect_1' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/axi_interconnect_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_interconnect_1' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/axi_interconnect_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi4_32_to_axilite' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/axi4_32_to_axilite_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_32_to_axilite' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/axi4_32_to_axilite_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_interconnect_1' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/axi_interconnect_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_interconnect_1' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/axi_interconnect_1_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_1_top' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/ip/axi_crossbar_1/wrapper/axi_crossbar_1_top.v:1]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_1' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/axi_crossbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_1' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/axi_crossbar_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_1' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/axi_crossbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_1' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/axi_crossbar_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_1_top' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/ip/axi_crossbar_1/wrapper/axi_crossbar_1_top.v:1]
-INFO: [Synth 8-6157] synthesizing module 'axi_to_apb' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/axi_to_apb_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_to_apb' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-47872-BOOK-PDMLPL2P14/realtime/axi_to_apb_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_to_apb' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/axi_to_apb_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_to_apb' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/hw_test/hw_test.runs/synth_1/.Xil/Vivado-7700-BOOK-PDMLPL2P14/realtime/axi_to_apb_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'axi_subsystem' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/system/rtl/axi_subsystem.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'interface_top' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/interface_top.v:5]
 INFO: [Synth 8-6157] synthesizing module 'compute_top' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/compute_top.v:7]
@@ -193,122 +193,156 @@ Reason is one or more of the following :
 	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
 RAM "buf_bias_reg" dissolved into registers
 WARNING: [Synth 8-3848] Net s_axis_tready in module/entity fc_module does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/fc_module/fc_module.v:47]
-WARNING: [Synth 8-6014] Unused sequential element o2_reg was removed.  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:240]
-WARNING: [Synth 8-6014] Unused sequential element o3_reg was removed.  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:240]
-WARNING: [Synth 8-7137] Register sent_word_cnt_reg in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:267]
-WARNING: [Synth 8-7137] Register total_output_words_reg in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:268]
+WARNING: [Synth 8-6014] Unused sequential element stride_reg was removed.  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:312]
+WARNING: [Synth 8-7137] Register output_buf_reg in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-7137] Register sent_word_cnt_reg in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:244]
+WARNING: [Synth 8-7137] Register total_output_words_reg in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:245]
 WARNING: [Synth 8-7137] Register input_buf_reg in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
 WARNING: [Synth 8-7137] Register bias_buf_reg in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
-WARNING: [Synth 8-7137] Register active_kernel_reg[0] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register active_kernel_reg[1] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register active_kernel_reg[2] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register active_kernel_reg[3] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register active_kernel_reg[4] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register active_kernel_reg[5] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register active_kernel_reg[6] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register active_kernel_reg[7] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register active_kernel_reg[8] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[0] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[1] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[2] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[3] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[4] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[5] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[6] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[7] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[8] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[9] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[10] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[11] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[12] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[13] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[14] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[15] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[16] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[17] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[18] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[19] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[20] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[21] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[22] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[23] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[24] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[25] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[26] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[27] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[28] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[29] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[30] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[31] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[32] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[33] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[34] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[35] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[36] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[37] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[38] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[39] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[40] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[41] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[42] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[43] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[44] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[45] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[46] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[47] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[48] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[49] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[50] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[51] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[52] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[53] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[54] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[55] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[56] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[57] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[58] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[59] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[60] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[61] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[62] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
-WARNING: [Synth 8-7137] Register wgt_fifo_reg[63] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:303]
+WARNING: [Synth 8-7137] Register active_kernel_reg[0] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register active_kernel_reg[1] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register active_kernel_reg[2] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register active_kernel_reg[3] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register active_kernel_reg[4] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register active_kernel_reg[5] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register active_kernel_reg[6] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register active_kernel_reg[7] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register active_kernel_reg[8] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[0] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[1] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[2] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[3] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[4] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[5] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[6] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[7] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[8] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[9] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[10] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[11] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[12] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[13] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[14] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[15] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[16] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[17] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[18] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[19] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[20] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[21] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[22] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[23] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[24] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[25] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[26] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[27] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[28] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[29] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[30] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[31] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[32] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[33] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[34] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[35] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[36] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[37] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[38] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[39] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[40] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[41] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[42] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[43] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[44] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[45] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[46] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[47] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[48] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[49] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[50] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[51] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[52] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[53] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[54] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[55] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[56] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[57] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[58] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[59] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[60] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[61] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[62] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
+WARNING: [Synth 8-7137] Register wgt_fifo_reg[63] in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:274]
 WARNING: [Synth 8-7137] Register acc_mem_reg in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
-WARNING: [Synth 8-7137] Register output_buf_reg in module conv_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
 WARNING: [Synth 8-4767] Trying to implement RAM 'input_buf_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
-	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	1: RAM has too many ports (16). Maximum supported = 16. 
 	2: Unable to determine number of words or word size in RAM. 
 	3: No valid read/write found for RAM. 
 RAM "input_buf_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
 WARNING: [Synth 8-4767] Trying to implement RAM 'acc_mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
 	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
 	2: Unable to determine number of words or word size in RAM. 
 	3: No valid read/write found for RAM. 
 RAM "acc_mem_reg" dissolved into registers
-WARNING: [Synth 8-4767] Trying to implement RAM 'bias_buf_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
-Reason is one or more of the following :
-	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
-	2: Unable to determine number of words or word size in RAM. 
-	3: No valid read/write found for RAM. 
-RAM "bias_buf_reg" dissolved into registers
 WARNING: [Synth 8-4767] Trying to implement RAM 'output_buf_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
 	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
 	2: Unable to determine number of words or word size in RAM. 
 	3: No valid read/write found for RAM. 
 ERROR: [Synth 8-3391] Unable to infer a block/distributed RAM for 'output_buf_reg' because the memory pattern used is not supported. Failed to dissolve the memory into bits because the number of bits (262144) is too large. Use 'set_param synth.elaboration.rodinMoreOptions {rt::set_parameter dissolveMemorySizeLimit 262144}' to allow the memory to be dissolved into individual bits
+WARNING: [Synth 8-4767] Trying to implement RAM 'bias_buf_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "bias_buf_reg" dissolved into registers
 WARNING: [Synth 8-7137] Register line_buffer_reg in module pool_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
 WARNING: [Synth 8-4767] Trying to implement RAM 'line_buffer_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
 	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
 RAM "line_buffer_reg" dissolved into registers
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2079.539 ; gain = 1444.711
+Finished RTL Elaboration : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 4172.258 ; gain = 3538.082
 ---------------------------------------------------------------------------------
 RTL Elaboration failed
 INFO: [Common 17-83] Releasing license: Synthesis
-92 Infos, 147 Warnings, 0 Critical Warnings and 2 Errors encountered.
+92 Infos, 153 Warnings, 0 Critical Warnings and 2 Errors encountered.
 synth_design failed
 ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  1 22:23:47 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  2 18:53:18 2025...
