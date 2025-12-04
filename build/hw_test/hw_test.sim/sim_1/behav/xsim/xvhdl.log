@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_to_apb/sim/axi_to_apb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'axi_to_apb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/common_ip/axi_vdma_0/sim/axi_vdma_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'axi_vdma_0'

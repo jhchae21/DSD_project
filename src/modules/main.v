@@ -224,7 +224,7 @@ module main
   (
     .CLK    (m00_axi_aclk),
     .RESETN (rstn_int2),
-    
+    /*
     // FC
     .FC_S_AXIS_TREADY (vdma0_m_axis_mm2s_tready), // output
     .FC_S_AXIS_TDATA  (vdma0_m_axis_mm2s_tdata),
@@ -247,7 +247,7 @@ module main
     .FC_PRDATA  (fc_apb_prdata),
     .FC_PREADY  (fc_apb_pready),
     .FC_PSLVERR (fc_apb_pslverr),
-    
+    */
     // CONV
     .CONV_S_AXIS_TREADY (vdma1_m_axis_mm2s_tready),
     .CONV_S_AXIS_TDATA  (vdma1_m_axis_mm2s_tdata),
@@ -269,8 +269,8 @@ module main
     .CONV_PWRITE        (conv_apb_pwrite),
     .CONV_PRDATA        (conv_apb_prdata),
     .CONV_PREADY        (conv_apb_pready),
-    .CONV_PSLVERR       (conv_apb_pslverr),
-    
+    .CONV_PSLVERR       (conv_apb_pslverr)
+    /*
     // POOL
     .POOL_S_AXIS_TREADY (vdma2_m_axis_mm2s_tready),
     .POOL_S_AXIS_TDATA  (vdma2_m_axis_mm2s_tdata),
@@ -292,7 +292,7 @@ module main
     .POOL_PWRITE        (pool_apb_pwrite),
     .POOL_PRDATA        (pool_apb_prdata),
     .POOL_PREADY        (pool_apb_pready),
-    .POOL_PSLVERR       (pool_apb_pslverr)
+    .POOL_PSLVERR       (pool_apb_pslverr)*/
   );
 
 endmodule

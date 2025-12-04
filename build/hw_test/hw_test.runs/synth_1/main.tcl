@@ -56,6 +56,11 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param synth.incrementalSynthesisCache C:/Users/ralph/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-11196-BOOK-PDMLPL2P14/incrSyn
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -81,21 +86,13 @@ read_verilog -library xil_defaultlib {
   {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/ip/host_decoder/rtl/axi_m_interface.v}
   {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/system/rtl/axi_subsystem.v}
   {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/clk_counter.v}
-  {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/fc_module/clk_counter.v}
-  {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/pool_module/clk_counter.v}
   {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/compute_top.v}
   {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_apb.v}
   {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v}
   {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_top.v}
-  {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/fc_module/fc_apb.v}
-  {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/fc_module/fc_module.v}
-  {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/fc_module/fc_top.v}
   {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/ip/host_decoder/rtl/host_decoder.v}
   {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/ip/host_decoder/rtl/host_decoder_top.v}
   {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/interface_top.v}
-  {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/pool_module/pool_apb.v}
-  {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/pool_module/pool_module.v}
-  {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/pool_module/pool_top.v}
   {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/ip/uart/rtl/receive_debouncing.v}
   {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/ip/uart/rtl/receiver.v}
   {C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/provided/ip/uart/rtl/transmit_debouncing.v}

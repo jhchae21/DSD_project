@@ -1,0 +1,220 @@
+
+*** Running vivado
+    with args -log tb.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Dec  2 22:43:22 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source tb.tcl -notrace
+Command: synth_design -top tb -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27784
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1062.789 ; gain = 468.832
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tb' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:4]
+WARNING: [Synth 8-6896] event control except as first statement of always block inside initial block, initial block items will be ignored [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:131]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:110]
+INFO: [Synth 8-6157] synthesizing module 'top_simulation' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:3]
+INFO: [Synth 8-6157] synthesizing module 'axi_interconnect_0' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.runs/synth_1/.Xil/Vivado-32260-BOOK-PDMLPL2P14/realtime/axi_interconnect_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_interconnect_0' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.runs/synth_1/.Xil/Vivado-32260-BOOK-PDMLPL2P14/realtime/axi_interconnect_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'S01_AXI_WDATA' does not match port width (64) of module 'axi_interconnect_0' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:251]
+WARNING: [Synth 8-689] width (4) of port connection 'S01_AXI_WSTRB' does not match port width (8) of module 'axi_interconnect_0' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:252]
+WARNING: [Synth 8-689] width (32) of port connection 'S01_AXI_RDATA' does not match port width (64) of module 'axi_interconnect_0' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:272]
+INFO: [Synth 8-6157] synthesizing module 'sram_32x131072' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.runs/synth_1/.Xil/Vivado-32260-BOOK-PDMLPL2P14/realtime/sram_32x131072_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sram_32x131072' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.runs/synth_1/.Xil/Vivado-32260-BOOK-PDMLPL2P14/realtime/sram_32x131072_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'sram_32x131072' is unconnected for instance 'u_sram_32x131072' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:322]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'sram_32x131072' is unconnected for instance 'u_sram_32x131072' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:322]
+WARNING: [Synth 8-7023] instance 'u_sram_32x131072' of module 'sram_32x131072' has 33 connections declared, but only 31 given [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:322]
+INFO: [Synth 8-6157] synthesizing module 'vdma_controller' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/vdma_controller.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'vdma_controller' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/vdma_controller.v:4]
+WARNING: [Synth 8-7071] port 'M_AXI_AWPROT' of module 'vdma_controller' is unconnected for instance 'u_vdma_controller' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:361]
+WARNING: [Synth 8-7071] port 'M_AXI_WSTRB' of module 'vdma_controller' is unconnected for instance 'u_vdma_controller' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:361]
+WARNING: [Synth 8-7071] port 'M_AXI_ARPROT' of module 'vdma_controller' is unconnected for instance 'u_vdma_controller' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:361]
+WARNING: [Synth 8-7023] instance 'u_vdma_controller' of module 'vdma_controller' has 25 connections declared, but only 22 given [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:361]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_0' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.runs/synth_1/.Xil/Vivado-32260-BOOK-PDMLPL2P14/realtime/axi_vdma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_0' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.runs/synth_1/.Xil/Vivado-32260-BOOK-PDMLPL2P14/realtime/axi_vdma_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_frame_ptr_out' of module 'axi_vdma_0' is unconnected for instance 'u_axi_vdma_0' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:393]
+WARNING: [Synth 8-7071] port 's2mm_frame_ptr_out' of module 'axi_vdma_0' is unconnected for instance 'u_axi_vdma_0' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:393]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'axi_vdma_0' is unconnected for instance 'u_axi_vdma_0' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:393]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tuser' of module 'axi_vdma_0' is unconnected for instance 'u_axi_vdma_0' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:393]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'axi_vdma_0' is unconnected for instance 'u_axi_vdma_0' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:393]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'axi_vdma_0' is unconnected for instance 'u_axi_vdma_0' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:393]
+WARNING: [Synth 8-7023] instance 'u_axi_vdma_0' of module 'axi_vdma_0' has 67 connections declared, but only 61 given [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:393]
+INFO: [Synth 8-6157] synthesizing module 'axi_m_interface' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/axi_m_interface.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'axi_m_interface' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/axi_m_interface.v:4]
+WARNING: [Synth 8-689] width (32) of port connection 'input_address' does not match port width (28) of module 'axi_m_interface' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:473]
+INFO: [Synth 8-6157] synthesizing module 'conv_module' [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'conv_module' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/modules/conv_module/conv_module.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_simulation' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tb' (0#1) [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:4]
+WARNING: [Synth 8-3848] Net axi_araddr in module/entity vdma_controller does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/vdma_controller.v:55]
+WARNING: [Synth 8-6014] Unused sequential element mst_exec_state_reg was removed.  [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/axi_m_interface.v:302]
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'acc_mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "acc_mem_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'input_buf_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "input_buf_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'bias_buf_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "bias_buf_reg" dissolved into registers
+WARNING: [Synth 8-3848] Net write_data in module/entity top_simulation does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:92]
+WARNING: [Synth 8-3848] Net INIT_AXI_WRITE in module/entity top_simulation does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:95]
+WARNING: [Synth 8-3848] Net S_AXIS_TKEEP in module/entity top_simulation does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:172]
+WARNING: [Synth 8-3848] Net S_AXIS_TUSER in module/entity top_simulation does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:173]
+WARNING: [Synth 8-3848] Net M_AXI_AWPROT in module/entity top_simulation does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:101]
+WARNING: [Synth 8-3848] Net M_AXI_WLAST in module/entity top_simulation does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:119]
+WARNING: [Synth 8-3848] Net M_AXI_ARPROT in module/entity top_simulation does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/top_simulation.v:112]
+WARNING: [Synth 8-3848] Net COMMAND in module/entity tb does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:68]
+WARNING: [Synth 8-3848] Net InCh in module/entity tb does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:69]
+WARNING: [Synth 8-3848] Net OutCh in module/entity tb does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:70]
+WARNING: [Synth 8-3848] Net FLength in module/entity tb does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:71]
+WARNING: [Synth 8-3848] Net F_writedone_respond in module/entity tb does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:77]
+WARNING: [Synth 8-3848] Net B_writedone_respond in module/entity tb does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:78]
+WARNING: [Synth 8-3848] Net rdy_to_transmit_respond in module/entity tb does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:79]
+WARNING: [Synth 8-3848] Net transmit_done_respond in module/entity tb does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:80]
+WARNING: [Synth 8-3848] Net resetn in module/entity tb does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:84]
+WARNING: [Synth 8-3848] Net init_txn in module/entity tb does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:87]
+WARNING: [Synth 8-3848] Net addr in module/entity tb does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:88]
+WARNING: [Synth 8-3848] Net data in module/entity tb does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:89]
+WARNING: [Synth 8-3848] Net init_read in module/entity tb does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:93]
+WARNING: [Synth 8-3848] Net r_addr in module/entity tb does not have driver. [C:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/tb.v:94]
+WARNING: [Synth 8-7129] Port S_AXIS_TKEEP[3] in module conv_module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TKEEP[2] in module conv_module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TKEEP[1] in module conv_module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TKEEP[0] in module conv_module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TUSER in module conv_module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port conv_start in module conv_module is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BRESP[1] in module axi_m_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BRESP[0] in module axi_m_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RRESP[1] in module axi_m_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RRESP[0] in module axi_m_interface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[31] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[30] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[29] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[28] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[27] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[26] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[25] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[24] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[23] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[22] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[21] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[20] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[19] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[18] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[17] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[16] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[15] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[14] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[13] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[12] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[11] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[10] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[9] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[8] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[7] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[6] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[5] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[4] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[3] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[2] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[1] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_ARADDR[0] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BRESP[1] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BRESP[0] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[31] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[30] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[29] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[28] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[27] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[26] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[25] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[24] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[23] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[22] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[21] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[20] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[19] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[18] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[17] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[16] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[15] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[14] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[13] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[12] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[11] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[10] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[9] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[8] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[7] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[6] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[5] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[4] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[3] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[2] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[1] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RDATA[0] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RRESP[1] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RRESP[0] in module vdma_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_addr[31] in module top_simulation is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_addr[30] in module top_simulation is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_addr[29] in module top_simulation is either unconnected or has no load
+WARNING: [Synth 8-7129] Port r_addr[28] in module top_simulation is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 4846.066 ; gain = 4252.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 4846.066 ; gain = 4252.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 4846.066 ; gain = 4252.109
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4846.066 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/ip/axi_vdma_0/axi_vdma_0/axi_vdma_0_in_context.xdc] for cell 'u_top_simulation/u_axi_vdma_0'
+Finished Parsing XDC File [c:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/ip/axi_vdma_0/axi_vdma_0/axi_vdma_0_in_context.xdc] for cell 'u_top_simulation/u_axi_vdma_0'
+Parsing XDC File [c:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.gen/sources_1/ip/sram_32x131072/sram_32x131072/sram_32x131072_in_context.xdc] for cell 'u_top_simulation/u_sram_32x131072'
+Finished Parsing XDC File [c:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.gen/sources_1/ip/sram_32x131072/sram_32x131072/sram_32x131072_in_context.xdc] for cell 'u_top_simulation/u_sram_32x131072'
+Parsing XDC File [c:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/ip/axi_interconnect_0/axi_interconnect_0/axi_interconnect_0_in_context.xdc] for cell 'u_top_simulation/u_axi_interconnect_0'
+Finished Parsing XDC File [c:/Users/ralph/Vivado projects/Digital systems/Term_Project/src/tb/conv/ip/axi_interconnect_0/axi_interconnect_0/axi_interconnect_0_in_context.xdc] for cell 'u_top_simulation/u_axi_interconnect_0'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 5474.133 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.602 . Memory (MB): peak = 5474.133 ; gain = 0.000

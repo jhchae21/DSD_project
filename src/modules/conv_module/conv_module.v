@@ -113,19 +113,19 @@ module conv_module
   reg signed [7:0]  i_val;  // Pixel의 입력값
   reg signed [31:0] mult;   
   reg signed [31:0] pixel_sum; 
-  reg signed [31:0] next_acc [0:15];
+  reg signed [31:0] next_acc [0:3];
 
   reg signed [15:0] curr_r, curr_c, pad_r, pad_c;
 
   // Packing Variables
   reg signed [31:0] raw_val;
   reg [7:0] final_byte [0:7]; // 8픽셀용
-  reg [31:0] pack_word_A, pack_word_B;
+  reg [31:0] pack_word;
   
   // BRAM Control MUX
-  reg [31:0] bram_addr_a, bram_addr_b;
-  reg bram_we_a, bram_we_b;
-  reg [31:0] bram_wdata_a, bram_wdata_b;
+  reg [31:0] bram_addr;
+  reg bram_we;
+  reg [31:0] bram_wdata;
   
   // Send Variables
   reg [31:0] send_data_latch; 
@@ -138,8 +138,8 @@ module conv_module
   assign s_axis_tready = (state == STATE_LOAD_FEAT) || (state == STATE_LOAD_BIAS) || ((state == STATE_STREAM_AND_CALC) && (wgt_count < 40)); 
   
   always @(*) begin
-      // 144-Way Parallel MAC Logic (16 Pixels x 9 Weights)
-      for (p = 0; p < 16; p = p + 1) begin
+      // 36-Way Parallel MAC Logic (4 Pixels x 9 Weights)
+      for (p = 0; p < 4; p = p + 1) begin
           pixel_sum = 0; // 9 MACs sum initialization
           // pix_cnt + p 가 현재 처리할 픽셀의 인덱스, feature_length에 따라 row, col을 역산하여 패딩 처리
           logic_idx = pix_cnt + p;
@@ -181,40 +181,35 @@ module conv_module
       end 
 
       // Packing Logic (for Last Channel)
-      for(p=0; p<8; p=p+1) begin
+      for(p=0; p<4; p=p+1) begin
           raw_val = (next_acc[p] >>> 6) + bias_buf[co_cnt];
           if (raw_val < 0) final_byte[p] = 0;
           else if (raw_val > 127) final_byte[p] = 127;
           else final_byte[p] = raw_val[7:0];
       end
-      pack_word_A = {final_byte[3], final_byte[2], final_byte[1], final_byte[0]};
-      pack_word_B = {final_byte[7], final_byte[6], final_byte[5], final_byte[4]};
+      pack_word = {final_byte[3], final_byte[2], final_byte[1], final_byte[0]};
 
       // BRAM Control
-      bram_we_a = 0; bram_we_b = 0;
-      bram_addr_a = 0; bram_addr_b = 0;
-      bram_wdata_a = 0; bram_wdata_b = 0;
+      bram_we = 0;
+      bram_addr = 0;
+      bram_wdata = 0;
 
       // pix_cnt 기반 BRAM 주소 계산
       if (state == STATE_STREAM_AND_CALC && compute_busy && (ci_cnt == input_ch - 1)) begin
-          bram_we_a = 1'b1;
-          bram_we_b = 1'b1;
-          bram_addr_a = (co_cnt * (total_pixels >> 2)) + (pix_cnt >> 2);
-          bram_addr_b = bram_addr_a + 1;
+          bram_we = 1'b1;
+          bram_addr = (co_cnt * (total_pixels >> 2)) + (pix_cnt >> 2);
           
-          bram_wdata_a = pack_word_A;
-          bram_wdata_b = pack_word_B;
+          bram_wdata = pack_word;
       end
       else if (state == STATE_SEND) begin
-          bram_addr_a = read_ptr;
+          bram_addr = read_ptr;
       end
   end
 
 
   // Sequential Logic
   integer i_seq, p_seq;
-  reg [4:0] stride;
-  always @(posedge clk or negedge rstn) begin
+  always @(posedge clk) begin
     if (!rstn) begin
       state <= STATE_IDLE;
       m_axis_tvalid <= 0; m_axis_tlast <= 0; m_axis_tdata_reg <= 0;
@@ -229,8 +224,7 @@ module conv_module
     else begin
       prev_command <= command;
       
-      if (bram_we_a) output_buf[bram_addr_a] <= bram_wdata_a;
-      if (bram_we_b) output_buf[bram_addr_b] <= bram_wdata_b;
+      if (bram_we) output_buf[bram_addr] <= bram_wdata;
 
       case (state)
         STATE_IDLE: begin
@@ -301,19 +295,15 @@ module conv_module
              
              // acc_mem Update (Always 16-Way)
              if (ci_cnt != input_ch - 1) begin
-                 for (p_seq = 0; p_seq < 16; p_seq = p_seq + 1) begin
+                 for (p_seq = 0; p_seq < 4; p_seq = p_seq + 1) begin
                      if (pix_cnt + p_seq < total_pixels) begin
                          acc_mem[pix_cnt + p_seq] <= next_acc[p_seq];
                      end
                  end
              end
 
-             // Loop Control & Stride
-             if (ci_cnt == input_ch - 1) stride = 8; // Last: 8 (for BRAM Write)
-             else stride = 16;                       // Mid: 16 (Fast)
-
              // Next Pixel
-             if (pix_cnt >= total_pixels - stride) begin
+             if (pix_cnt >= total_pixels - 4) begin
                  // Image Done
                  pix_cnt <= 0;
                  compute_busy <= 1'b0;
@@ -329,7 +319,7 @@ module conv_module
                      ci_cnt <= ci_cnt + 1;
                  end
              end else begin
-                 pix_cnt <= pix_cnt + stride;
+                 pix_cnt <= pix_cnt + 4;
              end
           end 
         end
@@ -344,7 +334,7 @@ module conv_module
               end
               else begin
                   // Data Ready
-                  m_axis_tdata_reg <= output_buf[bram_addr_a]; // Packed Data
+                  m_axis_tdata_reg <= output_buf[bram_addr]; // Packed Data
                   m_axis_tvalid <= 1'b1;
                   if (sent_word_cnt == total_output_words - 1) m_axis_tlast <= 1'b1;
                   send_phase <= 0; 

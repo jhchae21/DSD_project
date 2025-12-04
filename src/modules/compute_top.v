@@ -15,7 +15,7 @@ module compute_top
     //////////////////////////////////////////////////////////////////////////
     // FC layer
     //////////////////////////////////////////////////////////////////////////
-    output wire FC_S_AXIS_TREADY,
+    /*output wire FC_S_AXIS_TREADY,
     input wire [C_S00_AXIS_TDATA_WIDTH-1 : 0] FC_S_AXIS_TDATA,
     input wire [(C_S00_AXIS_TDATA_WIDTH/8)-1 : 0] FC_S_AXIS_TKEEP, 
     input wire FC_S_AXIS_TUSER, 
@@ -36,7 +36,7 @@ module compute_top
     input wire [31:0] FC_PWDATA, 
     output wire FC_PSLVERR, 
     output wire [31:0] FC_PRDATA, 
-    output wire FC_PREADY, 
+    output wire FC_PREADY, */
 
     //////////////////////////////////////////////////////////////////////////
     // Conv layer
@@ -62,12 +62,12 @@ module compute_top
     input wire [31:0] CONV_PWDATA, 
     output wire CONV_PSLVERR, 
     output wire CONV_PREADY, 
-    output wire [31:0] CONV_PRDATA, 
+    output wire [31:0] CONV_PRDATA
 
     //////////////////////////////////////////////////////////////////////////
     // Pooling layer
     //////////////////////////////////////////////////////////////////////////
-    output wire POOL_S_AXIS_TREADY, 
+    /*output wire POOL_S_AXIS_TREADY, 
     input wire [C_S00_AXIS_TDATA_WIDTH-1:0] POOL_S_AXIS_TDATA, 
     input wire [(C_S00_AXIS_TDATA_WIDTH/8)-1:0] POOL_S_AXIS_TKEEP, 
     input wire POOL_S_AXIS_TUSER, 
@@ -88,7 +88,7 @@ module compute_top
     input wire [31:0] POOL_PWDATA, 
     output wire [31:0] POOL_PRDATA, 
     output wire POOL_PREADY, 
-    output wire POOL_PSLVERR
+    output wire POOL_PSLVERR*/
   );
 
   ////////////////////////////////////////////////////////////////////////////
@@ -98,7 +98,7 @@ module compute_top
   //-------------------
   // ******* FC *******
   //-------------------
-  fc_top #(.C_S00_AXIS_TDATA_WIDTH(32))
+  /*fc_top #(.C_S00_AXIS_TDATA_WIDTH(32))
   u_fc_top
   (
     .CLK(CLK),
@@ -128,7 +128,7 @@ module compute_top
     .PRDATA  (FC_PRDATA),
     .PREADY  (FC_PREADY),
     .PSLVERR (FC_PSLVERR)
-  );
+  );*/
   
   //-------------------
   // ******* Conv *******
@@ -168,7 +168,7 @@ module compute_top
   //-----------------------------
   // ******* Pool *******
   //-----------------------------
-  pool_top #(.C_S00_AXIS_TDATA_WIDTH(32))
+  /*pool_top #(.C_S00_AXIS_TDATA_WIDTH(32))
   u_pool_top
   (
     .CLK(CLK),
@@ -198,6 +198,6 @@ module compute_top
     .PRDATA  (POOL_PRDATA),
     .PREADY  (POOL_PREADY),
     .PSLVERR (POOL_PSLVERR)
-  );
+  );*/
 
 endmodule

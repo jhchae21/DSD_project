@@ -4,6 +4,8 @@ verilog xil_defaultlib  --include "../../../../conv_tb.ip_user_files/ipstatic/hd
 "../../../../../../../src/tb/conv/ip/axi_interconnect_0/sim/axi_interconnect_0.v" \
 "../../../../../../../src/tb/conv/axi_m_interface.v" \
 "../../../../../../../src/modules/conv_module/conv_module.v" \
+"../../../../../../../src/modules/conv_module/pe.v" \
+"../../../../../../../src/modules/conv_module/systolic_array.v" \
 "../../../../../../../src/tb/conv/top_simulation.v" \
 "../../../../../../../src/tb/conv/vdma_controller.v" \
 "../../../../../../../src/tb/conv/tb.v" \

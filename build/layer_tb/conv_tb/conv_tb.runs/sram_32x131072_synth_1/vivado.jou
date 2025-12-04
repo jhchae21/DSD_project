@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Dec  2 19:26:20 2025
+# Process ID         : 9560
+# Current directory  : C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.runs/sram_32x131072_synth_1
+# Command line       : vivado.exe -log sram_32x131072.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sram_32x131072.tcl
+# Log file           : C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.runs/sram_32x131072_synth_1/sram_32x131072.vds
+# Journal file       : C:/Users/ralph/Vivado projects/Digital systems/Term_Project/build/layer_tb/conv_tb/conv_tb.runs/sram_32x131072_synth_1\vivado.jou
+# Running On         : BOOK-PDMLPL2P14
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 256V
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 16687 MB
+# Swap memory        : 12884 MB
+# Total Virtual      : 29572 MB
+# Available Virtual  : 8998 MB
+#-----------------------------------------------------------
+source sram_32x131072.tcl -notrace

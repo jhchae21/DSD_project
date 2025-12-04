@@ -324,6 +324,11 @@ module tb;
 
             compare_flag = 1'b0;
           end
+          else begin
+            $display("\nResult is correct!");
+            $display("Expected value: %h", {result_expected_32bit[i][7:0], result_expected_32bit[i][15:8], result_expected_32bit[i][23:16],result_expected_32bit[i][31:24]});
+            $display("Output value: %h\n", result_32bit);
+          end
         end
 
         if (compare_flag) begin
